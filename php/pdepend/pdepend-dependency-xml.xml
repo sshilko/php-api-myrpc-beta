@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies generated="2024-01-02T20:57:23" pdepend="@package_version@">
+  <package name="myrpc">
+    <class name="ApiServer">
+      <efferent>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="myrpc\Request" name="RequestFactoryInterface"/>
+        <type namespace="myrpc\Response" name="ResponseFactoryInterface"/>
+        <type namespace="myrpc\Identity" name="IdentityFactoryInterface"/>
+        <type namespace="myrpc\Schema" name="SchemaFactoryInterface"/>
+        <type namespace="myrpc\Handler\Context" name="ContextFactoryInterface"/>
+        <type namespace="Psr\Log" name="LoggerInterface"/>
+        <type namespace="myrpc" name="mixed"/>
+        <type namespace="myrpc\Response" name="ResponseInterface"/>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+        <type namespace="" name="Throwable"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/ApiServer.php"/>
+    </class>
+    <class name="SchemaServer">
+      <efferent>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="myrpc\Schema" name="SchemaFactoryInterface"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/SchemaServer.php"/>
+    </class>
+  </package>
+  <package name="myrpc\Datatype">
+    <class name="DatatypeFactory">
+      <efferent>
+        <type namespace="myrpc\Datatype" name="DatatypeFactoryInterface"/>
+        <type namespace="myrpc\Datatype" name="UserspaceDatatypeFactoryInterface"/>
+        <type namespace="Psr\Container" name="ContainerInterface"/>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+        <type namespace="myrpc\Datatype\Internal\v1\Response" name="Error"/>
+        <type namespace="myrpc\Datatype" name="object"/>
+        <type namespace="myrpc\Datatype\Internal\v1\Response" name="Success"/>
+        <type namespace="myrpc\Exception" name="DatatypeException"/>
+        <type namespace="Psr\Container" name="NotFoundExceptionInterface"/>
+        <type namespace="Psr\Container" name="ContainerExceptionInterface"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Datatype/DatatypeFactory.php"/>
+    </class>
+    <interface name="DatatypeFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+        <type namespace="myrpc\Datatype" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Datatype" name="DatatypeFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+        <type namespace="myrpc\Schema" name="JsonSchemaFactory"/>
+      </afferent>
+      <file name="/app/src/Datatype/DatatypeFactoryInterface.php"/>
+    </interface>
+    <interface name="DatatypeInterface">
+      <efferent>
+        <type namespace="myrpc\Datatype" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Datatype" name="DatatypeFactory"/>
+        <type namespace="myrpc\Datatype" name="DatatypeFactoryInterface"/>
+        <type namespace="myrpc\Datatype" name="UserspaceDatatypeFactoryInterface"/>
+        <type namespace="myrpc\Datatype\Internal" name="AbstractDatatype"/>
+        <type namespace="myrpc\Handler\Context" name="Context"/>
+        <type namespace="myrpc\Handler\Context" name="ContextReaderInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Datatype/DatatypeInterface.php"/>
+    </interface>
+    <interface name="UserspaceDatatypeFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Datatype" name="DatatypeFactory"/>
+        <type namespace="myrpc\Handler\Context" name="Context"/>
+        <type namespace="myrpc\Handler\Context" name="ContextFactory"/>
+      </afferent>
+      <file name="/app/src/Datatype/UserspaceDatatypeFactoryInterface.php"/>
+    </interface>
+  </package>
+  <package name="myrpc\Datatype\Internal">
+    <class name="AbstractDatatype">
+      <efferent>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+        <type namespace="myrpc\Validator" name="IsValidatableInterface"/>
+        <type namespace="myrpc\Datatype\Internal" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Datatype\Internal\v1\Response" name="Error"/>
+        <type namespace="myrpc\Datatype\Internal\v1\Response" name="Success"/>
+      </afferent>
+      <file name="/app/src/Datatype/Internal/AbstractDatatype.php"/>
+    </class>
+  </package>
+  <package name="myrpc\Datatype\Internal\v1\Response">
+    <class name="Error">
+      <efferent>
+        <type namespace="myrpc\Datatype\Internal" name="AbstractDatatype"/>
+        <type namespace="myrpc\Datatype\Internal\v1\Response" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Datatype" name="DatatypeFactory"/>
+      </afferent>
+      <file name="/app/src/Datatype/Internal/v1/Response/Error.php"/>
+    </class>
+    <class name="Success">
+      <efferent>
+        <type namespace="myrpc\Datatype\Internal" name="AbstractDatatype"/>
+        <type namespace="myrpc\Datatype\Internal\v1\Response" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Datatype" name="DatatypeFactory"/>
+      </afferent>
+      <file name="/app/src/Datatype/Internal/v1/Response/Success.php"/>
+    </class>
+  </package>
+  <package name="myrpc\Exception">
+    <class name="DatatypeException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Datatype" name="DatatypeFactory"/>
+      </afferent>
+      <file name="/app/src/Exception/DatatypeException.php"/>
+    </class>
+    <class name="HandlerActionArgumentsException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="HandlerActionException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Exception/HandlerActionArgumentsException.php"/>
+    </class>
+    <class name="HandlerActionException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Exception" name="HandlerActionArgumentsException"/>
+        <type namespace="myrpc\Exception" name="HandlerActionInputException"/>
+        <type namespace="myrpc\Exception" name="HandlerActionSerializerException"/>
+        <type namespace="myrpc\Exception" name="HandlerActionTypeException"/>
+        <type namespace="myrpc\Exception" name="HandlerActionValidationException"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Exception/HandlerActionException.php"/>
+    </class>
+    <class name="HandlerActionInputException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="HandlerActionException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Exception/HandlerActionInputException.php"/>
+    </class>
+    <class name="HandlerActionSerializerException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="HandlerActionException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Exception/HandlerActionSerializerException.php"/>
+    </class>
+    <class name="HandlerActionTypeException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="HandlerActionException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Exception/HandlerActionTypeException.php"/>
+    </class>
+    <class name="HandlerActionValidationException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="HandlerActionException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Exception/HandlerActionValidationException.php"/>
+    </class>
+    <class name="SerializerException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Serializer" name="JsonSerializer"/>
+      </afferent>
+      <file name="/app/src/Exception/SerializerException.php"/>
+    </class>
+    <class name="SerializerObjectAssertException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Serializer" name="JsonSerializer"/>
+      </afferent>
+      <file name="/app/src/Exception/SerializerObjectAssertException.php"/>
+    </class>
+    <class name="ServiceAuthenticationException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Exception/ServiceAuthenticationException.php"/>
+    </class>
+    <class name="ServiceException">
+      <efferent>
+        <type namespace="" name="RuntimeException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc" name="ApiServer"/>
+        <type namespace="myrpc\Exception" name="DatatypeException"/>
+        <type namespace="myrpc\Exception" name="HandlerActionException"/>
+        <type namespace="myrpc\Exception" name="SerializerException"/>
+        <type namespace="myrpc\Exception" name="SerializerObjectAssertException"/>
+        <type namespace="myrpc\Exception" name="ServiceAuthenticationException"/>
+        <type namespace="myrpc\Exception" name="ValidatorException"/>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+        <type namespace="myrpc\Request" name="JsonRpcRequestFactory"/>
+        <type namespace="myrpc\Response" name="JsonRpcResponse"/>
+        <type namespace="myrpc\Schema" name="JsonSchemaFactory"/>
+      </afferent>
+      <file name="/app/src/Exception/ServiceException.php"/>
+    </class>
+    <class name="ValidatorException">
+      <efferent>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Validator" name="Symfony"/>
+      </afferent>
+      <file name="/app/src/Exception/ValidatorException.php"/>
+    </class>
+  </package>
+  <package name="myrpc\Handler\Context">
+    <class name="Context">
+      <efferent>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactoryInterface"/>
+        <type namespace="myrpc\Datatype" name="UserspaceDatatypeFactoryInterface"/>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseInterface"/>
+        <type namespace="myrpc\Identity" name="IdentityInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler\Context" name="ContextFactory"/>
+      </afferent>
+      <file name="/app/src/Handler/Context/Context.php"/>
+    </class>
+    <class name="ContextFactory">
+      <efferent>
+        <type namespace="myrpc\Handler\Context" name="ContextFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactoryInterface"/>
+        <type namespace="myrpc\Datatype" name="UserspaceDatatypeFactoryInterface"/>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+        <type namespace="myrpc\Handler\Context" name="Context"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Handler/Context/ContextFactory.php"/>
+    </class>
+    <interface name="ContextFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc" name="ApiServer"/>
+        <type namespace="myrpc\Handler\Context" name="ContextFactory"/>
+      </afferent>
+      <file name="/app/src/Handler/Context/ContextFactoryInterface.php"/>
+    </interface>
+    <interface name="ContextInterface">
+      <efferent>
+        <type namespace="myrpc\Handler\Context" name="ContextWriterInterface"/>
+        <type namespace="myrpc\Handler\Context" name="ContextReaderInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler\Context" name="Context"/>
+        <type namespace="myrpc\Handler\Context" name="ContextFactory"/>
+        <type namespace="myrpc\Handler\Context" name="ContextFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Handler" name="SmartHandlerInterface"/>
+      </afferent>
+      <file name="/app/src/Handler/Context/ContextInterface.php"/>
+    </interface>
+    <interface name="ContextReaderInterface">
+      <efferent>
+        <type namespace="myrpc\Identity" name="IdentityInterface"/>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+        <type namespace="myrpc\Handler\Worker" name="WorkerInterface"/>
+        <type namespace="myrpc\Handler\Worker" name="WorkerTrait"/>
+      </afferent>
+      <file name="/app/src/Handler/Context/ContextReaderInterface.php"/>
+    </interface>
+    <interface name="ContextWriterInterface">
+      <efferent>
+        <type namespace="myrpc\Identity" name="IdentityInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+      </afferent>
+      <file name="/app/src/Handler/Context/ContextWriterInterface.php"/>
+    </interface>
+  </package>
+  <package name="myrpc\Handler">
+    <class name="HandlerFactory">
+      <efferent>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="Psr\Container" name="ContainerInterface"/>
+        <type namespace="myrpc\Datatype" name="DatatypeFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerInterface"/>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+        <type namespace="Psr\Container" name="NotFoundExceptionInterface"/>
+        <type namespace="Psr\Container" name="ContainerExceptionInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerSchemaInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandlerInterface"/>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+        <type namespace="myrpc\Schema" name="SchemaFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerWithSchemaInterface"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Handler/HandlerFactory.php"/>
+    </class>
+    <interface name="HandlerFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Handler" name="HandlerInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandlerInterface"/>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerSchemaInterface"/>
+        <type namespace="myrpc\Schema" name="SchemaFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerWithSchemaInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc" name="ApiServer"/>
+        <type namespace="myrpc" name="SchemaServer"/>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+      </afferent>
+      <file name="/app/src/Handler/HandlerFactoryInterface.php"/>
+    </interface>
+    <interface name="HandlerInterface">
+      <efferent>
+        <type namespace="myrpc\Identity" name="IdentityInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerWithSchemaInterface"/>
+      </afferent>
+      <file name="/app/src/Handler/HandlerInterface.php"/>
+    </interface>
+    <class name="HandlerResponse">
+      <efferent>
+        <type namespace="myrpc\Handler" name="HandlerResponseInterface"/>
+        <type namespace="myrpc\Handler" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactory"/>
+      </afferent>
+      <file name="/app/src/Handler/HandlerResponse.php"/>
+    </class>
+    <class name="HandlerResponseFactory">
+      <efferent>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="object"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponse"/>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Handler/HandlerResponseFactory.php"/>
+    </class>
+    <interface name="HandlerResponseFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler\Context" name="Context"/>
+        <type namespace="myrpc\Handler\Context" name="ContextFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactory"/>
+      </afferent>
+      <file name="/app/src/Handler/HandlerResponseFactoryInterface.php"/>
+    </interface>
+    <interface name="HandlerResponseInterface">
+      <efferent>
+        <type namespace="myrpc\Handler" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler\Context" name="Context"/>
+        <type namespace="myrpc\Handler\Context" name="ContextReaderInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponse"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Handler/HandlerResponseInterface.php"/>
+    </interface>
+    <interface name="HandlerSchemaInterface">
+      <efferent>
+        <type namespace="myrpc\Schema" name="SchemaFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerWithSchemaInterface"/>
+        <type namespace="myrpc\Schema" name="SchemaInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerWithSchemaInterface"/>
+      </afferent>
+      <file name="/app/src/Handler/HandlerSchemaInterface.php"/>
+    </interface>
+    <interface name="HandlerWithSchemaInterface">
+      <efferent>
+        <type namespace="myrpc\Handler" name="HandlerInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerSchemaInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerSchemaInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Handler" name="SmartHandlerInterface"/>
+      </afferent>
+      <file name="/app/src/Handler/HandlerWithSchemaInterface.php"/>
+    </interface>
+    <class name="SmartHandler">
+      <efferent>
+        <type namespace="myrpc\Handler" name="SmartHandlerInterface"/>
+        <type namespace="myrpc\Handler\Worker" name="WorkerInterface"/>
+        <type namespace="myrpc\Serializer" name="SerializerInterface"/>
+        <type namespace="myrpc\Validator" name="ValidatorInterface"/>
+        <type namespace="" name="ReflectionClass"/>
+        <type namespace="myrpc\Serializer" name="JsonSerializer"/>
+        <type namespace="myrpc\Validator" name="Symfony"/>
+        <type namespace="myrpc\Identity" name="IdentityInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerResponseInterface"/>
+        <type namespace="myrpc\Exception" name="HandlerActionException"/>
+        <type namespace="" name="ReflectionException"/>
+        <type namespace="myrpc\Exception" name="HandlerActionArgumentsException"/>
+        <type namespace="" name="TypeError"/>
+        <type namespace="myrpc\Exception" name="HandlerActionTypeException"/>
+        <type namespace="" name="BackedEnum"/>
+        <type namespace="myrpc\Datatype" name="DatatypeInterface"/>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+        <type namespace="myrpc\Schema" name="SchemaFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerWithSchemaInterface"/>
+        <type namespace="myrpc\Schema" name="SchemaInterface"/>
+        <type namespace="" name="ReflectionMethod"/>
+        <type namespace="myrpc\Exception" name="HandlerActionInputException"/>
+        <type namespace="" name="ReflectionUnionType"/>
+        <type namespace="" name="ReflectionNamedType"/>
+        <type namespace="" name="stdClass"/>
+        <type namespace="myrpc\Validator" name="IsValidatableInterface"/>
+        <type namespace="myrpc\Validator" name="ValidatorResultInterface"/>
+        <type namespace="myrpc\Exception" name="HandlerActionValidationException"/>
+        <type namespace="myrpc\Exception" name="ValidatorException"/>
+        <type namespace="myrpc\Exception" name="SerializerException"/>
+        <type namespace="Symfony\Component\Serializer\Exception" name="MissingConstructorArgumentsException"/>
+        <type namespace="myrpc\Exception" name="HandlerActionSerializerException"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Handler/SmartHandler.php"/>
+    </class>
+    <interface name="SmartHandlerInterface">
+      <efferent>
+        <type namespace="myrpc\Handler" name="HandlerWithSchemaInterface"/>
+        <type namespace="myrpc\Handler\Context" name="ContextInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Handler/SmartHandlerInterface.php"/>
+    </interface>
+  </package>
+  <package name="myrpc\Handler\Worker">
+    <interface name="WorkerInterface">
+      <efferent>
+        <type namespace="myrpc\Handler\Context" name="ContextReaderInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Handler/Worker/WorkerInterface.php"/>
+    </interface>
+    <trait name="WorkerTrait">
+      <efferent>
+        <type namespace="myrpc\Handler\Context" name="ContextReaderInterface"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Handler/Worker/WorkerTrait.php"/>
+    </trait>
+  </package>
+  <package name="myrpc\Identity">
+    <interface name="IdentityFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Identity" name="IdentityInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc" name="ApiServer"/>
+        <type namespace="myrpc\Identity" name="TokenIdentityFactory"/>
+      </afferent>
+      <file name="/app/src/Identity/IdentityFactoryInterface.php"/>
+    </interface>
+    <interface name="IdentityInterface">
+      <efferent/>
+      <afferent>
+        <type namespace="myrpc\Handler\Context" name="Context"/>
+        <type namespace="myrpc\Handler\Context" name="ContextReaderInterface"/>
+        <type namespace="myrpc\Handler\Context" name="ContextWriterInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Identity" name="IdentityFactoryInterface"/>
+        <type namespace="myrpc\Identity" name="TokenIdentity"/>
+        <type namespace="myrpc\Identity" name="TokenIdentityFactory"/>
+      </afferent>
+      <file name="/app/src/Identity/IdentityInterface.php"/>
+    </interface>
+    <class name="TokenIdentity">
+      <efferent>
+        <type namespace="myrpc\Identity" name="IdentityInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Identity" name="TokenIdentityFactory"/>
+      </afferent>
+      <file name="/app/src/Identity/TokenIdentity.php"/>
+    </class>
+    <class name="TokenIdentityFactory">
+      <efferent>
+        <type namespace="myrpc\Identity" name="IdentityFactoryInterface"/>
+        <type namespace="myrpc\Identity" name="IdentityInterface"/>
+        <type namespace="myrpc\Identity" name="TokenIdentity"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Identity/TokenIdentityFactory.php"/>
+    </class>
+  </package>
+  <package name="myrpc\Request">
+    <class name="JsonRpcRequest">
+      <efferent>
+        <type namespace="myrpc\Request" name="RequestInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Request" name="JsonRpcRequestFactory"/>
+      </afferent>
+      <file name="/app/src/Request/JsonRpcRequest.php"/>
+    </class>
+    <class name="JsonRpcRequestFactory">
+      <efferent>
+        <type namespace="myrpc\Request" name="RequestFactoryInterface"/>
+        <type namespace="myrpc\Request" name="mixed"/>
+        <type namespace="myrpc\Request" name="RequestInterface"/>
+        <type namespace="" name="JsonException"/>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+        <type namespace="myrpc\Request" name="JsonRpcRequest"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Request/JsonRpcRequestFactory.php"/>
+    </class>
+    <interface name="RequestFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Request" name="mixed"/>
+        <type namespace="myrpc\Request" name="RequestInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc" name="ApiServer"/>
+        <type namespace="myrpc\Request" name="JsonRpcRequestFactory"/>
+      </afferent>
+      <file name="/app/src/Request/RequestFactoryInterface.php"/>
+    </interface>
+    <interface name="RequestInterface">
+      <efferent/>
+      <afferent>
+        <type namespace="myrpc\Request" name="JsonRpcRequest"/>
+        <type namespace="myrpc\Request" name="JsonRpcRequestFactory"/>
+        <type namespace="myrpc\Request" name="RequestFactoryInterface"/>
+        <type namespace="myrpc\Request" name="SimpleRequest"/>
+      </afferent>
+      <file name="/app/src/Request/RequestInterface.php"/>
+    </interface>
+    <class name="SimpleRequest">
+      <efferent>
+        <type namespace="myrpc\Request" name="RequestInterface"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Request/SimpleRequest.php"/>
+    </class>
+  </package>
+  <package name="myrpc\Response">
+    <class name="JsonRpcResponse">
+      <efferent>
+        <type namespace="myrpc\Response" name="ResponseInterface"/>
+        <type namespace="myrpc\Response" name="object"/>
+        <type namespace="" name="Throwable"/>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Response" name="JsonRpcResponseFactory"/>
+      </afferent>
+      <file name="/app/src/Response/JsonRpcResponse.php"/>
+    </class>
+    <class name="JsonRpcResponseFactory">
+      <efferent>
+        <type namespace="myrpc\Response" name="ResponseFactoryInterface"/>
+        <type namespace="myrpc\Response" name="object"/>
+        <type namespace="myrpc\Response" name="ResponseInterface"/>
+        <type namespace="myrpc\Response" name="JsonRpcResponse"/>
+        <type namespace="" name="Throwable"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Response/JsonRpcResponseFactory.php"/>
+    </class>
+    <interface name="ResponseFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Response" name="object"/>
+        <type namespace="myrpc\Response" name="ResponseInterface"/>
+        <type namespace="" name="Throwable"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc" name="ApiServer"/>
+        <type namespace="myrpc\Response" name="JsonRpcResponseFactory"/>
+        <type namespace="myrpc\Response" name="SimpleResponseFactory"/>
+      </afferent>
+      <file name="/app/src/Response/ResponseFactoryInterface.php"/>
+    </interface>
+    <interface name="ResponseInterface">
+      <efferent>
+        <type namespace="myrpc\Response" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc" name="ApiServer"/>
+        <type namespace="myrpc\Response" name="JsonRpcResponse"/>
+        <type namespace="myrpc\Response" name="JsonRpcResponseFactory"/>
+        <type namespace="myrpc\Response" name="ResponseFactoryInterface"/>
+        <type namespace="myrpc\Response" name="SimpleResponse"/>
+        <type namespace="myrpc\Response" name="SimpleResponseFactory"/>
+      </afferent>
+      <file name="/app/src/Response/ResponseInterface.php"/>
+    </interface>
+    <class name="SimpleResponse">
+      <efferent>
+        <type namespace="myrpc\Response" name="ResponseInterface"/>
+        <type namespace="myrpc\Response" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Response" name="SimpleResponseFactory"/>
+      </afferent>
+      <file name="/app/src/Response/SimpleResponse.php"/>
+    </class>
+    <class name="SimpleResponseFactory">
+      <efferent>
+        <type namespace="myrpc\Response" name="ResponseFactoryInterface"/>
+        <type namespace="myrpc\Response" name="object"/>
+        <type namespace="myrpc\Response" name="ResponseInterface"/>
+        <type namespace="myrpc\Response" name="SimpleResponse"/>
+        <type namespace="" name="Throwable"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Response/SimpleResponseFactory.php"/>
+    </class>
+  </package>
+  <package name="myrpc\Schema">
+    <class name="JsonSchema">
+      <efferent>
+        <type namespace="myrpc\Schema" name="SchemaInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Schema" name="JsonSchemaFactory"/>
+      </afferent>
+      <file name="/app/src/Schema/JsonSchema.php"/>
+    </class>
+    <class name="JsonSchemaFactory">
+      <efferent>
+        <type namespace="myrpc\Schema" name="SchemaFactoryInterface"/>
+        <type namespace="myrpc\Datatype" name="DatatypeFactoryInterface"/>
+        <type namespace="myrpc\Schema" name="object"/>
+        <type namespace="myrpc\Schema" name="SchemaInterface"/>
+        <type namespace="myrpc\Schema" name="JsonSchema"/>
+        <type namespace="myrpc\Exception" name="ServiceException"/>
+      </efferent>
+      <afferent/>
+      <file name="/app/src/Schema/JsonSchemaFactory.php"/>
+    </class>
+    <interface name="SchemaFactoryInterface">
+      <efferent>
+        <type namespace="myrpc\Schema" name="object"/>
+        <type namespace="myrpc\Schema" name="SchemaInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc" name="ApiServer"/>
+        <type namespace="myrpc" name="SchemaServer"/>
+        <type namespace="myrpc\Handler" name="HandlerFactory"/>
+        <type namespace="myrpc\Handler" name="HandlerFactoryInterface"/>
+        <type namespace="myrpc\Handler" name="HandlerSchemaInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Schema" name="JsonSchemaFactory"/>
+      </afferent>
+      <file name="/app/src/Schema/SchemaFactoryInterface.php"/>
+    </interface>
+    <interface name="SchemaInterface">
+      <efferent>
+        <type namespace="" name="Stringable"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="HandlerSchemaInterface"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Schema" name="JsonSchema"/>
+        <type namespace="myrpc\Schema" name="JsonSchemaFactory"/>
+        <type namespace="myrpc\Schema" name="SchemaFactoryInterface"/>
+      </afferent>
+      <file name="/app/src/Schema/SchemaInterface.php"/>
+    </interface>
+  </package>
+  <package name="myrpc\Serializer">
+    <class name="JsonSerializer">
+      <efferent>
+        <type namespace="myrpc\Serializer" name="SerializerInterface"/>
+        <type namespace="Symfony\Component\Serializer\Mapping\Factory" name="ClassMetadataFactory"/>
+        <type namespace="Symfony\Component\Serializer\Mapping\Loader" name="AttributeLoader"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="ObjectNormalizer"/>
+        <type namespace="Symfony\Component\PropertyInfo\Extractor" name="ReflectionExtractor"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="DateTimeNormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="ArrayDenormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="BackedEnumNormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="DataUriNormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="DateTimeZoneNormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="UidNormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="PropertyNormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="JsonSerializableNormalizer"/>
+        <type namespace="Symfony\Component\Serializer" name="Serializer"/>
+        <type namespace="Symfony\Component\Serializer\Encoder" name="JsonEncoder"/>
+        <type namespace="" name="stdClass"/>
+        <type namespace="myrpc\Serializer" name="object"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="AbstractNormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Normalizer" name="AbstractObjectNormalizer"/>
+        <type namespace="Symfony\Component\Serializer\Encoder" name="JsonDecode"/>
+        <type namespace="Symfony\Component\Serializer\Encoder" name="JsonEncode"/>
+        <type namespace="myrpc\Exception" name="SerializerObjectAssertException"/>
+        <type namespace="" name="Throwable"/>
+        <type namespace="myrpc\Exception" name="SerializerException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Serializer/JsonSerializer.php"/>
+    </class>
+    <interface name="SerializerInterface">
+      <efferent>
+        <type namespace="" name="stdClass"/>
+        <type namespace="myrpc\Serializer" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Serializer" name="JsonSerializer"/>
+      </afferent>
+      <file name="/app/src/Serializer/SerializerInterface.php"/>
+    </interface>
+  </package>
+  <package name="myrpc\Validator">
+    <interface name="IsValidatableInterface">
+      <efferent>
+        <type namespace="myrpc\Validator" name="object"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Datatype\Internal" name="AbstractDatatype"/>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Validator" name="Symfony"/>
+        <type namespace="myrpc\Validator" name="ValidatorInterface"/>
+      </afferent>
+      <file name="/app/src/Validator/IsValidatableInterface.php"/>
+    </interface>
+    <class name="Symfony">
+      <efferent>
+        <type namespace="myrpc\Validator" name="ValidatorInterface"/>
+        <type namespace="Symfony\Component\Validator" name="Validation"/>
+        <type namespace="Symfony\Component\Validator\Mapping\Loader" name="StaticMethodLoader"/>
+        <type namespace="myrpc\Validator" name="IsValidatableInterface"/>
+        <type namespace="myrpc\Validator" name="SymfonyResult"/>
+        <type namespace="" name="Throwable"/>
+        <type namespace="myrpc\Exception" name="ValidatorException"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+      </afferent>
+      <file name="/app/src/Validator/Symfony.php"/>
+    </class>
+    <class name="SymfonyResult">
+      <efferent>
+        <type namespace="myrpc\Validator" name="ValidatorResultInterface"/>
+        <type namespace="" name="Stringable"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Validator" name="Symfony"/>
+      </afferent>
+      <file name="/app/src/Validator/SymfonyResult.php"/>
+    </class>
+    <interface name="ValidatorInterface">
+      <efferent>
+        <type namespace="myrpc\Validator" name="IsValidatableInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Validator" name="Symfony"/>
+      </afferent>
+      <file name="/app/src/Validator/ValidatorInterface.php"/>
+    </interface>
+    <interface name="ValidatorResultInterface">
+      <efferent>
+        <type namespace="" name="Stringable"/>
+      </efferent>
+      <afferent>
+        <type namespace="myrpc\Handler" name="SmartHandler"/>
+        <type namespace="myrpc\Validator" name="SymfonyResult"/>
+      </afferent>
+      <file name="/app/src/Validator/ValidatorResultInterface.php"/>
+    </interface>
+  </package>
+</dependencies>

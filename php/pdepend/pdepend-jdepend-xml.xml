@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDepend>
+  <Packages>
+    <Package name="myrpc">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>9</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/ApiServer.php">ApiServer</Class>
+        <Class sourceFile="/app/src/SchemaServer.php">SchemaServer</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Psr\Log</Package>
+        <Package>myrpc\Exception</Package>
+        <Package>myrpc\Handler</Package>
+        <Package>myrpc\Handler\Context</Package>
+        <Package>myrpc\Identity</Package>
+        <Package>myrpc\Request</Package>
+        <Package>myrpc\Response</Package>
+        <Package>myrpc\Schema</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="myrpc\Datatype">
+      <Stats>
+        <TotalClasses>5</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>3</AbstractClasses>
+        <Ca>4</Ca>
+        <Ce>3</Ce>
+        <A>0.6</A>
+        <I>0.42857142857143</I>
+        <D>0.028571428571428</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Datatype/DatatypeFactory.php">DatatypeFactory</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Datatype/DatatypeFactoryInterface.php">DatatypeFactoryInterface</Class>
+        <Class sourceFile="/app/src/Datatype/DatatypeInterface.php">DatatypeInterface</Class>
+        <Class sourceFile="/app/src/Datatype/UserspaceDatatypeFactoryInterface.php">UserspaceDatatypeFactoryInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>Psr\Container</Package>
+        <Package>myrpc\Datatype\Internal\v1\Response</Package>
+        <Package>myrpc\Exception</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc\Datatype\Internal</Package>
+        <Package>myrpc\Handler</Package>
+        <Package>myrpc\Handler\Context</Package>
+        <Package>myrpc\Schema</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Datatype\Internal">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>2</Ce>
+        <A>0.5</A>
+        <I>0.66666666666667</I>
+        <D>0.16666666666667</D>
+      </Stats>
+      <ConcreteClasses/>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Datatype/Internal/AbstractDatatype.php">AbstractDatatype</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>myrpc\Datatype</Package>
+        <Package>myrpc\Validator</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Datatype\Internal\v1\Response">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>0.5</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Datatype/Internal/v1/Response/Error.php">Error</Class>
+        <Class sourceFile="/app/src/Datatype/Internal/v1/Response/Success.php">Success</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>myrpc\Datatype\Internal</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc\Datatype</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Exception">
+      <Stats>
+        <TotalClasses>12</TotalClasses>
+        <ConcreteClasses>12</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>8</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>0.11111111111111</I>
+        <D>0.88888888888889</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Exception/DatatypeException.php">DatatypeException</Class>
+        <Class sourceFile="/app/src/Exception/HandlerActionArgumentsException.php">HandlerActionArgumentsException</Class>
+        <Class sourceFile="/app/src/Exception/HandlerActionException.php">HandlerActionException</Class>
+        <Class sourceFile="/app/src/Exception/HandlerActionInputException.php">HandlerActionInputException</Class>
+        <Class sourceFile="/app/src/Exception/HandlerActionSerializerException.php">HandlerActionSerializerException</Class>
+        <Class sourceFile="/app/src/Exception/HandlerActionTypeException.php">HandlerActionTypeException</Class>
+        <Class sourceFile="/app/src/Exception/HandlerActionValidationException.php">HandlerActionValidationException</Class>
+        <Class sourceFile="/app/src/Exception/SerializerException.php">SerializerException</Class>
+        <Class sourceFile="/app/src/Exception/SerializerObjectAssertException.php">SerializerObjectAssertException</Class>
+        <Class sourceFile="/app/src/Exception/ServiceAuthenticationException.php">ServiceAuthenticationException</Class>
+        <Class sourceFile="/app/src/Exception/ServiceException.php">ServiceException</Class>
+        <Class sourceFile="/app/src/Exception/ValidatorException.php">ValidatorException</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc</Package>
+        <Package>myrpc\Datatype</Package>
+        <Package>myrpc\Handler</Package>
+        <Package>myrpc\Request</Package>
+        <Package>myrpc\Response</Package>
+        <Package>myrpc\Schema</Package>
+        <Package>myrpc\Serializer</Package>
+        <Package>myrpc\Validator</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Handler\Context">
+      <Stats>
+        <TotalClasses>6</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>4</AbstractClasses>
+        <Ca>3</Ca>
+        <Ce>3</Ce>
+        <A>0.66666666666667</A>
+        <I>0.5</I>
+        <D>0.16666666666667</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Handler/Context/Context.php">Context</Class>
+        <Class sourceFile="/app/src/Handler/Context/ContextFactory.php">ContextFactory</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Handler/Context/ContextFactoryInterface.php">ContextFactoryInterface</Class>
+        <Class sourceFile="/app/src/Handler/Context/ContextInterface.php">ContextInterface</Class>
+        <Class sourceFile="/app/src/Handler/Context/ContextReaderInterface.php">ContextReaderInterface</Class>
+        <Class sourceFile="/app/src/Handler/Context/ContextWriterInterface.php">ContextWriterInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>myrpc\Datatype</Package>
+        <Package>myrpc\Handler</Package>
+        <Package>myrpc\Identity</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc</Package>
+        <Package>myrpc\Handler</Package>
+        <Package>myrpc\Handler\Worker</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Handler">
+      <Stats>
+        <TotalClasses>12</TotalClasses>
+        <ConcreteClasses>5</ConcreteClasses>
+        <AbstractClasses>7</AbstractClasses>
+        <Ca>2</Ca>
+        <Ce>11</Ce>
+        <A>0.58333333333333</A>
+        <I>0.84615384615385</I>
+        <D>0.42948717948718</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Handler/HandlerFactory.php">HandlerFactory</Class>
+        <Class sourceFile="/app/src/Handler/HandlerResponse.php">HandlerResponse</Class>
+        <Class sourceFile="/app/src/Handler/HandlerResponseFactory.php">HandlerResponseFactory</Class>
+        <Class sourceFile="/app/src/Handler/SmartHandler.php">SmartHandler</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Handler/HandlerFactoryInterface.php">HandlerFactoryInterface</Class>
+        <Class sourceFile="/app/src/Handler/HandlerInterface.php">HandlerInterface</Class>
+        <Class sourceFile="/app/src/Handler/HandlerResponseFactoryInterface.php">HandlerResponseFactoryInterface</Class>
+        <Class sourceFile="/app/src/Handler/HandlerResponseInterface.php">HandlerResponseInterface</Class>
+        <Class sourceFile="/app/src/Handler/HandlerSchemaInterface.php">HandlerSchemaInterface</Class>
+        <Class sourceFile="/app/src/Handler/HandlerWithSchemaInterface.php">HandlerWithSchemaInterface</Class>
+        <Class sourceFile="/app/src/Handler/SmartHandlerInterface.php">SmartHandlerInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Psr\Container</Package>
+        <Package>Symfony\Component\Serializer\Exception</Package>
+        <Package>myrpc\Datatype</Package>
+        <Package>myrpc\Exception</Package>
+        <Package>myrpc\Handler\Context</Package>
+        <Package>myrpc\Handler\Worker</Package>
+        <Package>myrpc\Identity</Package>
+        <Package>myrpc\Schema</Package>
+        <Package>myrpc\Serializer</Package>
+        <Package>myrpc\Validator</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc</Package>
+        <Package>myrpc\Handler\Context</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Handler\Worker">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>0</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>1</Ce>
+        <A>1</A>
+        <I>0.5</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses/>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Handler/Worker/WorkerInterface.php">WorkerInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>myrpc\Handler\Context</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc\Handler</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Identity">
+      <Stats>
+        <TotalClasses>4</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>3</Ca>
+        <Ce>0</Ce>
+        <A>0.5</A>
+        <I>0</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Identity/TokenIdentity.php">TokenIdentity</Class>
+        <Class sourceFile="/app/src/Identity/TokenIdentityFactory.php">TokenIdentityFactory</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Identity/IdentityFactoryInterface.php">IdentityFactoryInterface</Class>
+        <Class sourceFile="/app/src/Identity/IdentityInterface.php">IdentityInterface</Class>
+      </AbstractClasses>
+      <DependsUpon/>
+      <UsedBy>
+        <Package>myrpc</Package>
+        <Package>myrpc\Handler</Package>
+        <Package>myrpc\Handler\Context</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Request">
+      <Stats>
+        <TotalClasses>6</TotalClasses>
+        <ConcreteClasses>4</ConcreteClasses>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>2</Ce>
+        <A>0.33333333333333</A>
+        <I>0.66666666666667</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Request/JsonRpcRequest.php">JsonRpcRequest</Class>
+        <Class sourceFile="/app/src/Request/JsonRpcRequestFactory.php">JsonRpcRequestFactory</Class>
+        <Class sourceFile="/app/src/Request/SimpleRequest.php">SimpleRequest</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Request/RequestFactoryInterface.php">RequestFactoryInterface</Class>
+        <Class sourceFile="/app/src/Request/RequestInterface.php">RequestInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>myrpc\Exception</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Response">
+      <Stats>
+        <TotalClasses>7</TotalClasses>
+        <ConcreteClasses>5</ConcreteClasses>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>2</Ce>
+        <A>0.28571428571429</A>
+        <I>0.66666666666667</I>
+        <D>0.047619047619048</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Response/JsonRpcResponse.php">JsonRpcResponse</Class>
+        <Class sourceFile="/app/src/Response/JsonRpcResponseFactory.php">JsonRpcResponseFactory</Class>
+        <Class sourceFile="/app/src/Response/SimpleResponse.php">SimpleResponse</Class>
+        <Class sourceFile="/app/src/Response/SimpleResponseFactory.php">SimpleResponseFactory</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Response/ResponseFactoryInterface.php">ResponseFactoryInterface</Class>
+        <Class sourceFile="/app/src/Response/ResponseInterface.php">ResponseInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>myrpc\Exception</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Schema">
+      <Stats>
+        <TotalClasses>5</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>2</Ca>
+        <Ce>3</Ce>
+        <A>0.4</A>
+        <I>0.6</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Schema/JsonSchema.php">JsonSchema</Class>
+        <Class sourceFile="/app/src/Schema/JsonSchemaFactory.php">JsonSchemaFactory</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Schema/SchemaFactoryInterface.php">SchemaFactoryInterface</Class>
+        <Class sourceFile="/app/src/Schema/SchemaInterface.php">SchemaInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>myrpc\Datatype</Package>
+        <Package>myrpc\Exception</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc</Package>
+        <Package>myrpc\Handler</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Serializer">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>8</Ce>
+        <A>0.33333333333333</A>
+        <I>0.88888888888889</I>
+        <D>0.22222222222222</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Serializer/JsonSerializer.php">JsonSerializer</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Serializer/SerializerInterface.php">SerializerInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Symfony\Component\PropertyInfo\Extractor</Package>
+        <Package>Symfony\Component\Serializer</Package>
+        <Package>Symfony\Component\Serializer\Encoder</Package>
+        <Package>Symfony\Component\Serializer\Mapping\Factory</Package>
+        <Package>Symfony\Component\Serializer\Mapping\Loader</Package>
+        <Package>Symfony\Component\Serializer\Normalizer</Package>
+        <Package>myrpc\Exception</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc\Handler</Package>
+      </UsedBy>
+    </Package>
+    <Package name="myrpc\Validator">
+      <Stats>
+        <TotalClasses>6</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>3</AbstractClasses>
+        <Ca>2</Ca>
+        <Ce>4</Ce>
+        <A>0.5</A>
+        <I>0.66666666666667</I>
+        <D>0.16666666666667</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/app/src/Validator/Symfony.php">Symfony</Class>
+        <Class sourceFile="/app/src/Validator/SymfonyResult.php">SymfonyResult</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/app/src/Validator/IsValidatableInterface.php">IsValidatableInterface</Class>
+        <Class sourceFile="/app/src/Validator/ValidatorInterface.php">ValidatorInterface</Class>
+        <Class sourceFile="/app/src/Validator/ValidatorResultInterface.php">ValidatorResultInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Symfony\Component\Validator</Package>
+        <Package>Symfony\Component\Validator\Mapping\Loader</Package>
+        <Package>myrpc\Exception</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>myrpc\Datatype\Internal</Package>
+        <Package>myrpc\Handler</Package>
+      </UsedBy>
+    </Package>
+  </Packages>
+  <Cycles>
+    <Package Name="myrpc">
+      <Package>myrpc</Package>
+      <Package>myrpc\Handler</Package>
+      <Package>myrpc\Datatype</Package>
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      <Package>myrpc\Datatype\Internal</Package>
+      <Package>myrpc\Datatype</Package>
+    </Package>
+    <Package Name="myrpc\Datatype">
+      <Package>myrpc\Datatype</Package>
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      <Package>myrpc\Datatype\Internal</Package>
+      <Package>myrpc\Datatype</Package>
+    </Package>
+    <Package Name="myrpc\Datatype\Internal">
+      <Package>myrpc\Datatype\Internal</Package>
+      <Package>myrpc\Datatype</Package>
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      <Package>myrpc\Datatype\Internal</Package>
+    </Package>
+    <Package Name="myrpc\Datatype\Internal\v1\Response">
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      <Package>myrpc\Datatype\Internal</Package>
+      <Package>myrpc\Datatype</Package>
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+    </Package>
+    <Package Name="myrpc\Handler\Context">
+      <Package>myrpc\Handler\Context</Package>
+      <Package>myrpc\Datatype</Package>
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      <Package>myrpc\Datatype\Internal</Package>
+      <Package>myrpc\Datatype</Package>
+    </Package>
+    <Package Name="myrpc\Handler">
+      <Package>myrpc\Handler</Package>
+      <Package>myrpc\Datatype</Package>
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      <Package>myrpc\Datatype\Internal</Package>
+      <Package>myrpc\Datatype</Package>
+    </Package>
+    <Package Name="myrpc\Handler\Worker">
+      <Package>myrpc\Handler\Worker</Package>
+      <Package>myrpc\Handler\Context</Package>
+      <Package>myrpc\Datatype</Package>
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      <Package>myrpc\Datatype\Internal</Package>
+      <Package>myrpc\Datatype</Package>
+    </Package>
+    <Package Name="myrpc\Schema">
+      <Package>myrpc\Schema</Package>
+      <Package>myrpc\Datatype</Package>
+      <Package>myrpc\Datatype\Internal\v1\Response</Package>
+      <Package>myrpc\Datatype\Internal</Package>
+      <Package>myrpc\Datatype</Package>
+    </Package>
+  </Cycles>
+</PDepend>

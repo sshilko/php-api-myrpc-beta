@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2024-01-02T20:57:23" pdepend="@package_version@" ahh="0.2" andc="0.33333333333333" calls="159" ccn="159" ccn2="188" cloc="209" clsa="1" clsc="37" eloc="1418" fanout="179" leafs="34" lloc="843" loc="2174" maxDIT="4" ncloc="1965" noc="38" nof="0" noi="27" nom="144" nop="14" roots="2">
+  <files>
+    <file name="/app/src/ApiServer.php" loc="92" cloc="9" eloc="63" lloc="37" ncloc="83"/>
+    <file name="/app/src/SchemaServer.php" loc="36" cloc="4" eloc="24" lloc="13" ncloc="32"/>
+    <file name="/app/src/Datatype/DatatypeFactory.php" loc="72" cloc="6" eloc="53" lloc="31" ncloc="66"/>
+    <file name="/app/src/Datatype/Internal/AbstractDatatype.php" loc="22" cloc="0" eloc="16" lloc="8" ncloc="22"/>
+    <file name="/app/src/Datatype/Internal/v1/Response/Error.php" loc="17" cloc="0" eloc="12" lloc="4" ncloc="17"/>
+    <file name="/app/src/Datatype/Internal/v1/Response/Success.php" loc="24" cloc="8" eloc="10" lloc="4" ncloc="16"/>
+    <file name="/app/src/Exception/DatatypeException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/HandlerActionArgumentsException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/HandlerActionException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/HandlerActionInputException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/HandlerActionSerializerException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/HandlerActionTypeException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/HandlerActionValidationException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/SerializerException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/SerializerObjectAssertException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Exception/ServiceAuthenticationException.php" loc="10" cloc="0" eloc="6" lloc="2" ncloc="10"/>
+    <file name="/app/src/Exception/ServiceException.php" loc="22" cloc="3" eloc="12" lloc="6" ncloc="19"/>
+    <file name="/app/src/Exception/ValidatorException.php" loc="11" cloc="0" eloc="6" lloc="2" ncloc="11"/>
+    <file name="/app/src/Handler/Context/Context.php" loc="80" cloc="0" eloc="61" lloc="31" ncloc="80"/>
+    <file name="/app/src/Handler/Context/ContextFactory.php" loc="23" cloc="0" eloc="17" lloc="7" ncloc="23"/>
+    <file name="/app/src/Handler/HandlerFactory.php" loc="88" cloc="3" eloc="67" lloc="40" ncloc="85"/>
+    <file name="/app/src/Handler/HandlerResponse.php" loc="31" cloc="0" eloc="24" lloc="9" ncloc="31"/>
+    <file name="/app/src/Handler/HandlerResponseFactory.php" loc="32" cloc="1" eloc="24" lloc="13" ncloc="31"/>
+    <file name="/app/src/Handler/SmartHandler.php" loc="377" cloc="45" eloc="280" lloc="201" ncloc="332"/>
+    <file name="/app/src/Handler/Worker/WorkerTrait.php" loc="19" cloc="0" eloc="12" lloc="6" ncloc="19"/>
+    <file name="/app/src/Identity/TokenIdentity.php" loc="19" cloc="0" eloc="13" lloc="5" ncloc="19"/>
+    <file name="/app/src/Identity/TokenIdentityFactory.php" loc="15" cloc="1" eloc="10" lloc="4" ncloc="14"/>
+    <file name="/app/src/Request/JsonRpcRequest.php" loc="69" cloc="6" eloc="50" lloc="32" ncloc="63"/>
+    <file name="/app/src/Request/JsonRpcRequestFactory.php" loc="53" cloc="18" eloc="28" lloc="26" ncloc="35"/>
+    <file name="/app/src/Request/SimpleRequest.php" loc="44" cloc="0" eloc="34" lloc="13" ncloc="44"/>
+    <file name="/app/src/Response/JsonRpcResponse.php" loc="59" cloc="5" eloc="42" lloc="27" ncloc="54"/>
+    <file name="/app/src/Response/JsonRpcResponseFactory.php" loc="45" cloc="14" eloc="24" lloc="9" ncloc="31"/>
+    <file name="/app/src/Response/SimpleResponse.php" loc="40" cloc="3" eloc="28" lloc="11" ncloc="37"/>
+    <file name="/app/src/Response/SimpleResponseFactory.php" loc="31" cloc="0" eloc="24" lloc="9" ncloc="31"/>
+    <file name="/app/src/Schema/JsonSchema.php" loc="35" cloc="8" eloc="19" lloc="14" ncloc="27"/>
+    <file name="/app/src/Schema/JsonSchemaFactory.php" loc="75" cloc="14" eloc="47" lloc="37" ncloc="61"/>
+    <file name="/app/src/Serializer/JsonSerializer.php" loc="118" cloc="24" eloc="46" lloc="16" ncloc="94"/>
+    <file name="/app/src/Validator/Symfony.php" loc="55" cloc="12" eloc="34" lloc="24" ncloc="43"/>
+    <file name="/app/src/Validator/SymfonyResult.php" loc="33" cloc="0" eloc="25" lloc="10" ncloc="33"/>
+  </files>
+  <package name="myrpc" noc="2" noi="0" nom="4" nof="0" cr="0.15" rcr="0.15">
+    <class name="ApiServer" fqname="myrpc\ApiServer" start="18" end="91" loc="74" cloc="9" eloc="38" lloc="23" ncloc="65" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.15" ca="0" cbo="11" ce="11" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="6" wmci="6" wmcnp="6">
+      <file name="/app/src/ApiServer.php"/>
+      <method name="__construct" start="21" end="30" ccn="1" ccn2="1" loc="10" cloc="0" eloc="2" lloc="0" ncloc="10" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="run" start="32" end="90" ccn="5" ccn2="5" loc="59" cloc="8" eloc="36" lloc="23" ncloc="51" npath="6" hnt="155" hnd="55" hv="896.11075559632" hd="14.083333333333" hl="0.071005917159763" he="12620.226474648" ht="701.12369303601" hb="0.18068558700656" hi="63.629166077845" mi="44.705883222954"/>
+    </class>
+    <class name="SchemaServer" fqname="myrpc\SchemaServer" start="10" end="35" loc="26" cloc="4" eloc="12" lloc="7" ncloc="22" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.15" ca="0" cbo="3" ce="3" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/app/src/SchemaServer.php"/>
+      <method name="__construct" start="13" end="17" ccn="1" ccn2="1" loc="5" cloc="0" eloc="2" lloc="0" ncloc="5" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="getServiceSchema" start="22" end="34" ccn="2" ccn2="2" loc="13" cloc="0" eloc="10" lloc="7" ncloc="13" npath="2" hnt="37" hnd="19" hv="157.17331799741" hd="9.9" hl="0.1010101010101" he="1556.0158481744" ht="86.445324898577" hb="0.044759795051017" hi="15.876092727011" mi="62.537956727022"/>
+    </class>
+  </package>
+  <package name="myrpc\Datatype" noc="1" noi="3" nom="11" nof="0" cr="0.2679375" rcr="0.15">
+    <class name="DatatypeFactory" fqname="myrpc\Datatype\DatatypeFactory" start="15" end="71" loc="57" cloc="6" eloc="34" lloc="15" ncloc="51" dit="0" noam="0" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.405" ca="0" cbo="8" ce="8" impl="2" cis="5" csz="6" npm="5" vars="0" varsi="0" varsnp="0" wmc="10" wmci="10" wmcnp="5">
+      <file name="/app/src/Datatype/DatatypeFactory.php"/>
+      <method name="__construct" start="17" end="19" ccn="1" ccn2="1" loc="3" cloc="0" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="hasUserspaceType" start="21" end="24" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="getUserspaceType" start="29" end="32" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="getInternalErrorResponseType" start="34" end="37" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="6" hl="0.16666666666667" he="171.17595007788" ht="9.5097750043269" hb="0.010276389970974" hi="4.7548875021635" mi="79.267620989406"/>
+      <method name="getInternalSuccessResponseType" start="39" end="42" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="create" start="47" end="70" ccn="5" ccn2="5" loc="24" cloc="0" eloc="20" lloc="11" ncloc="24" npath="12" hnt="74" hnd="31" hv="366.61052696863" hd="18.117647058824" hl="0.055194805194805" he="6642.1201356669" ht="369.00667420372" hb="0.11778316752127" hi="20.234996618398" mi="52.992267197518"/>
+    </class>
+  </package>
+  <package name="myrpc\Datatype\Internal" noc="1" noi="0" nom="2" nof="0" cr="0.2775" rcr="0.405">
+    <class name="AbstractDatatype" fqname="myrpc\Datatype\Internal\AbstractDatatype" start="10" end="21" loc="12" cloc="0" eloc="6" lloc="2" ncloc="12" dit="0" noam="0" nocc="2" noom="0" nom="2" cr="0.405" rcr="0.405" ca="0" cbo="1" ce="1" impl="2" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/app/src/Datatype/Internal/AbstractDatatype.php"/>
+      <method name="getPayload" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="validatableObject" start="17" end="20" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+  </package>
+  <package name="myrpc\Datatype\Internal\v1\Response" noc="2" noi="0" nom="2" nof="0" cr="0.15" rcr="0.49425">
+    <class name="Error" fqname="myrpc\Datatype\Internal\v1\Response\Error" start="9" end="16" loc="8" cloc="0" eloc="2" lloc="0" ncloc="8" dit="1" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.322125" ca="1" cbo="1" ce="1" impl="2" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="3" wmcnp="1">
+      <file name="/app/src/Datatype/Internal/v1/Response/Error.php"/>
+      <method name="__construct" start="11" end="15" ccn="1" ccn2="1" loc="5" cloc="0" eloc="2" lloc="0" ncloc="5" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+    </class>
+    <class name="Success" fqname="myrpc\Datatype\Internal\v1\Response\Success" start="12" end="23" loc="12" cloc="5" eloc="2" lloc="0" ncloc="7" dit="1" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.322125" ca="1" cbo="1" ce="1" impl="2" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="3" wmcnp="1">
+      <file name="/app/src/Datatype/Internal/v1/Response/Success.php"/>
+      <method name="__construct" start="20" end="22" ccn="1" ccn2="1" loc="3" cloc="0" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+    </class>
+  </package>
+  <package name="myrpc\Exception" noc="12" noi="0" nom="1" nof="0" cr="0.15" rcr="0.21375">
+    <class name="DatatypeException" fqname="myrpc\Exception\DatatypeException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="3" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.1893125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/DatatypeException.php"/>
+    </class>
+    <class name="HandlerActionArgumentsException" fqname="myrpc\Exception\HandlerActionArgumentsException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="4" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.182183125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/HandlerActionArgumentsException.php"/>
+    </class>
+    <class name="HandlerActionException" fqname="myrpc\Exception\HandlerActionException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="3" noam="0" nocc="5" noom="0" nom="0" cr="0.7875" rcr="0.1893125" ca="2" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/HandlerActionException.php"/>
+    </class>
+    <class name="HandlerActionInputException" fqname="myrpc\Exception\HandlerActionInputException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="4" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.182183125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/HandlerActionInputException.php"/>
+    </class>
+    <class name="HandlerActionSerializerException" fqname="myrpc\Exception\HandlerActionSerializerException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="4" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.182183125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/HandlerActionSerializerException.php"/>
+    </class>
+    <class name="HandlerActionTypeException" fqname="myrpc\Exception\HandlerActionTypeException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="4" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.182183125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/HandlerActionTypeException.php"/>
+    </class>
+    <class name="HandlerActionValidationException" fqname="myrpc\Exception\HandlerActionValidationException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="4" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.182183125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/HandlerActionValidationException.php"/>
+    </class>
+    <class name="SerializerException" fqname="myrpc\Exception\SerializerException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="3" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.1893125" ca="2" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/SerializerException.php"/>
+    </class>
+    <class name="SerializerObjectAssertException" fqname="myrpc\Exception\SerializerObjectAssertException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="3" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.1893125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/SerializerObjectAssertException.php"/>
+    </class>
+    <class name="ServiceAuthenticationException" fqname="myrpc\Exception\ServiceAuthenticationException" start="7" end="9" loc="3" cloc="0" eloc="0" lloc="0" ncloc="3" dit="3" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.1893125" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/ServiceAuthenticationException.php"/>
+    </class>
+    <class name="ServiceException" fqname="myrpc\Exception\ServiceException" start="9" end="21" loc="13" cloc="3" eloc="3" lloc="1" ncloc="10" dit="2" noam="1" nocc="6" noom="0" nom="1" cr="1.456875" rcr="0.2775" ca="9" cbo="0" ce="0" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/app/src/Exception/ServiceException.php"/>
+      <method name="getLogMessage" start="17" end="20" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="17" hnd="12" hv="60.94436251226" hd="8.4" hl="0.11904761904762" he="511.93264510298" ht="28.440702505721" hb="0.021331462322948" hi="7.2552812514595" mi="76.95946307717"/>
+    </class>
+    <class name="ValidatorException" fqname="myrpc\Exception\ValidatorException" start="7" end="10" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="3" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.1893125" ca="2" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="1" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="/app/src/Exception/ValidatorException.php"/>
+    </class>
+  </package>
+  <package name="myrpc\Handler\Context" noc="2" noi="4" nom="22" nof="0" cr="0.15" rcr="0.15">
+    <class name="Context" fqname="myrpc\Handler\Context\Context" start="13" end="79" loc="67" cloc="0" eloc="32" lloc="11" ncloc="67" dit="0" noam="0" nocc="0" noom="0" nom="10" cr="0.15" rcr="0.49425" ca="1" cbo="5" ce="5" impl="3" cis="10" csz="13" npm="10" vars="3" varsi="3" varsnp="0" wmc="11" wmci="11" wmcnp="11">
+      <file name="/app/src/Handler/Context/Context.php"/>
+      <method name="__construct" start="22" end="26" ccn="1" ccn2="1" loc="5" cloc="0" eloc="2" lloc="0" ncloc="5" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="newErrorResponse" start="28" end="33" ccn="1" ccn2="1" loc="6" cloc="0" eloc="3" lloc="1" ncloc="6" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="6" hl="0.16666666666667" he="171.17595007788" ht="9.5097750043269" hb="0.010276389970974" hi="4.7548875021635" mi="79.267620989406"/>
+      <method name="newSuccessResponse" start="35" end="39" ccn="1" ccn2="1" loc="5" cloc="0" eloc="3" lloc="1" ncloc="5" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="newDatatypeResponse" start="41" end="48" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="16" hnd="11" hv="55.350905898197" hd="9.625" hl="0.1038961038961" he="532.75246927014" ht="29.597359403897" hb="0.021905965170429" hi="5.7507434699425" mi="70.551048458848"/>
+      <method name="setIdentity" start="50" end="53" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getIdentity" start="55" end="58" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setAction" start="60" end="63" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="setArguments" start="65" end="68" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getAction" start="70" end="73" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getArguments" start="75" end="78" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="ContextFactory" fqname="myrpc\Handler\Context\ContextFactory" start="10" end="22" loc="13" cloc="0" eloc="5" lloc="1" ncloc="13" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="0" cbo="4" ce="4" impl="1" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/app/src/Handler/Context/ContextFactory.php"/>
+      <method name="__construct" start="12" end="16" ccn="1" ccn2="1" loc="5" cloc="0" eloc="2" lloc="0" ncloc="5" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="create" start="18" end="21" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="6" hl="0.16666666666667" he="171.17595007788" ht="9.5097750043269" hb="0.010276389970974" hi="4.7548875021635" mi="79.267620989406"/>
+    </class>
+  </package>
+  <package name="myrpc\Handler" noc="4" noi="7" nom="33" nof="0" cr="0.15" rcr="0.15">
+    <class name="HandlerFactory" fqname="myrpc\Handler\HandlerFactory" start="16" end="87" loc="72" cloc="3" eloc="45" lloc="23" ncloc="69" dit="0" noam="0" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.2775" ca="0" cbo="11" ce="11" impl="1" cis="6" csz="6" npm="6" vars="0" varsi="0" varsnp="0" wmc="13" wmci="13" wmcnp="13">
+      <file name="/app/src/Handler/HandlerFactory.php"/>
+      <method name="__construct" start="18" end="22" ccn="1" ccn2="1" loc="5" cloc="0" eloc="2" lloc="0" ncloc="5" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="create" start="27" end="56" ccn="6" ccn2="6" loc="30" cloc="0" eloc="24" lloc="14" ncloc="30" npath="14" hnt="94" hnd="35" hv="482.15260359283" hd="18.333333333333" hl="0.054545454545455" he="8839.4643992018" ht="491.08135551121" hb="0.1425047627056" hi="26.299232923245" mi="50.297410801199"/>
+      <method name="hasSchema" start="58" end="65" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="15" hnd="11" hv="51.891474279559" hd="8.75" hl="0.11428571428571" he="454.05039994615" ht="25.22502221923" hb="0.019691620330492" hi="5.9304542033782" mi="70.747305950027"/>
+      <method name="hasContext" start="67" end="74" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="15" hnd="11" hv="51.891474279559" hd="8.75" hl="0.11428571428571" he="454.05039994615" ht="25.22502221923" hb="0.019691620330492" hi="5.9304542033782" mi="70.747305950027"/>
+      <method name="withContext" start="76" end="81" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="9" hnd="8" hv="27" hd="5" hl="0.2" he="135" ht="7.5" hb="0.0087720532146386" hi="5.4" mi="76.709754179319"/>
+      <method name="withSchema" start="83" end="86" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="HandlerResponse" fqname="myrpc\Handler\HandlerResponse" start="7" end="30" loc="24" cloc="0" eloc="11" lloc="3" ncloc="24" dit="0" noam="0" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.2775" ca="1" cbo="1" ce="1" impl="1" cis="4" csz="4" npm="4" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/app/src/Handler/HandlerResponse.php"/>
+      <method name="__construct" start="9" end="14" ccn="1" ccn2="1" loc="6" cloc="0" eloc="2" lloc="0" ncloc="6" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="getResponse" start="16" end="19" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="isError" start="21" end="24" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getErrorCode" start="26" end="29" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="HandlerResponseFactory" fqname="myrpc\Handler\HandlerResponseFactory" start="12" end="31" loc="20" cloc="0" eloc="9" lloc="4" ncloc="20" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="0" cbo="4" ce="4" impl="1" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/app/src/Handler/HandlerResponseFactory.php"/>
+      <method name="createErrorResponse" start="14" end="19" ccn="1" ccn2="1" loc="6" cloc="0" eloc="3" lloc="1" ncloc="6" npath="1" hnt="11" hnd="10" hv="36.541209043761" hd="5.25" hl="0.19047619047619" he="191.84134747975" ht="10.657852637764" hb="0.011087668241344" hi="6.9602302940497" mi="78.514964679948"/>
+      <method name="createSuccessResponse" start="21" end="30" ccn="2" ccn2="3" loc="10" cloc="0" eloc="6" lloc="3" ncloc="10" npath="3" hnt="32" hnd="16" hv="128" hd="9.5" hl="0.10526315789474" he="1216" ht="67.555555555556" hb="0.037975292580811" hi="13.473684210526" mi="67.86721592171"/>
+    </class>
+    <class name="SmartHandler" fqname="myrpc\Handler\SmartHandler" start="63" end="376" loc="314" cloc="41" eloc="205" lloc="114" ncloc="273" dit="0" noam="0" nocc="0" noom="0" nom="7" cr="0.15" rcr="0.5701125" ca="0" cbo="30" ce="30" impl="4" cis="5" csz="12" npm="5" vars="5" varsi="5" varsnp="0" wmc="59" wmci="59" wmcnp="18">
+      <file name="/app/src/Handler/SmartHandler.php"/>
+      <method name="__construct" start="76" end="84" ccn="1" ccn2="1" loc="9" cloc="0" eloc="5" lloc="3" ncloc="9" npath="1" hnt="22" hnd="15" hv="85.951593103387" hd="4.3333333333333" hl="0.23076923076923" he="372.45690344801" ht="20.692050191556" hb="0.017255574806497" hi="19.834983023859" mi="71.0745190823"/>
+      <method name="action" start="91" end="165" ccn="8" ccn2="14" loc="75" cloc="14" eloc="45" lloc="31" ncloc="61" npath="160" hnt="203" hnd="71" hv="1248.3986652595" hd="21.375" hl="0.046783625730994" he="26684.521469921" ht="1482.4734149956" hb="0.29765854737199" hi="58.404615918571" mi="40.373134252221"/>
+      <method name="setContext" start="167" end="170" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="setSchemaFactory" start="172" end="177" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="9" hnd="8" hv="27" hd="5" hl="0.2" he="135" ht="7.5" hb="0.0087720532146386" hi="5.4" mi="76.709754179319"/>
+      <method name="getSchema" start="179" end="184" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="13" hnd="11" hv="44.972611042285" hd="4.8" hl="0.20833333333333" he="215.86853300297" ht="11.992696277943" hb="0.011995130357899" hi="9.3692939671427" mi="75.158217726801"/>
+      <method name="prepareArguments" start="186" end="208" ccn="4" ccn2="9" loc="23" cloc="0" eloc="20" lloc="9" ncloc="23" npath="4" hnt="71" hnd="30" hv="348.3892322882" hd="17.9375" hl="0.055749128919861" he="6249.2318541697" ht="347.17954745387" hb="0.11309146686351" hi="19.422396225126" mi="52.609281525812"/>
+      <method name="resolveArguments" start="217" end="375" ccn="21" ccn2="32" loc="159" cloc="15" eloc="124" lloc="66" ncloc="144" npath="17922" hnt="503" hnd="125" hv="3503.789495185" hd="40.224489795918" hl="0.024860476915271" he="140938.14479612" ht="7829.8969331176" hb="0.90274365698795" hi="87.105877861018" mi="25.211179350222"/>
+    </class>
+  </package>
+  <package name="myrpc\Handler\Worker" noc="0" noi="1" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <trait name="WorkerTrait" fqname="myrpc\Handler\Worker\WorkerTrait" start="9" end="18" ca="0" cbo="1" ce="1" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/app/src/Handler/Worker/WorkerTrait.php"/>
+      <method name="setupWorker" start="14" end="17" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+    </trait>
+  </package>
+  <package name="myrpc\Identity" noc="2" noi="2" nom="5" nof="0" cr="0.15" rcr="0.15">
+    <class name="TokenIdentity" fqname="myrpc\Identity\TokenIdentity" start="7" end="18" loc="12" cloc="0" eloc="5" lloc="1" ncloc="12" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="1" cbo="0" ce="0" impl="1" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/app/src/Identity/TokenIdentity.php"/>
+      <method name="__construct" start="10" end="12" ccn="1" ccn2="1" loc="3" cloc="0" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="getIdentityToken" start="14" end="17" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="TokenIdentityFactory" fqname="myrpc\Identity\TokenIdentityFactory" start="7" end="14" loc="8" cloc="1" eloc="3" lloc="1" ncloc="7" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="2" ce="2" impl="1" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/app/src/Identity/TokenIdentityFactory.php"/>
+      <method name="create" start="9" end="13" ccn="2" ccn2="2" loc="5" cloc="1" eloc="3" lloc="1" ncloc="4" npath="2" hnt="10" hnd="9" hv="31.699250014423" hd="6" hl="0.16666666666667" he="190.19550008654" ht="10.566416671474" hb="0.011024161587826" hi="5.2832083357372" mi="78.812723514891"/>
+    </class>
+  </package>
+  <package name="myrpc\Request" noc="3" noi="2" nom="19" nof="0" cr="0.15" rcr="0.15">
+    <class name="JsonRpcRequest" fqname="myrpc\Request\JsonRpcRequest" start="15" end="68" loc="54" cloc="6" eloc="25" lloc="11" ncloc="48" dit="0" noam="0" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.21375" ca="1" cbo="0" ce="0" impl="1" cis="6" csz="8" npm="6" vars="2" varsi="2" varsnp="0" wmc="10" wmci="10" wmcnp="10">
+      <file name="/app/src/Request/JsonRpcRequest.php"/>
+      <method name="__construct" start="22" end="42" ccn="3" ccn2="5" loc="21" cloc="6" eloc="10" lloc="6" ncloc="15" npath="5" hnt="53" hnd="23" hv="239.74878367102" hd="11.538461538462" hl="0.086666666666667" he="2766.332119281" ht="153.68511773783" hb="0.065687332326536" hi="20.778227918155" mi="60.850435651034"/>
+      <method name="getService" start="44" end="47" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getAction" start="49" end="52" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getArguments" start="54" end="57" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getIdentityToken" start="59" end="62" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getRequestId" start="64" end="67" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="JsonRpcRequestFactory" fqname="myrpc\Request\JsonRpcRequestFactory" start="16" end="52" loc="37" cloc="18" eloc="13" lloc="10" ncloc="19" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="5" ce="5" impl="1" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="11" wmci="11" wmcnp="11">
+      <file name="/app/src/Request/JsonRpcRequestFactory.php"/>
+      <method name="create" start="18" end="51" ccn="7" ccn2="11" loc="34" cloc="18" eloc="13" lloc="10" ncloc="16" npath="48" hnt="126" hnd="39" hv="665.96067957664" hd="21.875" hl="0.045714285714286" he="14567.889865739" ht="809.32721476328" hb="0.1988275273601" hi="30.443916780647" mi="54.45112347233"/>
+    </class>
+    <class name="SimpleRequest" fqname="myrpc\Request\SimpleRequest" start="7" end="43" loc="37" cloc="0" eloc="17" lloc="5" ncloc="37" dit="0" noam="0" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.21375" ca="0" cbo="0" ce="0" impl="1" cis="6" csz="6" npm="6" vars="0" varsi="0" varsnp="0" wmc="6" wmci="6" wmcnp="6">
+      <file name="/app/src/Request/SimpleRequest.php"/>
+      <method name="__construct" start="10" end="17" ccn="1" ccn2="1" loc="8" cloc="0" eloc="2" lloc="0" ncloc="8" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="getService" start="19" end="22" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getAction" start="24" end="27" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getArguments" start="29" end="32" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getIdentityToken" start="34" end="37" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getRequestId" start="39" end="42" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+  </package>
+  <package name="myrpc\Response" noc="4" noi="2" nom="23" nof="0" cr="0.15" rcr="0.15">
+    <class name="JsonRpcResponse" fqname="myrpc\Response\JsonRpcResponse" start="14" end="58" loc="45" cloc="5" eloc="21" lloc="10" ncloc="40" dit="0" noam="0" nocc="0" noom="0" nom="5" cr="0.15" rcr="0.21375" ca="1" cbo="3" ce="3" impl="1" cis="5" csz="6" npm="5" vars="1" varsi="1" varsnp="0" wmc="6" wmci="6" wmcnp="6">
+      <file name="/app/src/Response/JsonRpcResponse.php"/>
+      <method name="__construct" start="19" end="25" ccn="1" ccn2="1" loc="7" cloc="0" eloc="3" lloc="1" ncloc="7" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="isSuccess" start="27" end="30" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="getResponse" start="35" end="47" ccn="2" ccn2="2" loc="13" cloc="2" eloc="9" lloc="6" ncloc="11" npath="2" hnt="31" hnd="20" hv="133.97977094151" hd="9.5" hl="0.10526315789474" he="1272.8078239443" ht="70.711545774685" hb="0.039148996660498" hi="14.103133783317" mi="64.021625704625"/>
+      <method name="getError" start="49" end="52" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getRequestId" start="54" end="57" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="JsonRpcResponseFactory" fqname="myrpc\Response\JsonRpcResponseFactory" start="9" end="44" loc="36" cloc="14" eloc="9" lloc="3" ncloc="22" dit="0" noam="0" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.21375" ca="0" cbo="4" ce="4" impl="1" cis="3" csz="3" npm="3" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/app/src/Response/JsonRpcResponseFactory.php"/>
+      <method name="createSuccessResponse" start="11" end="30" ccn="1" ccn2="1" loc="20" cloc="14" eloc="3" lloc="1" ncloc="6" npath="1" hnt="11" hnd="10" hv="36.541209043761" hd="5.25" hl="0.19047619047619" he="191.84134747975" ht="10.657852637764" hb="0.011087668241344" hi="6.9602302940497" mi="78.514964679948"/>
+      <method name="createErrorResponse" start="32" end="38" ccn="1" ccn2="1" loc="7" cloc="0" eloc="3" lloc="1" ncloc="7" npath="1" hnt="15" hnd="13" hv="55.506595772116" hd="5.25" hl="0.19047619047619" he="291.40962780361" ht="16.189423766867" hb="0.014651474810021" hi="10.572684908975" mi="77.243667409433"/>
+      <method name="createExceptionResponse" start="40" end="43" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="14" hnd="12" hv="50.189475010096" hd="6.3" hl="0.15873015873016" he="316.19369256361" ht="17.566316253534" hb="0.015470851358978" hi="7.9665833349359" mi="77.549879027516"/>
+    </class>
+    <class name="SimpleResponse" fqname="myrpc\Response\SimpleResponse" start="7" end="39" loc="33" cloc="3" eloc="14" lloc="4" ncloc="30" dit="0" noam="0" nocc="0" noom="0" nom="5" cr="0.15" rcr="0.21375" ca="1" cbo="2" ce="2" impl="1" cis="5" csz="5" npm="5" vars="0" varsi="0" varsnp="0" wmc="5" wmci="5" wmcnp="5">
+      <file name="/app/src/Response/SimpleResponse.php"/>
+      <method name="__construct" start="10" end="15" ccn="1" ccn2="1" loc="6" cloc="0" eloc="2" lloc="0" ncloc="6" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="isSuccess" start="17" end="20" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="getResponse" start="25" end="28" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getError" start="30" end="33" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getRequestId" start="35" end="38" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="SimpleResponseFactory" fqname="myrpc\Response\SimpleResponseFactory" start="9" end="30" loc="22" cloc="0" eloc="9" lloc="3" ncloc="22" dit="0" noam="0" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.21375" ca="0" cbo="4" ce="4" impl="1" cis="3" csz="3" npm="3" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/app/src/Response/SimpleResponseFactory.php"/>
+      <method name="createSuccessResponse" start="11" end="16" ccn="1" ccn2="1" loc="6" cloc="0" eloc="3" lloc="1" ncloc="6" npath="1" hnt="13" hnd="12" hv="46.604512509375" hd="5.6" hl="0.17857142857143" he="260.9852700525" ht="14.499181669583" hb="0.013613069956043" hi="8.3222343766741" mi="77.775236603656"/>
+      <method name="createErrorResponse" start="18" end="24" ccn="1" ccn2="1" loc="7" cloc="0" eloc="3" lloc="1" ncloc="7" npath="1" hnt="15" hnd="13" hv="55.506595772116" hd="5.25" hl="0.19047619047619" he="291.40962780361" ht="16.189423766867" hb="0.014651474810021" hi="10.572684908975" mi="77.243667409433"/>
+      <method name="createExceptionResponse" start="26" end="29" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="14" hnd="12" hv="50.189475010096" hd="6.3" hl="0.15873015873016" he="316.19369256361" ht="17.566316253534" hb="0.015470851358978" hi="7.9665833349359" mi="77.549879027516"/>
+    </class>
+  </package>
+  <package name="myrpc\Schema" noc="2" noi="2" nom="7" nof="0" cr="0.15" rcr="0.21375">
+    <class name="JsonSchema" fqname="myrpc\Schema\JsonSchema" start="15" end="34" loc="20" cloc="5" eloc="7" lloc="3" ncloc="15" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.385875" ca="1" cbo="1" ce="1" impl="2" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/app/src/Schema/JsonSchema.php"/>
+      <method name="__construct" start="18" end="20" ccn="1" ccn2="1" loc="3" cloc="0" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="__toString" start="25" end="33" ccn="1" ccn2="1" loc="9" cloc="2" eloc="5" lloc="3" ncloc="7" npath="1" hnt="19" hnd="13" hv="70.308354644681" hd="6.4166666666667" hl="0.15584415584416" he="451.1452756367" ht="25.063626424261" hb="0.019607536004667" hi="10.957146178392" mi="71.685423695431"/>
+    </class>
+    <class name="JsonSchemaFactory" fqname="myrpc\Schema\JsonSchemaFactory" start="15" end="74" loc="60" cloc="14" eloc="30" lloc="19" ncloc="46" dit="0" noam="0" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.2775" ca="0" cbo="5" ce="5" impl="1" cis="2" csz="4" npm="2" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="2">
+      <file name="/app/src/Schema/JsonSchemaFactory.php"/>
+      <method name="__construct" start="17" end="19" ccn="1" ccn2="1" loc="3" cloc="0" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="newSchemaFromObject" start="24" end="39" ccn="1" ccn2="1" loc="16" cloc="4" eloc="8" lloc="6" ncloc="12" npath="1" hnt="33" hnd="14" hv="125.6427124279" hd="10" hl="0.1" he="1256.427124279" ht="69.801506904389" hb="0.03881238055541" hi="12.56427124279" mi="65.467337576312"/>
+      <method name="sortSchema" start="46" end="66" ccn="4" ccn2="4" loc="21" cloc="2" eloc="16" lloc="11" ncloc="19" npath="6" hnt="76" hnd="33" hv="383.37395307124" hd="27.6" hl="0.036231884057971" he="10581.121104766" ht="587.84006137591" hb="0.16065707978592" hi="13.890360618523" mi="55.104798867455"/>
+      <method name="sortDefinitions" start="68" end="73" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="9" hnd="7" hv="25.266194298518" hd="7.5" hl="0.13333333333333" he="189.49645723889" ht="10.527580957716" hb="0.010997132943852" hi="3.3688259064691" mi="76.911579734314"/>
+    </class>
+  </package>
+  <package name="myrpc\Serializer" noc="1" noi="1" nom="3" nof="0" cr="0.15" rcr="0.15">
+    <class name="JsonSerializer" fqname="myrpc\Serializer\JsonSerializer" start="37" end="117" loc="81" cloc="24" eloc="40" lloc="11" ncloc="57" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="1" cbo="23" ce="23" impl="1" cis="2" csz="3" npm="2" vars="1" varsi="1" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/app/src/Serializer/JsonSerializer.php"/>
+      <method name="__construct" start="44" end="65" ccn="1" ccn2="1" loc="22" cloc="4" eloc="15" lloc="3" ncloc="18" npath="1" hnt="58" hnd="25" hv="269.34365900693" hd="7.1944444444444" hl="0.13899613899614" he="1937.7779911888" ht="107.65433284382" hb="0.051810139058792" hi="37.437728665056" mi="57.193244786939"/>
+      <method name="denormalize" start="72" end="116" ccn="3" ccn2="3" loc="45" cloc="15" eloc="25" lloc="8" ncloc="30" npath="3" hnt="96" hnd="44" hv="524.10543538918" hd="14.48275862069" hl="0.069047619047619" he="7590.492512533" ht="421.69402847405" hb="0.12874352108778" hi="36.188232443539" mi="50.06047291142"/>
+    </class>
+  </package>
+  <package name="myrpc\Validator" noc="2" noi="3" nom="11" nof="0" cr="0.2679375" rcr="0.15">
+    <class name="Symfony" fqname="myrpc\Validator\Symfony" start="18" end="54" loc="37" cloc="7" eloc="20" lloc="13" ncloc="30" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="1" cbo="7" ce="7" impl="1" cis="2" csz="3" npm="2" vars="1" varsi="1" varsnp="0" wmc="5" wmci="5" wmcnp="5">
+      <file name="/app/src/Validator/Symfony.php"/>
+      <method name="__construct" start="26" end="32" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="4" ncloc="7" npath="1" hnt="20" hnd="12" hv="71.699250014423" hd="4.6428571428571" hl="0.21538461538462" he="332.88937506696" ht="18.493854170387" hb="0.016010763207059" hi="15.442915387722" mi="69.898595966959"/>
+      <method name="validate" start="38" end="53" ccn="4" ccn2="4" loc="16" cloc="0" eloc="14" lloc="9" ncloc="16" npath="4" hnt="62" hnd="34" hv="315.42269615752" hd="20" hl="0.05" he="6308.4539231504" ht="350.46966239725" hb="0.11380483204068" hi="15.771134807876" mi="56.963111330165"/>
+    </class>
+    <class name="SymfonyResult" fqname="myrpc\Validator\SymfonyResult" start="9" end="32" loc="24" cloc="0" eloc="11" lloc="3" ncloc="24" dit="0" noam="0" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.2775" ca="1" cbo="1" ce="1" impl="1" cis="4" csz="4" npm="4" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/app/src/Validator/SymfonyResult.php"/>
+      <method name="__construct" start="11" end="16" ccn="1" ccn2="1" loc="6" cloc="0" eloc="2" lloc="0" ncloc="6" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="getName" start="18" end="21" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getCode" start="23" end="26" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getMessage" start="28" end="31" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+  </package>
+</metrics>
