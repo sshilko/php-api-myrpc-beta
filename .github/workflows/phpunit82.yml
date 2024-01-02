@@ -95,4 +95,4 @@ jobs:
       run: docker-compose exec -T app.php82 composer install
 
     - name: Docker run PHPUnit
-      run: docker-compose exec -T app.php82 composer app-phpunit
+      run: docker-compose exec -T app.php82 composer app-phpunit-coverage
