@@ -39,7 +39,7 @@ jobs:
     - name: Docker boot
       env:
         SERVICES_NAME: "app.php"
-      run: docker-compose up --no-build -d $SERVICES_NAME
+      run: docker-compose up -d $SERVICES_NAME
 
     - run: docker-compose ps
 
