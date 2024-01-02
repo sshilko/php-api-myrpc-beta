@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2024-01-02 21:11:57</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>93</methodCount>
+    <crapMethodCount>4</crapMethodCount>
+    <crapLoad>30</crapLoad>
+    <totalCrap>428.5</totalCrap>
+    <crapMethodPercent>4.3</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>myrpc</package>
+      <className>myrpc\ApiServer</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(myrpc\Handler\HandlerFactoryInterface $handlerFactory, myrpc\Request\RequestFactoryInterface $requestFactory, myrpc\Response\ResponseFactoryInterface $responseFactory, myrpc\Identity\IdentityFactoryInterface $identityFactory, myrpc\Schema\SchemaFactoryInterface $schemaFactory, myrpc\Handler\Context\ContextFactoryInterface $handlerContextFactory, Psr\Log\LoggerInterface $logger)</methodSignature>
+      <fullMethod>__construct(myrpc\Handler\HandlerFactoryInterface $handlerFactory, myrpc\Request\RequestFactoryInterface $requestFactory, myrpc\Response\ResponseFactoryInterface $responseFactory, myrpc\Identity\IdentityFactoryInterface $identityFactory, myrpc\Schema\SchemaFactoryInterface $schemaFactory, myrpc\Handler\Context\ContextFactoryInterface $handlerContextFactory, Psr\Log\LoggerInterface $logger)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc</package>
+      <className>myrpc\ApiServer</className>
+      <methodName>run</methodName>
+      <methodSignature>run(mixed $payload): myrpc\Response\ResponseInterface</methodSignature>
+      <fullMethod>run(mixed $payload): myrpc\Response\ResponseInterface</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype</package>
+      <className>myrpc\Datatype\DatatypeFactory</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(Psr\Container\ContainerInterface $typesSource)</methodSignature>
+      <fullMethod>__construct(Psr\Container\ContainerInterface $typesSource)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype</package>
+      <className>myrpc\Datatype\DatatypeFactory</className>
+      <methodName>hasUserspaceType</methodName>
+      <methodSignature>hasUserspaceType(string $typeName): bool</methodSignature>
+      <fullMethod>hasUserspaceType(string $typeName): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype</package>
+      <className>myrpc\Datatype\DatatypeFactory</className>
+      <methodName>getUserspaceType</methodName>
+      <methodSignature>getUserspaceType(string $typeName): myrpc\Datatype\DatatypeInterface</methodSignature>
+      <fullMethod>getUserspaceType(string $typeName): myrpc\Datatype\DatatypeInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype</package>
+      <className>myrpc\Datatype\DatatypeFactory</className>
+      <methodName>getInternalErrorResponseType</methodName>
+      <methodSignature>getInternalErrorResponseType(string $message, ?int $code): myrpc\Datatype\DatatypeInterface</methodSignature>
+      <fullMethod>getInternalErrorResponseType(string $message, ?int $code): myrpc\Datatype\DatatypeInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype</package>
+      <className>myrpc\Datatype\DatatypeFactory</className>
+      <methodName>getInternalSuccessResponseType</methodName>
+      <methodSignature>getInternalSuccessResponseType(object|array|string|int|float|bool|null $response): myrpc\Datatype\DatatypeInterface</methodSignature>
+      <fullMethod>getInternalSuccessResponseType(object|array|string|int|float|bool|null $response): myrpc\Datatype\DatatypeInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype</package>
+      <className>myrpc\Datatype\DatatypeFactory</className>
+      <methodName>create</methodName>
+      <methodSignature>create(string $typeName): myrpc\Datatype\DatatypeInterface</methodSignature>
+      <fullMethod>create(string $typeName): myrpc\Datatype\DatatypeInterface</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype\Internal</package>
+      <className>myrpc\Datatype\Internal\AbstractDatatype</className>
+      <methodName>getPayload</methodName>
+      <methodSignature>getPayload(): object|array|string|int|float|bool|null</methodSignature>
+      <fullMethod>getPayload(): object|array|string|int|float|bool|null</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype\Internal</package>
+      <className>myrpc\Datatype\Internal\AbstractDatatype</className>
+      <methodName>validatableObject</methodName>
+      <methodSignature>validatableObject(): object</methodSignature>
+      <fullMethod>validatableObject(): object</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype\Internal\v1\Response</package>
+      <className>myrpc\Datatype\Internal\v1\Response\Error</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(object|array|string|int|float|bool|null $error, ?int $code)</methodSignature>
+      <fullMethod>__construct(object|array|string|int|float|bool|null $error, ?int $code)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Datatype\Internal\v1\Response</package>
+      <className>myrpc\Datatype\Internal\v1\Response\Success</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(object|array|string|int|float|bool|null $success)</methodSignature>
+      <fullMethod>__construct(object|array|string|int|float|bool|null $success)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Exception</package>
+      <className>myrpc\Exception\ServiceException</className>
+      <methodName>getLogMessage</methodName>
+      <methodSignature>getLogMessage(): string</methodSignature>
+      <fullMethod>getLogMessage(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(myrpc\Handler\HandlerResponseFactoryInterface $handlerResponseFactory, myrpc\Datatype\UserspaceDatatypeFactoryInterface $userspaceDatatypeFactory)</methodSignature>
+      <fullMethod>__construct(myrpc\Handler\HandlerResponseFactoryInterface $handlerResponseFactory, myrpc\Datatype\UserspaceDatatypeFactoryInterface $userspaceDatatypeFactory)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>newErrorResponse</methodName>
+      <methodSignature>newErrorResponse(\myrpc\Datatype\DatatypeInterface|array|string|int|float|bool|null $response, int $errorCode): myrpc\Handler\HandlerResponseInterface</methodSignature>
+      <fullMethod>newErrorResponse(\myrpc\Datatype\DatatypeInterface|array|string|int|float|bool|null $response, int $errorCode): myrpc\Handler\HandlerResponseInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>newSuccessResponse</methodName>
+      <methodSignature>newSuccessResponse(\myrpc\Datatype\DatatypeInterface|array|string|int|float|bool|null $response): myrpc\Handler\HandlerResponseInterface</methodSignature>
+      <fullMethod>newSuccessResponse(\myrpc\Datatype\DatatypeInterface|array|string|int|float|bool|null $response): myrpc\Handler\HandlerResponseInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>newDatatypeResponse</methodName>
+      <methodSignature>newDatatypeResponse(string $typeName): ?myrpc\Datatype\DatatypeInterface</methodSignature>
+      <fullMethod>newDatatypeResponse(string $typeName): ?myrpc\Datatype\DatatypeInterface</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>setIdentity</methodName>
+      <methodSignature>setIdentity(?myrpc\Identity\IdentityInterface $identity): void</methodSignature>
+      <fullMethod>setIdentity(?myrpc\Identity\IdentityInterface $identity): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>getIdentity</methodName>
+      <methodSignature>getIdentity(): ?myrpc\Identity\IdentityInterface</methodSignature>
+      <fullMethod>getIdentity(): ?myrpc\Identity\IdentityInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>setAction</methodName>
+      <methodSignature>setAction(string $action): void</methodSignature>
+      <fullMethod>setAction(string $action): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>setArguments</methodName>
+      <methodSignature>setArguments(?array $arguments): void</methodSignature>
+      <fullMethod>setArguments(?array $arguments): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>getAction</methodName>
+      <methodSignature>getAction(): string</methodSignature>
+      <fullMethod>getAction(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\Context</className>
+      <methodName>getArguments</methodName>
+      <methodSignature>getArguments(): ?array</methodSignature>
+      <fullMethod>getArguments(): ?array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\ContextFactory</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(myrpc\Handler\HandlerResponseFactoryInterface $responseFactory, myrpc\Datatype\UserspaceDatatypeFactoryInterface $datatypeFactory)</methodSignature>
+      <fullMethod>__construct(myrpc\Handler\HandlerResponseFactoryInterface $responseFactory, myrpc\Datatype\UserspaceDatatypeFactoryInterface $datatypeFactory)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Context</package>
+      <className>myrpc\Handler\Context\ContextFactory</className>
+      <methodName>create</methodName>
+      <methodSignature>create(): myrpc\Handler\Context\ContextInterface</methodSignature>
+      <fullMethod>create(): myrpc\Handler\Context\ContextInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerFactory</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(Psr\Container\ContainerInterface $handlersSource, myrpc\Datatype\DatatypeFactoryInterface $datatypeFactory)</methodSignature>
+      <fullMethod>__construct(Psr\Container\ContainerInterface $handlersSource, myrpc\Datatype\DatatypeFactoryInterface $datatypeFactory)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerFactory</className>
+      <methodName>create</methodName>
+      <methodSignature>create(string $handlerId): myrpc\Handler\HandlerInterface</methodSignature>
+      <fullMethod>create(string $handlerId): myrpc\Handler\HandlerInterface</fullMethod>
+      <crap>15.75</crap>
+      <complexity>6</complexity>
+      <coverage>35.29</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerFactory</className>
+      <methodName>hasSchema</methodName>
+      <methodSignature>hasSchema(myrpc\Handler\HandlerInterface $h): ?myrpc\Handler\HandlerSchemaInterface</methodSignature>
+      <fullMethod>hasSchema(myrpc\Handler\HandlerInterface $h): ?myrpc\Handler\HandlerSchemaInterface</fullMethod>
+      <crap>2.15</crap>
+      <complexity>2</complexity>
+      <coverage>66.67</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerFactory</className>
+      <methodName>hasContext</methodName>
+      <methodSignature>hasContext(myrpc\Handler\HandlerInterface $h): ?myrpc\Handler\SmartHandlerInterface</methodSignature>
+      <fullMethod>hasContext(myrpc\Handler\HandlerInterface $h): ?myrpc\Handler\SmartHandlerInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerFactory</className>
+      <methodName>withContext</methodName>
+      <methodSignature>withContext(myrpc\Handler\SmartHandlerInterface $h, myrpc\Handler\Context\ContextInterface $ctx): myrpc\Handler\SmartHandlerInterface</methodSignature>
+      <fullMethod>withContext(myrpc\Handler\SmartHandlerInterface $h, myrpc\Handler\Context\ContextInterface $ctx): myrpc\Handler\SmartHandlerInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerFactory</className>
+      <methodName>withSchema</methodName>
+      <methodSignature>withSchema(myrpc\Handler\HandlerSchemaInterface $h, myrpc\Schema\SchemaFactoryInterface $schema): myrpc\Handler\HandlerWithSchemaInterface</methodSignature>
+      <fullMethod>withSchema(myrpc\Handler\HandlerSchemaInterface $h, myrpc\Schema\SchemaFactoryInterface $schema): myrpc\Handler\HandlerWithSchemaInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerResponse</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(object|array|string|int|float|bool|null $response, ?int $code, bool $isError)</methodSignature>
+      <fullMethod>__construct(object|array|string|int|float|bool|null $response, ?int $code, bool $isError)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerResponse</className>
+      <methodName>getResponse</methodName>
+      <methodSignature>getResponse(): object|array|string|int|float|bool|null</methodSignature>
+      <fullMethod>getResponse(): object|array|string|int|float|bool|null</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerResponse</className>
+      <methodName>isError</methodName>
+      <methodSignature>isError(): bool</methodSignature>
+      <fullMethod>isError(): bool</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerResponse</className>
+      <methodName>getErrorCode</methodName>
+      <methodSignature>getErrorCode(): ?int</methodSignature>
+      <fullMethod>getErrorCode(): ?int</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerResponseFactory</className>
+      <methodName>createErrorResponse</methodName>
+      <methodSignature>createErrorResponse(object|array|string|int|float|bool|null $response, ?int $errorCode): myrpc\Handler\HandlerResponseInterface</methodSignature>
+      <fullMethod>createErrorResponse(object|array|string|int|float|bool|null $response, ?int $errorCode): myrpc\Handler\HandlerResponseInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\HandlerResponseFactory</className>
+      <methodName>createSuccessResponse</methodName>
+      <methodSignature>createSuccessResponse(object|array|string|int|float|bool|null $response, ?int $code): myrpc\Handler\HandlerResponseInterface</methodSignature>
+      <fullMethod>createSuccessResponse(object|array|string|int|float|bool|null $response, ?int $code): myrpc\Handler\HandlerResponseInterface</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\SmartHandler</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(myrpc\Handler\Worker\WorkerInterface $worker, ?myrpc\Serializer\SerializerInterface $serializer, ?myrpc\Validator\ValidatorInterface $validator)</methodSignature>
+      <fullMethod>__construct(myrpc\Handler\Worker\WorkerInterface $worker, ?myrpc\Serializer\SerializerInterface $serializer, ?myrpc\Validator\ValidatorInterface $validator)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\SmartHandler</className>
+      <methodName>action</methodName>
+      <methodSignature>action(string $action, ?array $arguments, ?myrpc\Identity\IdentityInterface $id): myrpc\Handler\HandlerResponseInterface</methodSignature>
+      <fullMethod>action(string $action, ?array $arguments, ?myrpc\Identity\IdentityInterface $id): myrpc\Handler\HandlerResponseInterface</fullMethod>
+      <crap>24.34</crap>
+      <complexity>14</complexity>
+      <coverage>62.5</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\SmartHandler</className>
+      <methodName>setContext</methodName>
+      <methodSignature>setContext(myrpc\Handler\Context\ContextInterface $context): void</methodSignature>
+      <fullMethod>setContext(myrpc\Handler\Context\ContextInterface $context): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\SmartHandler</className>
+      <methodName>setSchemaFactory</methodName>
+      <methodSignature>setSchemaFactory(myrpc\Schema\SchemaFactoryInterface $schemaFactory): myrpc\Handler\HandlerWithSchemaInterface</methodSignature>
+      <fullMethod>setSchemaFactory(myrpc\Schema\SchemaFactoryInterface $schemaFactory): myrpc\Handler\HandlerWithSchemaInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\SmartHandler</className>
+      <methodName>getSchema</methodName>
+      <methodSignature>getSchema(): myrpc\Schema\SchemaInterface</methodSignature>
+      <fullMethod>getSchema(): myrpc\Schema\SchemaInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\SmartHandler</className>
+      <methodName>prepareArguments</methodName>
+      <methodSignature>prepareArguments(ReflectionMethod $method, array $input): array</methodSignature>
+      <fullMethod>prepareArguments(ReflectionMethod $method, array $input): array</fullMethod>
+      <crap>9.16</crap>
+      <complexity>9</complexity>
+      <coverage>87.5</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler</package>
+      <className>myrpc\Handler\SmartHandler</className>
+      <methodName>resolveArguments</methodName>
+      <methodSignature>resolveArguments(ReflectionMethod $method, array $input): array</methodSignature>
+      <fullMethod>resolveArguments(ReflectionMethod $method, array $input): array</fullMethod>
+      <crap>43.24</crap>
+      <complexity>32</complexity>
+      <coverage>77.78</coverage>
+      <crapLoad>8</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Handler\Worker</package>
+      <className>myrpc\Handler\Worker\WorkerTrait</className>
+      <methodName>setupWorker</methodName>
+      <methodSignature>setupWorker(myrpc\Handler\Context\ContextReaderInterface $context): void</methodSignature>
+      <fullMethod>setupWorker(myrpc\Handler\Context\ContextReaderInterface $context): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Identity</package>
+      <className>myrpc\Identity\TokenIdentity</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $token)</methodSignature>
+      <fullMethod>__construct(string $token)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Identity</package>
+      <className>myrpc\Identity\TokenIdentity</className>
+      <methodName>getIdentityToken</methodName>
+      <methodSignature>getIdentityToken(): string</methodSignature>
+      <fullMethod>getIdentityToken(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Identity</package>
+      <className>myrpc\Identity\TokenIdentityFactory</className>
+      <methodName>create</methodName>
+      <methodSignature>create(?string $payload): ?myrpc\Identity\IdentityInterface</methodSignature>
+      <fullMethod>create(?string $payload): ?myrpc\Identity\IdentityInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\JsonRpcRequest</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(?string $action, ?array $arguments, ?string $requestId, ?string $authenticationToken)</methodSignature>
+      <fullMethod>__construct(?string $action, ?array $arguments, ?string $requestId, ?string $authenticationToken)</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\JsonRpcRequest</className>
+      <methodName>getService</methodName>
+      <methodSignature>getService(): string</methodSignature>
+      <fullMethod>getService(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\JsonRpcRequest</className>
+      <methodName>getAction</methodName>
+      <methodSignature>getAction(): ?string</methodSignature>
+      <fullMethod>getAction(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\JsonRpcRequest</className>
+      <methodName>getArguments</methodName>
+      <methodSignature>getArguments(): ?array</methodSignature>
+      <fullMethod>getArguments(): ?array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\JsonRpcRequest</className>
+      <methodName>getIdentityToken</methodName>
+      <methodSignature>getIdentityToken(): ?string</methodSignature>
+      <fullMethod>getIdentityToken(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\JsonRpcRequest</className>
+      <methodName>getRequestId</methodName>
+      <methodSignature>getRequestId(): ?string</methodSignature>
+      <fullMethod>getRequestId(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\JsonRpcRequestFactory</className>
+      <methodName>create</methodName>
+      <methodSignature>create(mixed $data): myrpc\Request\RequestInterface</methodSignature>
+      <fullMethod>create(mixed $data): myrpc\Request\RequestInterface</fullMethod>
+      <crap>132</crap>
+      <complexity>11</complexity>
+      <coverage>0</coverage>
+      <crapLoad>11</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\SimpleRequest</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $service, string $action, array $arguments, string $requestId, string $authenticationToken)</methodSignature>
+      <fullMethod>__construct(string $service, string $action, array $arguments, string $requestId, string $authenticationToken)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\SimpleRequest</className>
+      <methodName>getService</methodName>
+      <methodSignature>getService(): string</methodSignature>
+      <fullMethod>getService(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\SimpleRequest</className>
+      <methodName>getAction</methodName>
+      <methodSignature>getAction(): ?string</methodSignature>
+      <fullMethod>getAction(): ?string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\SimpleRequest</className>
+      <methodName>getArguments</methodName>
+      <methodSignature>getArguments(): ?array</methodSignature>
+      <fullMethod>getArguments(): ?array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\SimpleRequest</className>
+      <methodName>getIdentityToken</methodName>
+      <methodSignature>getIdentityToken(): ?string</methodSignature>
+      <fullMethod>getIdentityToken(): ?string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Request</package>
+      <className>myrpc\Request\SimpleRequest</className>
+      <methodName>getRequestId</methodName>
+      <methodSignature>getRequestId(): ?string</methodSignature>
+      <fullMethod>getRequestId(): ?string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\JsonRpcResponse</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(object|array|string|int|float|bool|null $response, ?string $requestId, ?int $errorId)</methodSignature>
+      <fullMethod>__construct(object|array|string|int|float|bool|null $response, ?string $requestId, ?int $errorId)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\JsonRpcResponse</className>
+      <methodName>isSuccess</methodName>
+      <methodSignature>isSuccess(): bool</methodSignature>
+      <fullMethod>isSuccess(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\JsonRpcResponse</className>
+      <methodName>getResponse</methodName>
+      <methodSignature>getResponse(): string</methodSignature>
+      <fullMethod>getResponse(): string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\JsonRpcResponse</className>
+      <methodName>getError</methodName>
+      <methodSignature>getError(): ?int</methodSignature>
+      <fullMethod>getError(): ?int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\JsonRpcResponse</className>
+      <methodName>getRequestId</methodName>
+      <methodSignature>getRequestId(): ?string</methodSignature>
+      <fullMethod>getRequestId(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\JsonRpcResponseFactory</className>
+      <methodName>createSuccessResponse</methodName>
+      <methodSignature>createSuccessResponse(object|array|string|int|float|bool|null $data, ?string $requestId): myrpc\Response\ResponseInterface</methodSignature>
+      <fullMethod>createSuccessResponse(object|array|string|int|float|bool|null $data, ?string $requestId): myrpc\Response\ResponseInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\JsonRpcResponseFactory</className>
+      <methodName>createErrorResponse</methodName>
+      <methodSignature>createErrorResponse(object|array|string|int|float|bool|null $data, ?int $errorId, ?string $requestId): myrpc\Response\ResponseInterface</methodSignature>
+      <fullMethod>createErrorResponse(object|array|string|int|float|bool|null $data, ?int $errorId, ?string $requestId): myrpc\Response\ResponseInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\JsonRpcResponseFactory</className>
+      <methodName>createExceptionResponse</methodName>
+      <methodSignature>createExceptionResponse(Throwable $e, int $errorId, ?string $requestId): myrpc\Response\ResponseInterface</methodSignature>
+      <fullMethod>createExceptionResponse(Throwable $e, int $errorId, ?string $requestId): myrpc\Response\ResponseInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\SimpleResponse</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(object|array|bool|float|int|string|null $response, ?string $requestId, ?int $errorId)</methodSignature>
+      <fullMethod>__construct(object|array|bool|float|int|string|null $response, ?string $requestId, ?int $errorId)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\SimpleResponse</className>
+      <methodName>isSuccess</methodName>
+      <methodSignature>isSuccess(): bool</methodSignature>
+      <fullMethod>isSuccess(): bool</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\SimpleResponse</className>
+      <methodName>getResponse</methodName>
+      <methodSignature>getResponse(): object|array|bool|float|int|string|null</methodSignature>
+      <fullMethod>getResponse(): object|array|bool|float|int|string|null</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\SimpleResponse</className>
+      <methodName>getError</methodName>
+      <methodSignature>getError(): ?int</methodSignature>
+      <fullMethod>getError(): ?int</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\SimpleResponse</className>
+      <methodName>getRequestId</methodName>
+      <methodSignature>getRequestId(): ?string</methodSignature>
+      <fullMethod>getRequestId(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\SimpleResponseFactory</className>
+      <methodName>createSuccessResponse</methodName>
+      <methodSignature>createSuccessResponse(object|array|bool|float|int|string|null $data, ?string $requestId): myrpc\Response\ResponseInterface</methodSignature>
+      <fullMethod>createSuccessResponse(object|array|bool|float|int|string|null $data, ?string $requestId): myrpc\Response\ResponseInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\SimpleResponseFactory</className>
+      <methodName>createErrorResponse</methodName>
+      <methodSignature>createErrorResponse(object|array|bool|float|int|string|null $data, ?int $errorId, ?string $requestId): myrpc\Response\ResponseInterface</methodSignature>
+      <fullMethod>createErrorResponse(object|array|bool|float|int|string|null $data, ?int $errorId, ?string $requestId): myrpc\Response\ResponseInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Response</package>
+      <className>myrpc\Response\SimpleResponseFactory</className>
+      <methodName>createExceptionResponse</methodName>
+      <methodSignature>createExceptionResponse(Throwable $e, int $errorId, ?string $requestId): myrpc\Response\ResponseInterface</methodSignature>
+      <fullMethod>createExceptionResponse(Throwable $e, int $errorId, ?string $requestId): myrpc\Response\ResponseInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Schema</package>
+      <className>myrpc\Schema\JsonSchema</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $jsonSchema)</methodSignature>
+      <fullMethod>__construct(array $jsonSchema)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Schema</package>
+      <className>myrpc\Schema\JsonSchema</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString(): string</methodSignature>
+      <fullMethod>__toString(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Schema</package>
+      <className>myrpc\Schema\JsonSchemaFactory</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(myrpc\Datatype\DatatypeFactoryInterface $datatypeFactory)</methodSignature>
+      <fullMethod>__construct(myrpc\Datatype\DatatypeFactoryInterface $datatypeFactory)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Schema</package>
+      <className>myrpc\Schema\JsonSchemaFactory</className>
+      <methodName>newSchemaFromObject</methodName>
+      <methodSignature>newSchemaFromObject(object $obj): myrpc\Schema\SchemaInterface</methodSignature>
+      <fullMethod>newSchemaFromObject(object $obj): myrpc\Schema\SchemaInterface</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Schema</package>
+      <className>myrpc\Schema\JsonSchemaFactory</className>
+      <methodName>sortSchema</methodName>
+      <methodSignature>sortSchema(array $schema): array</methodSignature>
+      <fullMethod>sortSchema(array $schema): array</fullMethod>
+      <crap>6.6</crap>
+      <complexity>4</complexity>
+      <coverage>45.45</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Schema</package>
+      <className>myrpc\Schema\JsonSchemaFactory</className>
+      <methodName>sortDefinitions</methodName>
+      <methodSignature>sortDefinitions(array $definitions): array</methodSignature>
+      <fullMethod>sortDefinitions(array $definitions): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc</package>
+      <className>myrpc\SchemaServer</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(myrpc\Handler\HandlerFactoryInterface $handlerFactory, myrpc\Schema\SchemaFactoryInterface $schemaFactory)</methodSignature>
+      <fullMethod>__construct(myrpc\Handler\HandlerFactoryInterface $handlerFactory, myrpc\Schema\SchemaFactoryInterface $schemaFactory)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc</package>
+      <className>myrpc\SchemaServer</className>
+      <methodName>getServiceSchema</methodName>
+      <methodSignature>getServiceSchema(string $service): ?string</methodSignature>
+      <fullMethod>getServiceSchema(string $service): ?string</fullMethod>
+      <crap>2.01</crap>
+      <complexity>2</complexity>
+      <coverage>85.71</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Serializer</package>
+      <className>myrpc\Serializer\JsonSerializer</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Serializer</package>
+      <className>myrpc\Serializer\JsonSerializer</className>
+      <methodName>denormalize</methodName>
+      <methodSignature>denormalize(stdClass $input, string $className): object</methodSignature>
+      <fullMethod>denormalize(stdClass $input, string $className): object</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>95</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Validator</package>
+      <className>myrpc\Validator\Symfony</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Validator</package>
+      <className>myrpc\Validator\Symfony</className>
+      <methodName>validate</methodName>
+      <methodSignature>validate(myrpc\Validator\IsValidatableInterface $input): array</methodSignature>
+      <fullMethod>validate(myrpc\Validator\IsValidatableInterface $input): array</fullMethod>
+      <crap>4.25</crap>
+      <complexity>4</complexity>
+      <coverage>75</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Validator</package>
+      <className>myrpc\Validator\SymfonyResult</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $name, string $code, string|\Stringable $message)</methodSignature>
+      <fullMethod>__construct(string $name, string $code, string|\Stringable $message)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Validator</package>
+      <className>myrpc\Validator\SymfonyResult</className>
+      <methodName>getName</methodName>
+      <methodSignature>getName(): string</methodSignature>
+      <fullMethod>getName(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Validator</package>
+      <className>myrpc\Validator\SymfonyResult</className>
+      <methodName>getCode</methodName>
+      <methodSignature>getCode(): ?string</methodSignature>
+      <fullMethod>getCode(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>myrpc\Validator</package>
+      <className>myrpc\Validator\SymfonyResult</className>
+      <methodName>getMessage</methodName>
+      <methodSignature>getMessage(): string|\Stringable</methodSignature>
+      <fullMethod>getMessage(): string|\Stringable</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

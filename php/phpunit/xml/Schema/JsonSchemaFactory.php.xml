@@ -1,0 +1,696 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="JsonSchemaFactory.php" path="/Schema">
+    <totals>
+      <lines total="75" comments="14" code="61" executable="20" executed="12" percent="60.00"/>
+      <methods count="4" tested="2" percent="50.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="0" percent="0.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="myrpc\Schema\JsonSchemaFactory" start="15" executable="20" executed="12" crap="10.14">
+      <namespace name="myrpc\Schema"/>
+      <method name="__construct" signature="__construct(myrpc\Datatype\DatatypeFactoryInterface $datatypeFactory)" start="17" end="19" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="newSchemaFromObject" signature="newSchemaFromObject(object $obj): myrpc\Schema\SchemaInterface" start="24" end="39" crap="1" executable="6" executed="6" coverage="100"/>
+      <method name="sortSchema" signature="sortSchema(array $schema): array" start="46" end="66" crap="6.60" executable="11" executed="5" coverage="45.454545454545"/>
+      <method name="sortDefinitions" signature="sortDefinitions(array $definitions): array" start="68" end="73" crap="2" executable="2" executed="0" coverage="0"/>
+    </class>
+    <coverage>
+      <line nr="19">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="26">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="27">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="32">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="35">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="36">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="38">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="48">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="50">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="58">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="65">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="57">
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2"/>
+      <line no="3">
+        <token name="T_DECLARE">declare</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">strict_types</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="4"/>
+      <line no="5">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">myrpc\Schema</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="6"/>
+      <line no="7">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">myrpc\Datatype\DatatypeFactoryInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="8">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">myrpc\Exception\ServiceException</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="9">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">current</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="10">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">gettype</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="11">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">is_array</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="12">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ksort</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="13">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">usort</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="14"/>
+      <line no="15">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">JsonSchemaFactory</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">SchemaFactoryInterface</token>
+      </line>
+      <line no="16">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="17">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">DatatypeFactoryInterface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$datatypeFactory</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="18">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="19">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="20"/>
+      <line no="21">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="22">
+        <token name="T_DOC_COMMENT">     * @throws \myrpc\Exception\ServiceException</token>
+      </line>
+      <line no="23">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="24">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">newSchemaFromObject</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">object</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$obj</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">SchemaInterface</token>
+      </line>
+      <line no="25">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="26">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$schema</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="27">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$definitions</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="28"/>
+      <line no="29">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//TODO RESUME HERE 01.04.2023, 23.04.2023</token>
+      </line>
+      <line no="30">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//TODO needs type definitions use, see $this-&gt;datatypeFactory</token>
+      </line>
+      <line no="31"/>
+      <line no="32">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$schema</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">sortSchema</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$schema</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="33"/>
+      <line no="34">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//ksort($definitions);</token>
+      </line>
+      <line no="35">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$schema</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'obj'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$obj</token>
+        <token name="T_SEMICOLON">;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COMMENT">//TODO: remove me</token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$schema</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'definitions'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$definitions</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="37"/>
+      <line no="38">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">JsonSchema</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$schema</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="39">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="40"/>
+      <line no="41">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="42">
+        <token name="T_DOC_COMMENT">     * @param array&lt;array-key, array&lt;array-key, array&lt;array-key, mixed&gt;&gt;&gt; $schema</token>
+      </line>
+      <line no="43">
+        <token name="T_DOC_COMMENT">     * @return array</token>
+      </line>
+      <line no="44">
+        <token name="T_DOC_COMMENT">     * @throws \myrpc\Exception\ServiceException</token>
+      </line>
+      <line no="45">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="46">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sortSchema</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$schema</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$schemaSorted</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">/* @phan-suppress-next-line PhanThrowTypeAbsent */</token>
+      </line>
+      <line no="50">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$sortfunc</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STATIC">static</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$a</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$b</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="51">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_ISSET">isset</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$a</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'title'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$b</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'title'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_COMMENT">/* @phan-suppress-next-line PhanThrowTypeAbsent */</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_THROW">throw</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ServiceException</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Unexpected JSON schema root item: '</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOT">.</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">gettype</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$a</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOT">.</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">' &amp; '</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOT">.</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">gettype</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$b</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="54">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="55"/>
+      <line no="56">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$a</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'title'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_SPACESHIP">&lt;=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$b</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'title'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="57">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="58">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_FOREACH">foreach</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$schema</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_AS">as</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$sk</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$sv</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="59">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">is_array</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">current</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$sv</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="60">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_STRING">usort</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$sv</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$sortfunc</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="61">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="62">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$schemaSorted</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_VARIABLE">$sk</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$sv</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="63">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="64"/>
+      <line no="65">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$schemaSorted</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="66">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="67"/>
+      <line no="68">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sortDefinitions</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$definitions</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="69">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="70">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">ksort</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$definitions</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="71"/>
+      <line no="72">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$definitions</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="73">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="74">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="75"/>
+    </source>
+  </file>
+</phpunit>

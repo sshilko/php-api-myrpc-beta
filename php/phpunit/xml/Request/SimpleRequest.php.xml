@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="SimpleRequest.php" path="/Request">
+    <totals>
+      <lines total="44" comments="0" code="44" executable="6" executed="6" percent="100.00"/>
+      <methods count="6" tested="6" percent="100.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="1" percent="100.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="myrpc\Request\SimpleRequest" start="7" executable="6" executed="6" crap="6">
+      <namespace name="myrpc\Request"/>
+      <method name="__construct" signature="__construct(string $service, string $action, array $arguments, string $requestId, string $authenticationToken)" start="10" end="17" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getService" signature="getService(): string" start="19" end="22" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getAction" signature="getAction(): ?string" start="24" end="27" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getArguments" signature="getArguments(): ?array" start="29" end="32" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getIdentityToken" signature="getIdentityToken(): ?string" start="34" end="37" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getRequestId" signature="getRequestId(): ?string" start="39" end="42" crap="1" executable="1" executed="1" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="17">
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-2&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-3&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-4&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getIdentityToken&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+      </line>
+      <line nr="21">
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-2&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-3&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-4&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getIdentityToken&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+      </line>
+      <line nr="26">
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-2&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-3&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-4&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getIdentityToken&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+      </line>
+      <line nr="31">
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-2&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-3&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-4&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getIdentityToken&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+      </line>
+      <line nr="36">
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-2&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-3&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-4&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getIdentityToken&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+      </line>
+      <line nr="41">
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-2&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-3&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-4&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getIdentityToken&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2"/>
+      <line no="3">
+        <token name="T_DECLARE">declare</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">strict_types</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="4"/>
+      <line no="5">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">myrpc\Request</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="6"/>
+      <line no="7">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">SimpleRequest</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">RequestInterface</token>
+      </line>
+      <line no="8">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="9"/>
+      <line no="10">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="11">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$service</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="12">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$action</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="13">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$arguments</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="14">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$requestId</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="15">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$authenticationToken</token>
+      </line>
+      <line no="16">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="17">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="18"/>
+      <line no="19">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getService</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="20">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="21">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">service</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="22">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="23"/>
+      <line no="24">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getAction</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="25">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="26">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">action</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="27">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="28"/>
+      <line no="29">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getArguments</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="30">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="31">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">arguments</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="32">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="33"/>
+      <line no="34">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getIdentityToken</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="35">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">authenticationToken</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="37">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="38"/>
+      <line no="39">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getRequestId</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="40">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="41">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">requestId</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="42">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="43">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="44"/>
+    </source>
+  </file>
+</phpunit>

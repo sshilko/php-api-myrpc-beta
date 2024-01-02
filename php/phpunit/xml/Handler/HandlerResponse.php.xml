@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="HandlerResponse.php" path="/Handler">
+    <totals>
+      <lines total="31" comments="0" code="31" executable="4" executed="4" percent="100.00"/>
+      <methods count="4" tested="4" percent="100.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="1" percent="100.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="myrpc\Handler\HandlerResponse" start="7" executable="4" executed="4" crap="4">
+      <namespace name="myrpc\Handler"/>
+      <method name="__construct" signature="__construct(object|array|string|int|float|bool|null $response, ?int $code, bool $isError)" start="9" end="14" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getResponse" signature="getResponse(): object|array|string|int|float|bool|null" start="16" end="19" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="isError" signature="isError(): bool" start="21" end="24" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getErrorCode" signature="getErrorCode(): ?int" start="26" end="29" crap="1" executable="1" executed="1" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="14">
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="18">
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="23">
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
+      </line>
+      <line nr="28">
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;"/>
+        <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2"/>
+      <line no="3">
+        <token name="T_DECLARE">declare</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">strict_types</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="4"/>
+      <line no="5">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">myrpc\Handler</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="6"/>
+      <line no="7">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">HandlerResponse</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">HandlerResponseInterface</token>
+      </line>
+      <line no="8">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="9">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="10">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">object</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">string</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">int</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">float</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">bool</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">null</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$response</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="11">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$code</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="12">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$isError</token>
+      </line>
+      <line no="13">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="14">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="15"/>
+      <line no="16">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getResponse</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">object</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">string</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">int</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">float</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">bool</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">null</token>
+      </line>
+      <line no="17">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="18">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">response</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="19">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="20"/>
+      <line no="21">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">isError</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+      </line>
+      <line no="22">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="23">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">isError</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="24">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="25"/>
+      <line no="26">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getErrorCode</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_STRING">int</token>
+      </line>
+      <line no="27">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="28">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">code</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="29">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="30">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="31"/>
+    </source>
+  </file>
+</phpunit>

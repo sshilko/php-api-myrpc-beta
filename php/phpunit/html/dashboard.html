@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /app/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/app/src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Datatype/Internal/v1/Response/Error.php.html#9">myrpc\Datatype\Internal\v1\Response\Error</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/Context/ContextFactory.php.html#10">myrpc\Handler\Context\ContextFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#15">myrpc\Request\JsonRpcRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequestFactory.php.html#16">myrpc\Request\JsonRpcRequestFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponse.php.html#14">myrpc\Response\JsonRpcResponse</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponseFactory.php.html#9">myrpc\Response\JsonRpcResponseFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Datatype/DatatypeFactory.php.html#15">myrpc\Datatype\DatatypeFactory</a></td><td class="text-right">5%</td></tr>
+       <tr><td><a href="Handler/Context/Context.php.html#13">myrpc\Handler\Context\Context</a></td><td class="text-right">41%</td></tr>
+       <tr><td><a href="Handler/HandlerFactory.php.html#16">myrpc\Handler\HandlerFactory</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="Schema/JsonSchemaFactory.php.html#15">myrpc\Schema\JsonSchemaFactory</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Response/SimpleResponseFactory.php.html#9">myrpc\Response\SimpleResponseFactory</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Validator/SymfonyResult.php.html#9">myrpc\Validator\SymfonyResult</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Handler/SmartHandler.php.html#63">myrpc\Handler\SmartHandler</a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Response/SimpleResponse.php.html#7">myrpc\Response\SimpleResponse</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Validator/Symfony.php.html#18">myrpc\Validator\Symfony</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="SchemaServer.php.html#10">myrpc\SchemaServer</a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Request/JsonRpcRequestFactory.php.html#16">myrpc\Request\JsonRpcRequestFactory</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#15">myrpc\Request\JsonRpcRequest</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Handler/SmartHandler.php.html#63">myrpc\Handler\SmartHandler</a></td><td class="text-right">103</td></tr>
+       <tr><td><a href="Datatype/DatatypeFactory.php.html#15">myrpc\Datatype\DatatypeFactory</a></td><td class="text-right">95</td></tr>
+       <tr><td><a href="Response/JsonRpcResponse.php.html#14">myrpc\Response\JsonRpcResponse</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Handler/Context/Context.php.html#13">myrpc\Handler\Context\Context</a></td><td class="text-right">35</td></tr>
+       <tr><td><a href="Handler/HandlerFactory.php.html#16">myrpc\Handler\HandlerFactory</a></td><td class="text-right">27</td></tr>
+       <tr><td><a href="Schema/JsonSchemaFactory.php.html#15">myrpc\Schema\JsonSchemaFactory</a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Validator/Symfony.php.html#18">myrpc\Validator\Symfony</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="SchemaServer.php.html#10">myrpc\SchemaServer</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Datatype/DatatypeFactory.php.html#21"><abbr title="myrpc\Datatype\DatatypeFactory::hasUserspaceType">hasUserspaceType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Datatype/DatatypeFactory.php.html#29"><abbr title="myrpc\Datatype\DatatypeFactory::getUserspaceType">getUserspaceType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Datatype/DatatypeFactory.php.html#34"><abbr title="myrpc\Datatype\DatatypeFactory::getInternalErrorResponseType">getInternalErrorResponseType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Datatype/DatatypeFactory.php.html#39"><abbr title="myrpc\Datatype\DatatypeFactory::getInternalSuccessResponseType">getInternalSuccessResponseType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Datatype/DatatypeFactory.php.html#47"><abbr title="myrpc\Datatype\DatatypeFactory::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Datatype/Internal/v1/Response/Error.php.html#11"><abbr title="myrpc\Datatype\Internal\v1\Response\Error::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/Context/Context.php.html#41"><abbr title="myrpc\Handler\Context\Context::newDatatypeResponse">newDatatypeResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/Context/Context.php.html#60"><abbr title="myrpc\Handler\Context\Context::setAction">setAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/Context/Context.php.html#65"><abbr title="myrpc\Handler\Context\Context::setArguments">setArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/Context/Context.php.html#70"><abbr title="myrpc\Handler\Context\Context::getAction">getAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/Context/Context.php.html#75"><abbr title="myrpc\Handler\Context\Context::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/Context/ContextFactory.php.html#12"><abbr title="myrpc\Handler\Context\ContextFactory::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/Context/ContextFactory.php.html#18"><abbr title="myrpc\Handler\Context\ContextFactory::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#22"><abbr title="myrpc\Request\JsonRpcRequest::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#44"><abbr title="myrpc\Request\JsonRpcRequest::getService">getService</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#49"><abbr title="myrpc\Request\JsonRpcRequest::getAction">getAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#54"><abbr title="myrpc\Request\JsonRpcRequest::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#59"><abbr title="myrpc\Request\JsonRpcRequest::getIdentityToken">getIdentityToken</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#64"><abbr title="myrpc\Request\JsonRpcRequest::getRequestId">getRequestId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Request/JsonRpcRequestFactory.php.html#18"><abbr title="myrpc\Request\JsonRpcRequestFactory::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponse.php.html#19"><abbr title="myrpc\Response\JsonRpcResponse::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponse.php.html#27"><abbr title="myrpc\Response\JsonRpcResponse::isSuccess">isSuccess</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponse.php.html#35"><abbr title="myrpc\Response\JsonRpcResponse::getResponse">getResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponse.php.html#49"><abbr title="myrpc\Response\JsonRpcResponse::getError">getError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponse.php.html#54"><abbr title="myrpc\Response\JsonRpcResponse::getRequestId">getRequestId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponseFactory.php.html#11"><abbr title="myrpc\Response\JsonRpcResponseFactory::createSuccessResponse">createSuccessResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponseFactory.php.html#32"><abbr title="myrpc\Response\JsonRpcResponseFactory::createErrorResponse">createErrorResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/JsonRpcResponseFactory.php.html#40"><abbr title="myrpc\Response\JsonRpcResponseFactory::createExceptionResponse">createExceptionResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/SimpleResponse.php.html#35"><abbr title="myrpc\Response\SimpleResponse::getRequestId">getRequestId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Response/SimpleResponseFactory.php.html#26"><abbr title="myrpc\Response\SimpleResponseFactory::createExceptionResponse">createExceptionResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Schema/JsonSchemaFactory.php.html#68"><abbr title="myrpc\Schema\JsonSchemaFactory::sortDefinitions">sortDefinitions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validator/SymfonyResult.php.html#23"><abbr title="myrpc\Validator\SymfonyResult::getCode">getCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handler/HandlerFactory.php.html#27"><abbr title="myrpc\Handler\HandlerFactory::create">create</abbr></a></td><td class="text-right">35%</td></tr>
+       <tr><td><a href="Schema/JsonSchemaFactory.php.html#46"><abbr title="myrpc\Schema\JsonSchemaFactory::sortSchema">sortSchema</abbr></a></td><td class="text-right">45%</td></tr>
+       <tr><td><a href="Handler/SmartHandler.php.html#91"><abbr title="myrpc\Handler\SmartHandler::action">action</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="Handler/HandlerFactory.php.html#58"><abbr title="myrpc\Handler\HandlerFactory::hasSchema">hasSchema</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Validator/Symfony.php.html#38"><abbr title="myrpc\Validator\Symfony::validate">validate</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Handler/SmartHandler.php.html#217"><abbr title="myrpc\Handler\SmartHandler::resolveArguments">resolveArguments</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="SchemaServer.php.html#22"><abbr title="myrpc\SchemaServer::getServiceSchema">getServiceSchema</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Handler/SmartHandler.php.html#186"><abbr title="myrpc\Handler\SmartHandler::prepareArguments">prepareArguments</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Request/JsonRpcRequestFactory.php.html#18"><abbr title="myrpc\Request\JsonRpcRequestFactory::create">create</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Handler/SmartHandler.php.html#217"><abbr title="myrpc\Handler\SmartHandler::resolveArguments">resolveArguments</abbr></a></td><td class="text-right">43</td></tr>
+       <tr><td><a href="Datatype/DatatypeFactory.php.html#47"><abbr title="myrpc\Datatype\DatatypeFactory::create">create</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Request/JsonRpcRequest.php.html#22"><abbr title="myrpc\Request\JsonRpcRequest::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Handler/SmartHandler.php.html#91"><abbr title="myrpc\Handler\SmartHandler::action">action</abbr></a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="Handler/HandlerFactory.php.html#27"><abbr title="myrpc\Handler\HandlerFactory::create">create</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="Handler/SmartHandler.php.html#186"><abbr title="myrpc\Handler\SmartHandler::prepareArguments">prepareArguments</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Schema/JsonSchemaFactory.php.html#46"><abbr title="myrpc\Schema\JsonSchemaFactory::sortSchema">sortSchema</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handler/Context/Context.php.html#41"><abbr title="myrpc\Handler\Context\Context::newDatatypeResponse">newDatatypeResponse</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Response/JsonRpcResponse.php.html#35"><abbr title="myrpc\Response\JsonRpcResponse::getResponse">getResponse</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Validator/Symfony.php.html#38"><abbr title="myrpc\Validator\Symfony::validate">validate</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Handler/HandlerFactory.php.html#58"><abbr title="myrpc\Handler\HandlerFactory::hasSchema">hasSchema</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="SchemaServer.php.html#22"><abbr title="myrpc\SchemaServer::getServiceSchema">getServiceSchema</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.30</a> using <a href="https://secure.php.net/" target="_top">PHP 8.1.27</a> and <a href="https://phpunit.de/">PHPUnit 9.6.15</a> at Tue Jan 2 21:11:57 UTC 2024.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=9.2.30" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=9.2.30" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=9.2.30" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([6,1,0,0,0,1,1,2,2,3,1,22], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([32,0,0,0,1,1,0,2,2,2,1,52], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,6,"<a href=\"ApiServer.php.html#18\">myrpc\\ApiServer<\/a>"],[5.263157894736842,10,"<a href=\"Datatype\/DatatypeFactory.php.html#15\">myrpc\\Datatype\\DatatypeFactory<\/a>"],[100,2,"<a href=\"Datatype\/Internal\/AbstractDatatype.php.html#10\">myrpc\\Datatype\\Internal\\AbstractDatatype<\/a>"],[0,1,"<a href=\"Datatype\/Internal\/v1\/Response\/Error.php.html#9\">myrpc\\Datatype\\Internal\\v1\\Response\\Error<\/a>"],[100,1,"<a href=\"Datatype\/Internal\/v1\/Response\/Success.php.html#12\">myrpc\\Datatype\\Internal\\v1\\Response\\Success<\/a>"],[100,0,"<a href=\"Exception\/DatatypeException.php.html#7\">myrpc\\Exception\\DatatypeException<\/a>"],[100,0,"<a href=\"Exception\/HandlerActionArgumentsException.php.html#7\">myrpc\\Exception\\HandlerActionArgumentsException<\/a>"],[100,0,"<a href=\"Exception\/HandlerActionException.php.html#7\">myrpc\\Exception\\HandlerActionException<\/a>"],[100,0,"<a href=\"Exception\/HandlerActionInputException.php.html#7\">myrpc\\Exception\\HandlerActionInputException<\/a>"],[100,0,"<a href=\"Exception\/HandlerActionSerializerException.php.html#7\">myrpc\\Exception\\HandlerActionSerializerException<\/a>"],[100,0,"<a href=\"Exception\/HandlerActionTypeException.php.html#7\">myrpc\\Exception\\HandlerActionTypeException<\/a>"],[100,0,"<a href=\"Exception\/HandlerActionValidationException.php.html#7\">myrpc\\Exception\\HandlerActionValidationException<\/a>"],[100,0,"<a href=\"Exception\/SerializerException.php.html#7\">myrpc\\Exception\\SerializerException<\/a>"],[100,0,"<a href=\"Exception\/SerializerObjectAssertException.php.html#7\">myrpc\\Exception\\SerializerObjectAssertException<\/a>"],[100,0,"<a href=\"Exception\/ServiceAuthenticationException.php.html#7\">myrpc\\Exception\\ServiceAuthenticationException<\/a>"],[100,1,"<a href=\"Exception\/ServiceException.php.html#9\">myrpc\\Exception\\ServiceException<\/a>"],[100,0,"<a href=\"Exception\/ValidatorException.php.html#7\">myrpc\\Exception\\ValidatorException<\/a>"],[41.66666666666667,11,"<a href=\"Handler\/Context\/Context.php.html#13\">myrpc\\Handler\\Context\\Context<\/a>"],[0,2,"<a href=\"Handler\/Context\/ContextFactory.php.html#10\">myrpc\\Handler\\Context\\ContextFactory<\/a>"],[55.55555555555556,13,"<a href=\"Handler\/HandlerFactory.php.html#16\">myrpc\\Handler\\HandlerFactory<\/a>"],[100,4,"<a href=\"Handler\/HandlerResponse.php.html#7\">myrpc\\Handler\\HandlerResponse<\/a>"],[100,4,"<a href=\"Handler\/HandlerResponseFactory.php.html#12\">myrpc\\Handler\\HandlerResponseFactory<\/a>"],[76.66666666666667,59,"<a href=\"Handler\/SmartHandler.php.html#63\">myrpc\\Handler\\SmartHandler<\/a>"],[100,2,"<a href=\"Identity\/TokenIdentity.php.html#7\">myrpc\\Identity\\TokenIdentity<\/a>"],[100,2,"<a href=\"Identity\/TokenIdentityFactory.php.html#7\">myrpc\\Identity\\TokenIdentityFactory<\/a>"],[0,10,"<a href=\"Request\/JsonRpcRequest.php.html#15\">myrpc\\Request\\JsonRpcRequest<\/a>"],[0,11,"<a href=\"Request\/JsonRpcRequestFactory.php.html#16\">myrpc\\Request\\JsonRpcRequestFactory<\/a>"],[100,6,"<a href=\"Request\/SimpleRequest.php.html#7\">myrpc\\Request\\SimpleRequest<\/a>"],[0,6,"<a href=\"Response\/JsonRpcResponse.php.html#14\">myrpc\\Response\\JsonRpcResponse<\/a>"],[0,3,"<a href=\"Response\/JsonRpcResponseFactory.php.html#9\">myrpc\\Response\\JsonRpcResponseFactory<\/a>"],[80,5,"<a href=\"Response\/SimpleResponse.php.html#7\">myrpc\\Response\\SimpleResponse<\/a>"],[66.66666666666666,3,"<a href=\"Response\/SimpleResponseFactory.php.html#9\">myrpc\\Response\\SimpleResponseFactory<\/a>"],[100,2,"<a href=\"Schema\/JsonSchema.php.html#15\">myrpc\\Schema\\JsonSchema<\/a>"],[60,7,"<a href=\"Schema\/JsonSchemaFactory.php.html#15\">myrpc\\Schema\\JsonSchemaFactory<\/a>"],[87.5,3,"<a href=\"SchemaServer.php.html#10\">myrpc\\SchemaServer<\/a>"],[96.96969696969697,4,"<a href=\"Serializer\/JsonSerializer.php.html#37\">myrpc\\Serializer\\JsonSerializer<\/a>"],[83.33333333333334,5,"<a href=\"Validator\/Symfony.php.html#18\">myrpc\\Validator\\Symfony<\/a>"],[75,4,"<a href=\"Validator\/SymfonyResult.php.html#9\">myrpc\\Validator\\SymfonyResult<\/a>"],[100,1,"<a href=\"Handler\/Worker\/WorkerTrait.php.html#9\">myrpc\\Handler\\Worker\\WorkerTrait<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"ApiServer.php.html#21\">myrpc\\ApiServer::__construct<\/a>"],[100,5,"<a href=\"ApiServer.php.html#32\">myrpc\\ApiServer::run<\/a>"],[100,1,"<a href=\"Datatype\/DatatypeFactory.php.html#17\">myrpc\\Datatype\\DatatypeFactory::__construct<\/a>"],[0,1,"<a href=\"Datatype\/DatatypeFactory.php.html#21\">myrpc\\Datatype\\DatatypeFactory::hasUserspaceType<\/a>"],[0,1,"<a href=\"Datatype\/DatatypeFactory.php.html#29\">myrpc\\Datatype\\DatatypeFactory::getUserspaceType<\/a>"],[0,1,"<a href=\"Datatype\/DatatypeFactory.php.html#34\">myrpc\\Datatype\\DatatypeFactory::getInternalErrorResponseType<\/a>"],[0,1,"<a href=\"Datatype\/DatatypeFactory.php.html#39\">myrpc\\Datatype\\DatatypeFactory::getInternalSuccessResponseType<\/a>"],[0,5,"<a href=\"Datatype\/DatatypeFactory.php.html#47\">myrpc\\Datatype\\DatatypeFactory::create<\/a>"],[100,1,"<a href=\"Datatype\/Internal\/AbstractDatatype.php.html#12\">myrpc\\Datatype\\Internal\\AbstractDatatype::getPayload<\/a>"],[100,1,"<a href=\"Datatype\/Internal\/AbstractDatatype.php.html#17\">myrpc\\Datatype\\Internal\\AbstractDatatype::validatableObject<\/a>"],[0,1,"<a href=\"Datatype\/Internal\/v1\/Response\/Error.php.html#11\">myrpc\\Datatype\\Internal\\v1\\Response\\Error::__construct<\/a>"],[100,1,"<a href=\"Datatype\/Internal\/v1\/Response\/Success.php.html#20\">myrpc\\Datatype\\Internal\\v1\\Response\\Success::__construct<\/a>"],[100,1,"<a href=\"Exception\/ServiceException.php.html#17\">myrpc\\Exception\\ServiceException::getLogMessage<\/a>"],[100,1,"<a href=\"Handler\/Context\/Context.php.html#22\">myrpc\\Handler\\Context\\Context::__construct<\/a>"],[100,1,"<a href=\"Handler\/Context\/Context.php.html#28\">myrpc\\Handler\\Context\\Context::newErrorResponse<\/a>"],[100,1,"<a href=\"Handler\/Context\/Context.php.html#35\">myrpc\\Handler\\Context\\Context::newSuccessResponse<\/a>"],[0,2,"<a href=\"Handler\/Context\/Context.php.html#41\">myrpc\\Handler\\Context\\Context::newDatatypeResponse<\/a>"],[100,1,"<a href=\"Handler\/Context\/Context.php.html#50\">myrpc\\Handler\\Context\\Context::setIdentity<\/a>"],[100,1,"<a href=\"Handler\/Context\/Context.php.html#55\">myrpc\\Handler\\Context\\Context::getIdentity<\/a>"],[0,1,"<a href=\"Handler\/Context\/Context.php.html#60\">myrpc\\Handler\\Context\\Context::setAction<\/a>"],[0,1,"<a href=\"Handler\/Context\/Context.php.html#65\">myrpc\\Handler\\Context\\Context::setArguments<\/a>"],[0,1,"<a href=\"Handler\/Context\/Context.php.html#70\">myrpc\\Handler\\Context\\Context::getAction<\/a>"],[0,1,"<a href=\"Handler\/Context\/Context.php.html#75\">myrpc\\Handler\\Context\\Context::getArguments<\/a>"],[0,1,"<a href=\"Handler\/Context\/ContextFactory.php.html#12\">myrpc\\Handler\\Context\\ContextFactory::__construct<\/a>"],[0,1,"<a href=\"Handler\/Context\/ContextFactory.php.html#18\">myrpc\\Handler\\Context\\ContextFactory::create<\/a>"],[100,1,"<a href=\"Handler\/HandlerFactory.php.html#18\">myrpc\\Handler\\HandlerFactory::__construct<\/a>"],[35.294117647058826,6,"<a href=\"Handler\/HandlerFactory.php.html#27\">myrpc\\Handler\\HandlerFactory::create<\/a>"],[66.66666666666666,2,"<a href=\"Handler\/HandlerFactory.php.html#58\">myrpc\\Handler\\HandlerFactory::hasSchema<\/a>"],[100,2,"<a href=\"Handler\/HandlerFactory.php.html#67\">myrpc\\Handler\\HandlerFactory::hasContext<\/a>"],[100,1,"<a href=\"Handler\/HandlerFactory.php.html#76\">myrpc\\Handler\\HandlerFactory::withContext<\/a>"],[100,1,"<a href=\"Handler\/HandlerFactory.php.html#83\">myrpc\\Handler\\HandlerFactory::withSchema<\/a>"],[100,1,"<a href=\"Handler\/HandlerResponse.php.html#9\">myrpc\\Handler\\HandlerResponse::__construct<\/a>"],[100,1,"<a href=\"Handler\/HandlerResponse.php.html#16\">myrpc\\Handler\\HandlerResponse::getResponse<\/a>"],[100,1,"<a href=\"Handler\/HandlerResponse.php.html#21\">myrpc\\Handler\\HandlerResponse::isError<\/a>"],[100,1,"<a href=\"Handler\/HandlerResponse.php.html#26\">myrpc\\Handler\\HandlerResponse::getErrorCode<\/a>"],[100,1,"<a href=\"Handler\/HandlerResponseFactory.php.html#14\">myrpc\\Handler\\HandlerResponseFactory::createErrorResponse<\/a>"],[100,3,"<a href=\"Handler\/HandlerResponseFactory.php.html#21\">myrpc\\Handler\\HandlerResponseFactory::createSuccessResponse<\/a>"],[100,1,"<a href=\"Handler\/SmartHandler.php.html#76\">myrpc\\Handler\\SmartHandler::__construct<\/a>"],[62.5,14,"<a href=\"Handler\/SmartHandler.php.html#91\">myrpc\\Handler\\SmartHandler::action<\/a>"],[100,1,"<a href=\"Handler\/SmartHandler.php.html#167\">myrpc\\Handler\\SmartHandler::setContext<\/a>"],[100,1,"<a href=\"Handler\/SmartHandler.php.html#172\">myrpc\\Handler\\SmartHandler::setSchemaFactory<\/a>"],[100,1,"<a href=\"Handler\/SmartHandler.php.html#179\">myrpc\\Handler\\SmartHandler::getSchema<\/a>"],[87.5,9,"<a href=\"Handler\/SmartHandler.php.html#186\">myrpc\\Handler\\SmartHandler::prepareArguments<\/a>"],[77.77777777777779,32,"<a href=\"Handler\/SmartHandler.php.html#217\">myrpc\\Handler\\SmartHandler::resolveArguments<\/a>"],[100,1,"<a href=\"Identity\/TokenIdentity.php.html#10\">myrpc\\Identity\\TokenIdentity::__construct<\/a>"],[100,1,"<a href=\"Identity\/TokenIdentity.php.html#14\">myrpc\\Identity\\TokenIdentity::getIdentityToken<\/a>"],[100,2,"<a href=\"Identity\/TokenIdentityFactory.php.html#9\">myrpc\\Identity\\TokenIdentityFactory::create<\/a>"],[0,5,"<a href=\"Request\/JsonRpcRequest.php.html#22\">myrpc\\Request\\JsonRpcRequest::__construct<\/a>"],[0,1,"<a href=\"Request\/JsonRpcRequest.php.html#44\">myrpc\\Request\\JsonRpcRequest::getService<\/a>"],[0,1,"<a href=\"Request\/JsonRpcRequest.php.html#49\">myrpc\\Request\\JsonRpcRequest::getAction<\/a>"],[0,1,"<a href=\"Request\/JsonRpcRequest.php.html#54\">myrpc\\Request\\JsonRpcRequest::getArguments<\/a>"],[0,1,"<a href=\"Request\/JsonRpcRequest.php.html#59\">myrpc\\Request\\JsonRpcRequest::getIdentityToken<\/a>"],[0,1,"<a href=\"Request\/JsonRpcRequest.php.html#64\">myrpc\\Request\\JsonRpcRequest::getRequestId<\/a>"],[0,11,"<a href=\"Request\/JsonRpcRequestFactory.php.html#18\">myrpc\\Request\\JsonRpcRequestFactory::create<\/a>"],[100,1,"<a href=\"Request\/SimpleRequest.php.html#10\">myrpc\\Request\\SimpleRequest::__construct<\/a>"],[100,1,"<a href=\"Request\/SimpleRequest.php.html#19\">myrpc\\Request\\SimpleRequest::getService<\/a>"],[100,1,"<a href=\"Request\/SimpleRequest.php.html#24\">myrpc\\Request\\SimpleRequest::getAction<\/a>"],[100,1,"<a href=\"Request\/SimpleRequest.php.html#29\">myrpc\\Request\\SimpleRequest::getArguments<\/a>"],[100,1,"<a href=\"Request\/SimpleRequest.php.html#34\">myrpc\\Request\\SimpleRequest::getIdentityToken<\/a>"],[100,1,"<a href=\"Request\/SimpleRequest.php.html#39\">myrpc\\Request\\SimpleRequest::getRequestId<\/a>"],[0,1,"<a href=\"Response\/JsonRpcResponse.php.html#19\">myrpc\\Response\\JsonRpcResponse::__construct<\/a>"],[0,1,"<a href=\"Response\/JsonRpcResponse.php.html#27\">myrpc\\Response\\JsonRpcResponse::isSuccess<\/a>"],[0,2,"<a href=\"Response\/JsonRpcResponse.php.html#35\">myrpc\\Response\\JsonRpcResponse::getResponse<\/a>"],[0,1,"<a href=\"Response\/JsonRpcResponse.php.html#49\">myrpc\\Response\\JsonRpcResponse::getError<\/a>"],[0,1,"<a href=\"Response\/JsonRpcResponse.php.html#54\">myrpc\\Response\\JsonRpcResponse::getRequestId<\/a>"],[0,1,"<a href=\"Response\/JsonRpcResponseFactory.php.html#11\">myrpc\\Response\\JsonRpcResponseFactory::createSuccessResponse<\/a>"],[0,1,"<a href=\"Response\/JsonRpcResponseFactory.php.html#32\">myrpc\\Response\\JsonRpcResponseFactory::createErrorResponse<\/a>"],[0,1,"<a href=\"Response\/JsonRpcResponseFactory.php.html#40\">myrpc\\Response\\JsonRpcResponseFactory::createExceptionResponse<\/a>"],[100,1,"<a href=\"Response\/SimpleResponse.php.html#10\">myrpc\\Response\\SimpleResponse::__construct<\/a>"],[100,1,"<a href=\"Response\/SimpleResponse.php.html#17\">myrpc\\Response\\SimpleResponse::isSuccess<\/a>"],[100,1,"<a href=\"Response\/SimpleResponse.php.html#25\">myrpc\\Response\\SimpleResponse::getResponse<\/a>"],[100,1,"<a href=\"Response\/SimpleResponse.php.html#30\">myrpc\\Response\\SimpleResponse::getError<\/a>"],[0,1,"<a href=\"Response\/SimpleResponse.php.html#35\">myrpc\\Response\\SimpleResponse::getRequestId<\/a>"],[100,1,"<a href=\"Response\/SimpleResponseFactory.php.html#11\">myrpc\\Response\\SimpleResponseFactory::createSuccessResponse<\/a>"],[100,1,"<a href=\"Response\/SimpleResponseFactory.php.html#18\">myrpc\\Response\\SimpleResponseFactory::createErrorResponse<\/a>"],[0,1,"<a href=\"Response\/SimpleResponseFactory.php.html#26\">myrpc\\Response\\SimpleResponseFactory::createExceptionResponse<\/a>"],[100,1,"<a href=\"Schema\/JsonSchema.php.html#18\">myrpc\\Schema\\JsonSchema::__construct<\/a>"],[100,1,"<a href=\"Schema\/JsonSchema.php.html#25\">myrpc\\Schema\\JsonSchema::__toString<\/a>"],[100,1,"<a href=\"Schema\/JsonSchemaFactory.php.html#17\">myrpc\\Schema\\JsonSchemaFactory::__construct<\/a>"],[100,1,"<a href=\"Schema\/JsonSchemaFactory.php.html#24\">myrpc\\Schema\\JsonSchemaFactory::newSchemaFromObject<\/a>"],[45.45454545454545,4,"<a href=\"Schema\/JsonSchemaFactory.php.html#46\">myrpc\\Schema\\JsonSchemaFactory::sortSchema<\/a>"],[0,1,"<a href=\"Schema\/JsonSchemaFactory.php.html#68\">myrpc\\Schema\\JsonSchemaFactory::sortDefinitions<\/a>"],[100,1,"<a href=\"SchemaServer.php.html#13\">myrpc\\SchemaServer::__construct<\/a>"],[85.71428571428571,2,"<a href=\"SchemaServer.php.html#22\">myrpc\\SchemaServer::getServiceSchema<\/a>"],[100,1,"<a href=\"Serializer\/JsonSerializer.php.html#44\">myrpc\\Serializer\\JsonSerializer::__construct<\/a>"],[95,3,"<a href=\"Serializer\/JsonSerializer.php.html#72\">myrpc\\Serializer\\JsonSerializer::denormalize<\/a>"],[100,1,"<a href=\"Validator\/Symfony.php.html#26\">myrpc\\Validator\\Symfony::__construct<\/a>"],[75,4,"<a href=\"Validator\/Symfony.php.html#38\">myrpc\\Validator\\Symfony::validate<\/a>"],[100,1,"<a href=\"Validator\/SymfonyResult.php.html#11\">myrpc\\Validator\\SymfonyResult::__construct<\/a>"],[100,1,"<a href=\"Validator\/SymfonyResult.php.html#18\">myrpc\\Validator\\SymfonyResult::getName<\/a>"],[0,1,"<a href=\"Validator\/SymfonyResult.php.html#23\">myrpc\\Validator\\SymfonyResult::getCode<\/a>"],[100,1,"<a href=\"Validator\/SymfonyResult.php.html#28\">myrpc\\Validator\\SymfonyResult::getMessage<\/a>"],[100,1,"<a href=\"Handler\/Worker\/WorkerTrait.php.html#14\">myrpc\\Handler\\Worker\\WorkerTrait::setupWorker<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

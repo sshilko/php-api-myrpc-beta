@@ -1,0 +1,761 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <build time="Tue Jan 2 21:11:57 UTC 2024" phpunit="9.6.15" coverage="9.2.30">
+    <runtime name="PHP" version="8.1.27" url="https://secure.php.net/"/>
+    <driver name="xdebug" version="3.1.6"/>
+  </build>
+  <project source="/app/src">
+    <tests>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-2&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-3&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-4&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getIdentityToken&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getBool&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getError&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getErrorNull&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getFloat&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getInt&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getMyIdentity&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getNull&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getString&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputBool&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputDate&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputFloat&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputInt&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNamedArguments&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputBool&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputDate&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputEnum2&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputFloat&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputInt&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNamedArguments&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputNull&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\ServiceTest::testRunBehaviour with data set &quot;failure-response&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\ServiceTest::testRunBehaviour with data set &quot;success-response&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\ServiceTest::testRunBehaviour with data set &quot;svc-err-failure&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\ServiceTest::testRunBehaviour with data set &quot;svc-err-response&quot;" size="unknown" result="0" status="PASSED"/>
+    </tests>
+    <directory name="/">
+      <totals>
+        <lines total="2130" comments="214" code="1916" executable="353" executed="239" percent="67.71"/>
+        <methods count="93" tested="52" percent="55.91"/>
+        <functions count="0" tested="0" percent="0"/>
+        <classes count="27" tested="11" percent="40.74"/>
+        <traits count="1" tested="0" percent="0.00"/>
+      </totals>
+      <directory name="Datatype">
+        <totals>
+          <lines total="163" comments="14" code="149" executable="23" executed="4" percent="17.39"/>
+          <methods count="10" tested="4" percent="40.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="4" tested="2" percent="50.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <directory name="Internal">
+          <totals>
+            <lines total="63" comments="8" code="55" executable="4" executed="3" percent="75.00"/>
+            <methods count="4" tested="3" percent="75.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="3" tested="2" percent="66.67"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <directory name="v1">
+            <totals>
+              <lines total="41" comments="8" code="33" executable="2" executed="1" percent="50.00"/>
+              <methods count="2" tested="1" percent="50.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="2" tested="1" percent="50.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <directory name="Response">
+              <totals>
+                <lines total="41" comments="8" code="33" executable="2" executed="1" percent="50.00"/>
+                <methods count="2" tested="1" percent="50.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="2" tested="1" percent="50.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+              <file name="Error.php" href="Datatype/Internal/v1/Response/Error.php.xml">
+                <totals>
+                  <lines total="17" comments="0" code="17" executable="1" executed="0" percent="0.00"/>
+                  <methods count="1" tested="0" percent="0.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="0" percent="0.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+              <file name="Success.php" href="Datatype/Internal/v1/Response/Success.php.xml">
+                <totals>
+                  <lines total="24" comments="8" code="16" executable="1" executed="1" percent="100.00"/>
+                  <methods count="1" tested="1" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="1" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+            </directory>
+          </directory>
+          <file name="AbstractDatatype.php" href="Datatype/Internal/AbstractDatatype.php.xml">
+            <totals>
+              <lines total="22" comments="0" code="22" executable="2" executed="2" percent="100.00"/>
+              <methods count="2" tested="2" percent="100.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="1" percent="100.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <file name="DatatypeFactory.php" href="Datatype/DatatypeFactory.php.xml">
+          <totals>
+            <lines total="72" comments="6" code="66" executable="19" executed="1" percent="5.26"/>
+            <methods count="6" tested="1" percent="16.67"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="DatatypeFactoryInterface.php" href="Datatype/DatatypeFactoryInterface.php.xml">
+          <totals>
+            <lines total="15" comments="0" code="15" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="UserspaceDatatypeFactoryInterface.php" href="Datatype/UserspaceDatatypeFactoryInterface.php.xml">
+          <totals>
+            <lines total="13" comments="0" code="13" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Exception">
+        <totals>
+          <lines total="142" comments="3" code="139" executable="1" executed="1" percent="100.00"/>
+          <methods count="1" tested="1" percent="100.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="1" percent="100.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="DatatypeException.php" href="Exception/DatatypeException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerActionArgumentsException.php" href="Exception/HandlerActionArgumentsException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerActionException.php" href="Exception/HandlerActionException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerActionInputException.php" href="Exception/HandlerActionInputException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerActionSerializerException.php" href="Exception/HandlerActionSerializerException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerActionTypeException.php" href="Exception/HandlerActionTypeException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerActionValidationException.php" href="Exception/HandlerActionValidationException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SerializerException.php" href="Exception/SerializerException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SerializerObjectAssertException.php" href="Exception/SerializerObjectAssertException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ServiceAuthenticationException.php" href="Exception/ServiceAuthenticationException.php.xml">
+          <totals>
+            <lines total="10" comments="0" code="10" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ServiceException.php" href="Exception/ServiceException.php.xml">
+          <totals>
+            <lines total="22" comments="3" code="19" executable="1" executed="1" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ValidatorException.php" href="Exception/ValidatorException.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Handler">
+        <totals>
+          <lines total="866" comments="70" code="796" executable="170" executed="121" percent="71.18"/>
+          <methods count="32" tested="20" percent="62.50"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="6" tested="3" percent="50.00"/>
+          <traits count="1" tested="0" percent="0.00"/>
+        </totals>
+        <directory name="Context">
+          <totals>
+            <lines total="177" comments="6" code="171" executable="14" executed="5" percent="35.71"/>
+            <methods count="12" tested="5" percent="41.67"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="2" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <file name="Context.php" href="Handler/Context/Context.php.xml">
+            <totals>
+              <lines total="80" comments="0" code="80" executable="12" executed="5" percent="41.67"/>
+              <methods count="10" tested="5" percent="50.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ContextFactory.php" href="Handler/Context/ContextFactory.php.xml">
+            <totals>
+              <lines total="23" comments="0" code="23" executable="2" executed="0" percent="0.00"/>
+              <methods count="2" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ContextFactoryInterface.php" href="Handler/Context/ContextFactoryInterface.php.xml">
+            <totals>
+              <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ContextInterface.php" href="Handler/Context/ContextInterface.php.xml">
+            <totals>
+              <lines total="10" comments="0" code="10" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ContextReaderInterface.php" href="Handler/Context/ContextReaderInterface.php.xml">
+            <totals>
+              <lines total="36" comments="6" code="30" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="ContextWriterInterface.php" href="Handler/Context/ContextWriterInterface.php.xml">
+            <totals>
+              <lines total="17" comments="0" code="17" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <directory name="Worker">
+          <totals>
+            <lines total="32" comments="0" code="32" executable="1" executed="1" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="1" percent="0"/>
+            <traits count="1" tested="0" percent="0.00"/>
+          </totals>
+          <file name="WorkerInterface.php" href="Handler/Worker/WorkerInterface.php.xml">
+            <totals>
+              <lines total="13" comments="0" code="13" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="WorkerTrait.php" href="Handler/Worker/WorkerTrait.php.xml">
+            <totals>
+              <lines total="19" comments="0" code="19" executable="1" executed="1" percent="100.00"/>
+              <methods count="1" tested="1" percent="100.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="1" percent="0"/>
+              <traits count="1" tested="0" percent="0.00"/>
+            </totals>
+          </file>
+        </directory>
+        <file name="HandlerFactory.php" href="Handler/HandlerFactory.php.xml">
+          <totals>
+            <lines total="88" comments="3" code="85" executable="27" executed="15" percent="55.56"/>
+            <methods count="6" tested="4" percent="66.67"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerFactoryInterface.php" href="Handler/HandlerFactoryInterface.php.xml">
+          <totals>
+            <lines total="34" comments="12" code="22" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerInterface.php" href="Handler/HandlerInterface.php.xml">
+          <totals>
+            <lines total="20" comments="3" code="17" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerResponse.php" href="Handler/HandlerResponse.php.xml">
+          <totals>
+            <lines total="31" comments="0" code="31" executable="4" executed="4" percent="100.00"/>
+            <methods count="4" tested="4" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerResponseFactory.php" href="Handler/HandlerResponseFactory.php.xml">
+          <totals>
+            <lines total="32" comments="1" code="31" executable="4" executed="4" percent="100.00"/>
+            <methods count="2" tested="2" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerResponseFactoryInterface.php" href="Handler/HandlerResponseFactoryInterface.php.xml">
+          <totals>
+            <lines total="20" comments="0" code="20" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerResponseInterface.php" href="Handler/HandlerResponseInterface.php.xml">
+          <totals>
+            <lines total="15" comments="0" code="15" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerSchemaInterface.php" href="Handler/HandlerSchemaInterface.php.xml">
+          <totals>
+            <lines total="16" comments="0" code="16" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HandlerWithSchemaInterface.php" href="Handler/HandlerWithSchemaInterface.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SmartHandler.php" href="Handler/SmartHandler.php.xml">
+          <totals>
+            <lines total="377" comments="45" code="332" executable="120" executed="92" percent="76.67"/>
+            <methods count="7" tested="4" percent="57.14"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SmartHandlerInterface.php" href="Handler/SmartHandlerInterface.php.xml">
+          <totals>
+            <lines total="13" comments="0" code="13" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Identity">
+        <totals>
+          <lines total="34" comments="1" code="33" executable="3" executed="3" percent="100.00"/>
+          <methods count="3" tested="3" percent="100.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="2" tested="2" percent="100.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="TokenIdentity.php" href="Identity/TokenIdentity.php.xml">
+          <totals>
+            <lines total="19" comments="0" code="19" executable="2" executed="2" percent="100.00"/>
+            <methods count="2" tested="2" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="TokenIdentityFactory.php" href="Identity/TokenIdentityFactory.php.xml">
+          <totals>
+            <lines total="15" comments="1" code="14" executable="1" executed="1" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Request">
+        <totals>
+          <lines total="196" comments="24" code="172" executable="26" executed="6" percent="23.08"/>
+          <methods count="13" tested="6" percent="46.15"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="3" tested="1" percent="33.33"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="JsonRpcRequest.php" href="Request/JsonRpcRequest.php.xml">
+          <totals>
+            <lines total="69" comments="6" code="63" executable="11" executed="0" percent="0.00"/>
+            <methods count="6" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="JsonRpcRequestFactory.php" href="Request/JsonRpcRequestFactory.php.xml">
+          <totals>
+            <lines total="53" comments="18" code="35" executable="9" executed="0" percent="0.00"/>
+            <methods count="1" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="RequestFactoryInterface.php" href="Request/RequestFactoryInterface.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="RequestInterface.php" href="Request/RequestInterface.php.xml">
+          <totals>
+            <lines total="19" comments="0" code="19" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SimpleRequest.php" href="Request/SimpleRequest.php.xml">
+          <totals>
+            <lines total="44" comments="0" code="44" executable="6" executed="6" percent="100.00"/>
+            <methods count="6" tested="6" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Response">
+        <totals>
+          <lines total="219" comments="25" code="194" executable="19" executed="6" percent="31.58"/>
+          <methods count="16" tested="6" percent="37.50"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="4" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="JsonRpcResponse.php" href="Response/JsonRpcResponse.php.xml">
+          <totals>
+            <lines total="59" comments="5" code="54" executable="8" executed="0" percent="0.00"/>
+            <methods count="5" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="JsonRpcResponseFactory.php" href="Response/JsonRpcResponseFactory.php.xml">
+          <totals>
+            <lines total="45" comments="14" code="31" executable="3" executed="0" percent="0.00"/>
+            <methods count="3" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ResponseFactoryInterface.php" href="Response/ResponseFactoryInterface.php.xml">
+          <totals>
+            <lines total="24" comments="0" code="24" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ResponseInterface.php" href="Response/ResponseInterface.php.xml">
+          <totals>
+            <lines total="20" comments="3" code="17" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SimpleResponse.php" href="Response/SimpleResponse.php.xml">
+          <totals>
+            <lines total="40" comments="3" code="37" executable="5" executed="4" percent="80.00"/>
+            <methods count="5" tested="4" percent="80.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SimpleResponseFactory.php" href="Response/SimpleResponseFactory.php.xml">
+          <totals>
+            <lines total="31" comments="0" code="31" executable="3" executed="2" percent="66.67"/>
+            <methods count="3" tested="2" percent="66.67"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Schema">
+        <totals>
+          <lines total="135" comments="23" code="112" executable="23" executed="15" percent="65.22"/>
+          <methods count="6" tested="4" percent="66.67"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="2" tested="1" percent="50.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="JsonSchema.php" href="Schema/JsonSchema.php.xml">
+          <totals>
+            <lines total="35" comments="8" code="27" executable="3" executed="3" percent="100.00"/>
+            <methods count="2" tested="2" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="JsonSchemaFactory.php" href="Schema/JsonSchemaFactory.php.xml">
+          <totals>
+            <lines total="75" comments="14" code="61" executable="20" executed="12" percent="60.00"/>
+            <methods count="4" tested="2" percent="50.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SchemaFactoryInterface.php" href="Schema/SchemaFactoryInterface.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SchemaInterface.php" href="Schema/SchemaInterface.php.xml">
+          <totals>
+            <lines total="14" comments="1" code="13" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Serializer">
+        <totals>
+          <lines total="131" comments="29" code="102" executable="33" executed="32" percent="96.97"/>
+          <methods count="2" tested="1" percent="50.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="JsonSerializer.php" href="Serializer/JsonSerializer.php.xml">
+          <totals>
+            <lines total="118" comments="29" code="89" executable="33" executed="32" percent="96.97"/>
+            <methods count="2" tested="1" percent="50.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SerializerInterface.php" href="Serializer/SerializerInterface.php.xml">
+          <totals>
+            <lines total="13" comments="0" code="13" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Validator">
+        <totals>
+          <lines total="116" comments="12" code="104" executable="16" executed="13" percent="81.25"/>
+          <methods count="6" tested="4" percent="66.67"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="2" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="Symfony.php" href="Validator/Symfony.php.xml">
+          <totals>
+            <lines total="55" comments="12" code="43" executable="12" executed="10" percent="83.33"/>
+            <methods count="2" tested="1" percent="50.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SymfonyResult.php" href="Validator/SymfonyResult.php.xml">
+          <totals>
+            <lines total="33" comments="0" code="33" executable="4" executed="3" percent="75.00"/>
+            <methods count="4" tested="3" percent="75.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ValidatorInterface.php" href="Validator/ValidatorInterface.php.xml">
+          <totals>
+            <lines total="11" comments="0" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ValidatorResultInterface.php" href="Validator/ValidatorResultInterface.php.xml">
+          <totals>
+            <lines total="17" comments="0" code="17" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <file name="ApiServer.php" href="ApiServer.php.xml">
+        <totals>
+          <lines total="92" comments="9" code="83" executable="31" executed="31" percent="100.00"/>
+          <methods count="2" tested="2" percent="100.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="1" percent="100.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="SchemaServer.php" href="SchemaServer.php.xml">
+        <totals>
+          <lines total="36" comments="4" code="32" executable="8" executed="7" percent="87.50"/>
+          <methods count="2" tested="1" percent="50.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+    </directory>
+  </project>
+</phpunit>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /app/src/Handler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css?v=9.2.30" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/app/src</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Handler</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Context/ContextFactory.php.html#10">myrpc\Handler\Context\ContextFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Context/Context.php.html#13">myrpc\Handler\Context\Context</a></td><td class="text-right">41%</td></tr>
+       <tr><td><a href="HandlerFactory.php.html#16">myrpc\Handler\HandlerFactory</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="SmartHandler.php.html#63">myrpc\Handler\SmartHandler</a></td><td class="text-right">76%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="SmartHandler.php.html#63">myrpc\Handler\SmartHandler</a></td><td class="text-right">103</td></tr>
+       <tr><td><a href="Context/Context.php.html#13">myrpc\Handler\Context\Context</a></td><td class="text-right">35</td></tr>
+       <tr><td><a href="HandlerFactory.php.html#16">myrpc\Handler\HandlerFactory</a></td><td class="text-right">27</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Context/Context.php.html#41"><abbr title="myrpc\Handler\Context\Context::newDatatypeResponse">newDatatypeResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Context/Context.php.html#60"><abbr title="myrpc\Handler\Context\Context::setAction">setAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Context/Context.php.html#65"><abbr title="myrpc\Handler\Context\Context::setArguments">setArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Context/Context.php.html#70"><abbr title="myrpc\Handler\Context\Context::getAction">getAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Context/Context.php.html#75"><abbr title="myrpc\Handler\Context\Context::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Context/ContextFactory.php.html#12"><abbr title="myrpc\Handler\Context\ContextFactory::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Context/ContextFactory.php.html#18"><abbr title="myrpc\Handler\Context\ContextFactory::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HandlerFactory.php.html#27"><abbr title="myrpc\Handler\HandlerFactory::create">create</abbr></a></td><td class="text-right">35%</td></tr>
+       <tr><td><a href="SmartHandler.php.html#91"><abbr title="myrpc\Handler\SmartHandler::action">action</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="HandlerFactory.php.html#58"><abbr title="myrpc\Handler\HandlerFactory::hasSchema">hasSchema</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="SmartHandler.php.html#217"><abbr title="myrpc\Handler\SmartHandler::resolveArguments">resolveArguments</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="SmartHandler.php.html#186"><abbr title="myrpc\Handler\SmartHandler::prepareArguments">prepareArguments</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="SmartHandler.php.html#217"><abbr title="myrpc\Handler\SmartHandler::resolveArguments">resolveArguments</abbr></a></td><td class="text-right">43</td></tr>
+       <tr><td><a href="SmartHandler.php.html#91"><abbr title="myrpc\Handler\SmartHandler::action">action</abbr></a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="HandlerFactory.php.html#27"><abbr title="myrpc\Handler\HandlerFactory::create">create</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="SmartHandler.php.html#186"><abbr title="myrpc\Handler\SmartHandler::prepareArguments">prepareArguments</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Context/Context.php.html#41"><abbr title="myrpc\Handler\Context\Context::newDatatypeResponse">newDatatypeResponse</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="HandlerFactory.php.html#58"><abbr title="myrpc\Handler\HandlerFactory::hasSchema">hasSchema</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.30</a> using <a href="https://secure.php.net/" target="_top">PHP 8.1.27</a> and <a href="https://phpunit.de/">PHPUnit 9.6.15</a> at Tue Jan 2 21:11:57 UTC 2024.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js?v=9.2.30" type="text/javascript"></script>
+  <script src="../_js/d3.min.js?v=9.2.30" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js?v=9.2.30" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,0,0,0,0,1,1,0,1,0,0,3], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,0,0,0,1,0,0,2,1,1,0,20], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[41.66666666666667,11,"<a href=\"Context\/Context.php.html#13\">myrpc\\Handler\\Context\\Context<\/a>"],[0,2,"<a href=\"Context\/ContextFactory.php.html#10\">myrpc\\Handler\\Context\\ContextFactory<\/a>"],[55.55555555555556,13,"<a href=\"HandlerFactory.php.html#16\">myrpc\\Handler\\HandlerFactory<\/a>"],[100,4,"<a href=\"HandlerResponse.php.html#7\">myrpc\\Handler\\HandlerResponse<\/a>"],[100,4,"<a href=\"HandlerResponseFactory.php.html#12\">myrpc\\Handler\\HandlerResponseFactory<\/a>"],[76.66666666666667,59,"<a href=\"SmartHandler.php.html#63\">myrpc\\Handler\\SmartHandler<\/a>"],[100,1,"<a href=\"Worker\/WorkerTrait.php.html#9\">myrpc\\Handler\\Worker\\WorkerTrait<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Context\/Context.php.html#22\">myrpc\\Handler\\Context\\Context::__construct<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#28\">myrpc\\Handler\\Context\\Context::newErrorResponse<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#35\">myrpc\\Handler\\Context\\Context::newSuccessResponse<\/a>"],[0,2,"<a href=\"Context\/Context.php.html#41\">myrpc\\Handler\\Context\\Context::newDatatypeResponse<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#50\">myrpc\\Handler\\Context\\Context::setIdentity<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#55\">myrpc\\Handler\\Context\\Context::getIdentity<\/a>"],[0,1,"<a href=\"Context\/Context.php.html#60\">myrpc\\Handler\\Context\\Context::setAction<\/a>"],[0,1,"<a href=\"Context\/Context.php.html#65\">myrpc\\Handler\\Context\\Context::setArguments<\/a>"],[0,1,"<a href=\"Context\/Context.php.html#70\">myrpc\\Handler\\Context\\Context::getAction<\/a>"],[0,1,"<a href=\"Context\/Context.php.html#75\">myrpc\\Handler\\Context\\Context::getArguments<\/a>"],[0,1,"<a href=\"Context\/ContextFactory.php.html#12\">myrpc\\Handler\\Context\\ContextFactory::__construct<\/a>"],[0,1,"<a href=\"Context\/ContextFactory.php.html#18\">myrpc\\Handler\\Context\\ContextFactory::create<\/a>"],[100,1,"<a href=\"HandlerFactory.php.html#18\">myrpc\\Handler\\HandlerFactory::__construct<\/a>"],[35.294117647058826,6,"<a href=\"HandlerFactory.php.html#27\">myrpc\\Handler\\HandlerFactory::create<\/a>"],[66.66666666666666,2,"<a href=\"HandlerFactory.php.html#58\">myrpc\\Handler\\HandlerFactory::hasSchema<\/a>"],[100,2,"<a href=\"HandlerFactory.php.html#67\">myrpc\\Handler\\HandlerFactory::hasContext<\/a>"],[100,1,"<a href=\"HandlerFactory.php.html#76\">myrpc\\Handler\\HandlerFactory::withContext<\/a>"],[100,1,"<a href=\"HandlerFactory.php.html#83\">myrpc\\Handler\\HandlerFactory::withSchema<\/a>"],[100,1,"<a href=\"HandlerResponse.php.html#9\">myrpc\\Handler\\HandlerResponse::__construct<\/a>"],[100,1,"<a href=\"HandlerResponse.php.html#16\">myrpc\\Handler\\HandlerResponse::getResponse<\/a>"],[100,1,"<a href=\"HandlerResponse.php.html#21\">myrpc\\Handler\\HandlerResponse::isError<\/a>"],[100,1,"<a href=\"HandlerResponse.php.html#26\">myrpc\\Handler\\HandlerResponse::getErrorCode<\/a>"],[100,1,"<a href=\"HandlerResponseFactory.php.html#14\">myrpc\\Handler\\HandlerResponseFactory::createErrorResponse<\/a>"],[100,3,"<a href=\"HandlerResponseFactory.php.html#21\">myrpc\\Handler\\HandlerResponseFactory::createSuccessResponse<\/a>"],[100,1,"<a href=\"SmartHandler.php.html#76\">myrpc\\Handler\\SmartHandler::__construct<\/a>"],[62.5,14,"<a href=\"SmartHandler.php.html#91\">myrpc\\Handler\\SmartHandler::action<\/a>"],[100,1,"<a href=\"SmartHandler.php.html#167\">myrpc\\Handler\\SmartHandler::setContext<\/a>"],[100,1,"<a href=\"SmartHandler.php.html#172\">myrpc\\Handler\\SmartHandler::setSchemaFactory<\/a>"],[100,1,"<a href=\"SmartHandler.php.html#179\">myrpc\\Handler\\SmartHandler::getSchema<\/a>"],[87.5,9,"<a href=\"SmartHandler.php.html#186\">myrpc\\Handler\\SmartHandler::prepareArguments<\/a>"],[77.77777777777779,32,"<a href=\"SmartHandler.php.html#217\">myrpc\\Handler\\SmartHandler::resolveArguments<\/a>"],[100,1,"<a href=\"Worker\/WorkerTrait.php.html#14\">myrpc\\Handler\\Worker\\WorkerTrait::setupWorker<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

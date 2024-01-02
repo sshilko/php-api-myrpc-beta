@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-family: Source SansSerif Pro, Arial, sans-serif;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2rem;
+                background-color: #fff;
+                color: #000;
+            }
+
+            body > ul > li {
+                font-size: larger;
+            }
+
+            h2 {
+                font-size: larger;
+                text-decoration-line: underline;
+                text-decoration-thickness: 2px;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0 0 2rem;
+                padding: 0 0 0 1rem;
+                text-indent: -1rem;
+            }
+
+            .success:before {
+                color: #4e9a06;
+                content: '✓';
+                padding-right: 0.5rem;
+            }
+
+            .defect {
+                color: #a40000;
+            }
+
+            .defect:before {
+                color: #a40000;
+                content: '✗';
+                padding-right: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Basic Handler (phpunit\BasicHandler)</h2>
+        <ul>
+            <li class="success">Simple request response handler with data set "getArguments-1"</li>
+            <li class="success">Simple request response handler with data set "getArguments-2"</li>
+            <li class="success">Simple request response handler with data set "getArguments-3"</li>
+            <li class="success">Simple request response handler with data set "getArguments-4"</li>
+            <li class="success">Simple request response handler with data set "getArray"</li>
+            <li class="success">Simple request response handler with data set "getBool"</li>
+            <li class="success">Simple request response handler with data set "getError"</li>
+            <li class="success">Simple request response handler with data set "getErrorNull"</li>
+            <li class="success">Simple request response handler with data set "getFloat"</li>
+            <li class="success">Simple request response handler with data set "getIdentityToken"</li>
+            <li class="success">Simple request response handler with data set "getInt"</li>
+            <li class="success">Simple request response handler with data set "getNull"</li>
+            <li class="success">Simple request response handler with data set "getString"</li>
+        </ul>
+        <h2>Basic Worker (phpunit\BasicWorker)</h2>
+        <ul>
+            <li class="success">Simple request response handler with data set "getArray"</li>
+            <li class="success">Simple request response handler with data set "getBool"</li>
+            <li class="success">Simple request response handler with data set "getError"</li>
+            <li class="success">Simple request response handler with data set "getErrorNull"</li>
+            <li class="success">Simple request response handler with data set "getFloat"</li>
+            <li class="success">Simple request response handler with data set "getInt"</li>
+            <li class="success">Simple request response handler with data set "getMyIdentity"</li>
+            <li class="success">Simple request response handler with data set "getNull"</li>
+            <li class="success">Simple request response handler with data set "getString"</li>
+        </ul>
+        <h2>Normal Worker (phpunit\NormalWorker)</h2>
+        <ul>
+            <li class="success">Datatypes request response handler with data set "inputCustomDatatype but incomplete payload provided as input"</li>
+            <li class="success">Datatypes request response handler with data set "inputCustomDatatype with optional and nullable property returns OK"</li>
+            <li class="success">Datatypes request response handler with data set "inputCustomDatatype"</li>
+            <li class="success">Datatypes request response handler with data set "inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata"</li>
+            <li class="success">Datatypes request response handler with data set "inputCustomDatatype with attributes validation using Symfony validator attributes"</li>
+            <li class="success">Simple request response handler with data set "input5or6"</li>
+            <li class="success">Simple request response handler with data set "inputBool"</li>
+            <li class="success">Simple request response handler with data set "inputDate"</li>
+            <li class="success">Simple request response handler with data set "inputEnum2"</li>
+            <li class="success">Simple request response handler with data set "inputFloat"</li>
+            <li class="success">Simple request response handler with data set "inputInt"</li>
+            <li class="success">Simple request response handler with data set "inputNamedArguments"</li>
+            <li class="success">Simple request response handler with data set "inputNull"</li>
+            <li class="success">Simple request response handler with data set "inputString"</li>
+            <li class="success">Simple request response handler with data set "inputStringBetween1And5Characters"</li>
+            <li class="success">Simple request response handler with data set "inputUUIDorEmail"</li>
+            <li class="success">Simple schema generation with data set "input5or6"</li>
+            <li class="success">Simple schema generation with data set "inputBool"</li>
+            <li class="success">Simple schema generation with data set "inputDate"</li>
+            <li class="success">Simple schema generation with data set "inputEnum2"</li>
+            <li class="success">Simple schema generation with data set "inputFloat"</li>
+            <li class="success">Simple schema generation with data set "inputInt"</li>
+            <li class="success">Simple schema generation with data set "inputNamedArguments"</li>
+            <li class="success">Simple schema generation with data set "inputNull"</li>
+            <li class="success">Simple schema generation with data set "inputString"</li>
+            <li class="success">Simple schema generation with data set "inputStringBetween1And5Characters"</li>
+            <li class="success">Simple schema generation with data set "inputUUIDorEmail"</li>
+            <li class="success">Simple method validations with data set "inputArray"</li>
+            <li class="success">Simple method validations with data set "inputEnum1"</li>
+            <li class="success">Simple method validations with data set "inputEnum2"</li>
+            <li class="success">Simple method validations with data set "inputIntOrString"</li>
+        </ul>
+        <h2>Service (phpunit\Service)</h2>
+        <ul>
+            <li class="success">Run behaviour with data set "failure-response"</li>
+            <li class="success">Run behaviour with data set "success-response"</li>
+            <li class="success">Run behaviour with data set "svc-err-failure"</li>
+            <li class="success">Run behaviour with data set "svc-err-response"</li>
+        </ul>
+    </body>
+</html>
