@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This file is part of the sshilko/php-api-myrpc package.
+
+ (c) Sergei Shilko <contact@sshilko.com>
+
+ MIT License
+
+ For the full copyright and license information, please view the LICENSE
+ file that was distributed with this source code.
+
+ @license https://opensource.org/licenses/mit-license.php MIT
+-->
+<psalm
+    autoloader="../vendor/autoload.php"
+    threads="1"
+    findUnusedCode="false"
+    findUnusedVariablesAndParams="true"
+    findUnusedBaselineEntry="false"
+    checkForThrowsDocblock="false"
+    ensureArrayIntOffsetsExist="true"
+    ensureArrayStringOffsetsExist="true"
+    strictBinaryOperands="true"
+    reportInfo="true"
+    disableSuppressAll="true"
+    errorLevel="1"
+    reportMixedIssues="true"
+    cacheDirectory="tmp/psalm-cache"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config">
+    <projectFiles>
+        <directory name="../src" />
+        <ignoreFiles>
+            <directory name="../vendor" />
+        </ignoreFiles>
+    </projectFiles>
+    <extraFiles>
+        <directory name="../test" />
+    </extraFiles>
+</psalm>

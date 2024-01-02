@@ -1,0 +1,147 @@
+{
+    "name": "sshilko/php-api-myrpc",
+    "type": "library",
+    "description": "API facade in PHP for JSON RPC",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergei Shilko",
+            "email": "contact@sshilko.com",
+            "homepage": "https://github.com/sshilko",
+            "role": "Developer"
+        }
+    ],
+    "keywords": ["api", "php", "json", "rpc", "schema", "grpc", "rest", "json-schema", "openapi"],
+    "config": {
+        "vendor-dir": "vendor",
+        "preferred-install": {
+            "*": "dist"
+        },
+        "prepend-autoloader": false,
+        "optimize-autoloader": true,
+        "classmap-authoritative": false,
+        "process-timeout": 360,
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "app-pre-commit": [
+            "@putenv XDEBUG_MODE=off",
+            "pre-commit run --config build/.pre-commit-config.yaml"
+        ],
+        "app-quality": [
+            "@app-phpcbf",
+            "@app-phpcs",
+            "@app-phpcpd",
+            "@app-pdepend",
+            "@app-phpmd",
+            "@app-phpstan",
+            "@app-psalm-alter",
+            "@app-psalm-taint",
+            "@app-psalm",
+            "@app-phan"
+        ],
+        "app-nocache":[
+            "rm -rf build/tmp/cache/* && rm -rf build/tmp/psalm-cache/* && echo build/tmp cache cleared"
+        ],
+        "app-psalm":[
+            "@putenv XDEBUG_MODE=off",
+            "php ./vendor/bin/psalm.phar --root=$PWD/src --php-version=$(php -r 'echo PHP_VERSION;') --config build/psalm.xml --memory-limit=-1 --no-diff --show-info=true --long-progress --stats --disable-extension=xdebug --report=$PWD/build/tmp/psalm.txt $1"
+        ],
+        "app-psalm-alter": [
+            "@putenv XDEBUG_MODE=off",
+            "php ./vendor/bin/psalm.phar --root=$PWD/src --php-version=$(php -r 'echo PHP_VERSION;') --config build/psalm.xml --alter --issues=MissingParamType,MissingReturnType,InvalidReturnType,InvalidNullableReturnType,InvalidFalsableReturnType,PossiblyUndefinedVariable,UnnecessaryVarAnnotation,ParamNameMismatch"
+        ],
+        "app-psalm-taint": [
+            "@putenv XDEBUG_MODE=off",
+            "php ./vendor/bin/psalm.phar --root=$PWD/src --php-version=$(php -r 'echo PHP_VERSION;') --config build/psalm.xml --taint-analysis --long-progress --disable-extension=xdebug"
+        ],
+        "app-phpcbf":[
+            "@putenv XDEBUG_MODE=off",
+            "pre-commit run --all-files --config build/.pre-commit-config.yaml php-code-phpcbf"
+        ],
+        "app-phpcs":[
+            "@putenv XDEBUG_MODE=off",
+            "pre-commit run --all-files --config build/.pre-commit-config.yaml php-code-phpcs"
+        ],
+        "app-phpstan":[
+            "@putenv XDEBUG_MODE=off",
+            "pre-commit run --all-files --config build/.pre-commit-config.yaml php-code-phpstan"
+        ],
+        "app-phpmd": [
+            "@putenv XDEBUG_MODE=off",
+            "php ./vendor/phpmd/phpmd/src/bin/phpmd --reportfile build/tmp/phpmd.txt src/ ansi build/phpmd-rulesets.xml; cat build/tmp/phpmd.txt"
+        ],
+        "app-phpunit": [
+            "@putenv XDEBUG_MODE=off",
+            "php ./vendor/phpunit/phpunit/phpunit --no-coverage --configuration test/phpunit.xml $1"
+        ],
+        "app-phpunit-coverage": [
+            "@putenv XDEBUG_MODE=coverage",
+            "php ./vendor/phpunit/phpunit/phpunit --configuration test/phpunit.xml"
+        ],
+        "app-phpunit-badges-coverage": [
+            "@putenv XDEBUG_MODE=off",
+            "php test/phpunit.xml.badges.php"
+        ],
+        "app-phpdoc": [
+            "@putenv XDEBUG_MODE=off",
+            "/usr/bin/phpdoc --config /app/build/phpdoc.xml"
+        ],
+        "app-phan": [
+            "@putenv XDEBUG_MODE=off",
+            "@putenv PHAN_DISABLE_XDEBUG_WARN=1",
+            "@putenv PHAN_ALLOW_XDEBUG=1",
+            "php ./vendor/bin/phan --load-baseline='./build/phan.baseline.php' --disable-plugins --color -k ./build/phan.php --output-mode html -o build/tmp/phan.html --long-progress-bar; cat build/tmp/phan.html"
+        ],
+        "app-phan-baseline": [
+            "@putenv XDEBUG_MODE=off",
+            "@putenv PHAN_DISABLE_XDEBUG_WARN=1",
+            "@putenv PHAN_ALLOW_XDEBUG=1",
+            "php ./vendor/bin/phan --save-baseline=./build/phan.baseline.php --disable-plugins --color -k ./build/phan.php --output-mode html -o build/tmp/phan.html --long-progress-bar; cat build/tmp/phan.html"
+        ],
+        "app-phpcpd": [
+            "@putenv XDEBUG_MODE=off",
+            "php /usr/bin/phpcpd src"
+        ],
+        "app-pdepend": [
+            "@putenv XDEBUG_MODE=off",
+            "php ./vendor/bin/pdepend --configuration=$PWD/build/pdepend.xml --dependency-xml=$PWD/build/tmp/pdepend-dependency-xml.xml --jdepend-chart=$PWD/build/tmp/pdepend-jdepend-chart.svg --jdepend-xml=$PWD/build/tmp/pdepend-jdepend-xml.xml --summary-xml=$PWD/build/tmp/pdepend-summary-xml.xml --overview-pyramid=$PWD/build/tmp/pdepend-overview-pyramid.svg src"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "ext-posix": "*",
+        "ext-ast": "*",
+        "nikic/php-parser": "^4",
+        "pdepend/pdepend": "^2.12",
+        "phan/phan": "^5.4",
+        "phpmd/phpmd": "^2.13",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5",
+        "psalm/phar": "*",
+        "slevomat/coding-standard": "^8.4",
+        "squizlabs/php_codesniffer": "^3.7",
+        "composer/composer": "^2"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "ext-pcntl": "*",
+        "composer-plugin-api": "^2",
+        "psr/container": "^1.1",
+        "psr/log": "^1",
+        "symfony/property-access": "^6.4",
+        "symfony/property-info": "^6.4",
+        "symfony/serializer": "^6.4",
+        "symfony/validator": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "myrpc\\": "src"
+        }
+    }
+}
