@@ -1,5 +1,5 @@
 {
-    "name": "sshilko/php-api-myrpc",
+    "name": "sshilko/php-api-myrpc-beta",
     "type": "library",
     "description": "API facade in PHP for JSON RPC",
     "license": "MIT",

@@ -4,7 +4,6 @@ declare(strict_types = 1);
 
 namespace myrpc;
 
-use myrpc\Exception\ServiceException;
 use myrpc\Handler\HandlerFactoryInterface;
 use myrpc\Schema\SchemaFactoryInterface;
 
@@ -18,7 +17,7 @@ class SchemaServer
     }
 
     /**
-     * @throws ServiceException
+     * @throws \myrpc\Exception\ServiceException
      */
     public function getServiceSchema(string $service): ?string
     {

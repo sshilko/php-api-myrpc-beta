@@ -8,6 +8,7 @@ use myrpc\Handler\Context\ContextReaderInterface;
 
 trait WorkerTrait
 {
+
     protected ?ContextReaderInterface $context = null;
 
     public function setupWorker(ContextReaderInterface $context): void

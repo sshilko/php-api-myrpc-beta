@@ -5,6 +5,9 @@ declare(strict_types = 1);
 namespace myrpc\Response;
 
 use myrpc\Exception\ServiceException;
+use Throwable;
+use function assert;
+use function is_string;
 use function json_encode;
 use const JSON_THROW_ON_ERROR;
 
@@ -32,11 +35,13 @@ class JsonRpcResponse implements ResponseInterface
     public function getResponse(): string
     {
         try {
-            /** @var string|bool $encoded */
+            /** @psalm-suppress RedundantConditionGivenDocblockType */
             $encoded = json_encode($this->response, JSON_THROW_ON_ERROR);
+            /** @psalm-suppress RedundantConditionGivenDocblockType */
             assert(is_string($encoded));
+
             return $encoded;
-        } catch (\Throwable $ex) {
+        } catch (Throwable $ex) {
             throw new ServiceException($ex->getMessage());
         }
     }

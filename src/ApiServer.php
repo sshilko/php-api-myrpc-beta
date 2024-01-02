@@ -74,8 +74,13 @@ class ApiServer
             $this->logger->error($e->getLogMessage());
 
             /** @psalm-suppress RedundantCast */
+
             /* @phan-suppress-next-line PhanCoalescingNeverUndefined */
-            return $this->responseFactory->createErrorResponse($e->getMessage(), (int) $e->getCode(), $requestId ?? null);
+            return $this->responseFactory->createErrorResponse(
+                $e->getMessage(),
+                (int) $e->getCode(),
+                $requestId ?? null
+            );
         } catch (Throwable $e) {
             $this->logger->critical($e->getMessage() . ' ' . $e->getTraceAsString());
 

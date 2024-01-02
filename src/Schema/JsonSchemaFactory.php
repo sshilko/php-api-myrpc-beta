@@ -19,7 +19,7 @@ class JsonSchemaFactory implements SchemaFactoryInterface
     }
 
     /**
-     * @throws ServiceException
+     * @throws \myrpc\Exception\ServiceException
      */
     public function newSchemaFromObject(object $obj): SchemaInterface
     {
@@ -41,7 +41,7 @@ class JsonSchemaFactory implements SchemaFactoryInterface
     /**
      * @param array<array-key, array<array-key, array<array-key, mixed>>> $schema
      * @return array
-     * @throws ServiceException
+     * @throws \myrpc\Exception\ServiceException
      */
     protected function sortSchema(array $schema): array
     {

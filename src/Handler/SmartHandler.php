@@ -44,6 +44,7 @@ use function enum_exists;
 use function explode;
 use function implode;
 use function is_a;
+use function is_array;
 use function is_bool;
 use function is_float;
 use function is_int;
@@ -84,7 +85,8 @@ class SmartHandler implements SmartHandlerInterface
 
     /**
      * @throws \ReflectionException
-     * @throws HandlerActionException
+     * @throws \myrpc\Exception\HandlerActionException
+     * @phpcs:disable SlevomatCodingStandard.Complexity.Cognitive.ComplexityTooHigh
      */
     public function action(
         string $action,
@@ -134,8 +136,9 @@ class SmartHandler implements SmartHandlerInterface
         }
 
         if ($result instanceof BackedEnum) {
+            assert($result instanceof BackedEnum);
             /**
-             * @var BackedEnum $result
+             *
              * @psalm-suppress NoInterfaceProperties
              */
             $result = $result->value;
@@ -154,6 +157,7 @@ class SmartHandler implements SmartHandlerInterface
             is_scalar($result) ||
             (is_array($flatArray) && array_is_list($flatArray))
         );
+        assert(!($result instanceof BackedEnum));
         assert(null !== $this->context);
 
         /** @var array<array-key, mixed>|\myrpc\Datatype\DatatypeInterface|scalar|null $result */
@@ -168,6 +172,7 @@ class SmartHandler implements SmartHandlerInterface
     public function setSchemaFactory(SchemaFactoryInterface $schemaFactory): HandlerWithSchemaInterface
     {
         $this->schemaFactory = $schemaFactory;
+
         return $this;
     }
 
@@ -205,7 +210,7 @@ class SmartHandler implements SmartHandlerInterface
     /**
      * @phpcs:disable SlevomatCodingStandard.Complexity.Cognitive.ComplexityTooHigh
      * @throws \ReflectionException
-     * @throws HandlerActionException
+     * @throws \myrpc\Exception\HandlerActionException
      * @SuppressWarnings(PHPMD.NPathComplexity)
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      */
@@ -287,10 +292,8 @@ class SmartHandler implements SmartHandlerInterface
             if (enum_exists($paramType->getName(), false)) {
                 $reflectionClass = new ReflectionClass($paramType->getName());
                 if ($reflectionClass->isEnum() && $reflectionClass->implementsInterface(BackedEnum::class)) {
-                    /**
-                     * @var BackedEnum $enumName
-                     */
                     $enumName = $paramType->getName();
+                    assert($enumName instanceof BackedEnum);
                     assert(is_string($input[$paramName]) || is_int($input[$paramName]));
                     $reflectionEnumValue = $enumName::tryFrom($input[$paramName]);
 

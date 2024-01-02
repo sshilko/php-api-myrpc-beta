@@ -14,31 +14,31 @@ file that was distributed with this source code.
 =================
 <!--
 <p align="left">
-	<img src="https://img.shields.io/badge/status-active-success" alt="Project status - active">
-	<a href="https://packagist.org/packages/sshilko/php-api-myrpc"><img src="https://poser.pugx.org/sshilko/php-api-myrpc/v/stable" alt="Latest Stable Version"></a>
-	<a href="https://packagist.org/packages/sshilko/php-api-myrpc/stats"><img src="https://poser.pugx.org/sshilko/php-api-myrpc/downloads" alt="Total Downloads"></a>
-	<a href="https://packagist.org/packages/sshilko/php-api-myrpc"><img src="https://poser.pugx.org/sshilko/php-api-myrpc/require/php" alt="PHP Required Version"></a>
-	<a href="https://choosealicense.com/licenses/mit/"><img src="https://poser.pugx.org/sshilko/php-api-myrpc/license" alt="MIT License"></a>
+	<img src="https://img.shields.io/badge/status-active-success" alt="Project status - beta">
+	<a href="https://packagist.org/packages/sshilko/php-api-myrpc-beta"><img src="https://poser.pugx.org/sshilko/php-api-myrpc-beta/v/stable" alt="Latest Stable Version"></a>
+	<a href="https://packagist.org/packages/sshilko/php-api-myrpc-beta/stats"><img src="https://poser.pugx.org/sshilko/php-api-myrpc-beta/downloads" alt="Total Downloads"></a>
+	<a href="https://packagist.org/packages/sshilko/php-api-myrpc-beta"><img src="https://poser.pugx.org/sshilko/php-api-myrpc-beta/require/php" alt="PHP Required Version"></a>
+	<a href="https://choosealicense.com/licenses/mit/"><img src="https://poser.pugx.org/sshilko/php-api-myrpc-beta/license" alt="MIT License"></a>
     <a href="https://psalm.dev/docs/running_psalm/command_line_usage/#shepherd">
-    <img src="https://shepherd.dev/github/sshilko/php-api-myrpc/coverage.svg" alt="Psalm Coverage"></a>
+    <img src="https://shepherd.dev/github/sshilko/php-api-myrpc-beta/coverage.svg" alt="Psalm Coverage"></a>
     <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsshilko%2Fphp-sql-mydb&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
-    <img src="https://img.shields.io/github/languages/code-size/sshilko/php-api-myrpc" alt="Code size">
+    <img src="https://img.shields.io/github/languages/code-size/sshilko/php-api-myrpc-beta" alt="Code size">
     <br />
-    <img src="https://raw.githubusercontent.com/sshilko/php-api-myrpc/pages/php/phpunit/phpunit-coverage-badge.svg" alt="PHPUnit coverage" />
-    <img src="https://raw.githubusercontent.com/sshilko/php-api-myrpc/pages/php/phpunit/phpunit-coverage-badge-classes.svg" alt="PHPUnit classes coverage" />
-    <img src="https://raw.githubusercontent.com/sshilko/php-api-myrpc/pages/php/phpunit/phpunit-coverage-badge-lines.svg" alt="PHPUnit lines coverage" />
-    <img src="https://raw.githubusercontent.com/sshilko/php-api-myrpc/pages/php/phpunit/phpunit-coverage-badge-methods.svg" alt="PHPUnit methods coverage" />
+    <img src="https://raw.githubusercontent.com/sshilko/php-api-myrpc-beta/pages/php/phpunit/phpunit-coverage-badge.svg" alt="PHPUnit coverage" />
+    <img src="https://raw.githubusercontent.com/sshilko/php-api-myrpc-beta/pages/php/phpunit/phpunit-coverage-badge-classes.svg" alt="PHPUnit classes coverage" />
+    <img src="https://raw.githubusercontent.com/sshilko/php-api-myrpc-beta/pages/php/phpunit/phpunit-coverage-badge-lines.svg" alt="PHPUnit lines coverage" />
+    <img src="https://raw.githubusercontent.com/sshilko/php-api-myrpc-beta/pages/php/phpunit/phpunit-coverage-badge-methods.svg" alt="PHPUnit methods coverage" />
     <br/>
-    <a href="http://sshilko.com/php-rpc-json/php/phan/"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phpphan.yml/badge.svg" alt="Phan build"></a>
-    <a href="http://sshilko.com/php-rpc-json/php/psalm/"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phppsalm.yml/badge.svg" alt="Psalm build"></a>
-    <a href="http://sshilko.com/php-rpc-json/php/phpmd/"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phpmd.yml/badge.svg" alt="PHPMd build"></a>
-    <a href="http://sshilko.com/php-rpc-json/php/phpstan/"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phpstan.yml/badge.svg" alt="PHPStan build"></a>
-    <a href="http://sshilko.com/php-rpc-json/php/phpcs/"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phpcs.yml/badge.svg" alt="PHPCodeSniffer build"></a>
-    <a href="http://sshilko.com/php-rpc-json/php/phpdoc/"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phpdoc.yml/badge.svg" alt="PHPDocumentor build"></a>
-    <a href="http://sshilko.com/php-rpc-json/php/pdepend/"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phppdepend.yml/badge.svg" alt="Pdepend build"></a>
-    <a href="http://sshilko.com/php-rpc-json/php/phpunit/html/"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phpunit.yml/badge.svg" alt="PHPUnit build"></a>
-    <a href="https://github.com/sshilko/php-api-myrpc/actions/workflows/phpunit81.yml"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/phpunit81.yml/badge.svg" alt="8.1 PHPUnit build"></a>
-    <a href="https://github.com/sshilko/php-api-myrpc/actions/workflows/github-pages.yml"><img src="https://github.com/sshilko/php-api-myrpc/actions/workflows/github-pages.yml/badge.svg" alt="GithubPages build"></a>
+    <a href="https://sshilko.com/php-api-myrpc-beta/php/phan/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpphan.yml/badge.svg" alt="Phan build"></a>
+    <a href="https://sshilko.com/php-api-myrpc-beta/php/psalm/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phppsalm.yml/badge.svg" alt="Psalm build"></a>
+    <a href="https://sshilko.com/php-api-myrpc-beta/php/phpmd/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpmd.yml/badge.svg" alt="PHPMd build"></a>
+    <a href="https://sshilko.com/php-api-myrpc-beta/php/phpstan/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpstan.yml/badge.svg" alt="PHPStan build"></a>
+    <a href="https://sshilko.com/php-api-myrpc-beta/php/phpcs/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpcs.yml/badge.svg" alt="PHPCodeSniffer build"></a>
+    <a href="https://sshilko.com/php-api-myrpc-beta/php/phpdoc/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpdoc.yml/badge.svg" alt="PHPDocumentor build"></a>
+    <a href="https://sshilko.com/php-api-myrpc-beta/php/pdepend/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phppdepend.yml/badge.svg" alt="Pdepend build"></a>
+    <a href="https://sshilko.com/php-api-myrpc-beta/php/phpunit/html/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpunit.yml/badge.svg" alt="PHPUnit build"></a>
+    <a href="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpunit81.yml"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpunit81.yml/badge.svg" alt="8.1 PHPUnit build"></a>
+    <a href="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/github-pages.yml"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/github-pages.yml/badge.svg" alt="GithubPages build"></a>
     <br/>
     </p>
 </p>
@@ -48,11 +48,12 @@ PHP [JSON-RPC](https://www.jsonrpc.org) server and client with json-schema auto-
 
 #### Installation
 
+Please wait for initial public release at `sshilko/php-api-myrpc`.
 ```
-composer require sshilko/php-api-myrpc
+composer require sshilko/php-api-myrpc-beta
 ```
 
-#### [Compatibility](http://sshilko.com/php-rpc-json/php/)
+#### Compatibility
 
 - PHP >= 8.1
 

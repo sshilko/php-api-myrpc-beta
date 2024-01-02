@@ -24,7 +24,7 @@ class DatatypeFactory implements DatatypeFactoryInterface, UserspaceDatatypeFact
     }
 
     /**
-     * @throws DatatypeException
+     * @throws \myrpc\Exception\DatatypeException
      */
     public function getUserspaceType(string $typeName): DatatypeInterface
     {
