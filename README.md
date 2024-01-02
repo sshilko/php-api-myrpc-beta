@@ -36,7 +36,7 @@ file that was distributed with this source code.
     <a href="https://sshilko.com/php-api-myrpc-beta/php/phpdoc/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpdoc.yml/badge.svg" alt="PHPDocumentor build"></a>
     <a href="https://sshilko.com/php-api-myrpc-beta/php/pdepend/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phppdepend.yml/badge.svg" alt="Pdepend build"></a>
     <a href="https://sshilko.com/php-api-myrpc-beta/php/phpunit/html/"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpunit.yml/badge.svg" alt="PHPUnit build"></a>
-    <a href="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpunit81.yml"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpunit81.yml/badge.svg" alt="8.1 PHPUnit build"></a>
+    <a href="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpunit.yml"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/phpunit.yml/badge.svg" alt="PHPUnit build"></a>
     <a href="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/github-pages.yml"><img src="https://github.com/sshilko/php-api-myrpc-beta/actions/workflows/github-pages.yml/badge.svg" alt="GithubPages build"></a>
     <br/>
     </p>

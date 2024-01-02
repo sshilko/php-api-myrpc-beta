@@ -64,7 +64,7 @@ jobs:
 
       # Docs: https://phpunit.readthedocs.io/en/9.5/
     - name: Docker run PHPUnit
-      run: docker-compose exec -T app.php composer app-phpunit
+      run: docker-compose exec -T app.php composer app-phpunit-coverage
 
     - name: Docker run PHPUnit badge generation
       id: app-phpunit-badges-coverage
