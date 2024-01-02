@@ -1,0 +1,35 @@
+------------------------------
+[42;2m                              [0m
+[42;30;2m       No errors found!       [0m
+[42;2m                              [0m
+------------------------------
+
+Checks took 4.84 seconds and used 295.622MB of memory
+Psalm was able to infer types for 100% of the codebase
+-----------------
+100.000% ../src/ApiServer.php (0 mixed)
+100.000% ../src/Datatype/DatatypeFactory.php (0 mixed)
+100.000% ../src/Datatype/Internal/AbstractDatatype.php (0 mixed)
+100.000% ../src/Exception/ServiceException.php (0 mixed)
+100.000% ../src/Handler/Context/Context.php (0 mixed)
+100.000% ../src/Handler/Context/ContextFactory.php (0 mixed)
+100.000% ../src/Handler/HandlerFactory.php (0 mixed)
+100.000% ../src/Handler/HandlerResponse.php (0 mixed)
+100.000% ../src/Handler/HandlerResponseFactory.php (0 mixed)
+100.000% ../src/Handler/SmartHandler.php (0 mixed)
+100.000% ../src/Identity/TokenIdentity.php (0 mixed)
+100.000% ../src/Identity/TokenIdentityFactory.php (0 mixed)
+100.000% ../src/Request/JsonRpcRequest.php (0 mixed)
+100.000% ../src/Request/JsonRpcRequestFactory.php (0 mixed)
+100.000% ../src/Request/SimpleRequest.php (0 mixed)
+100.000% ../src/Response/JsonRpcResponse.php (0 mixed)
+100.000% ../src/Response/JsonRpcResponseFactory.php (0 mixed)
+100.000% ../src/Response/SimpleResponse.php (0 mixed)
+100.000% ../src/Response/SimpleResponseFactory.php (0 mixed)
+100.000% ../src/Schema/JsonSchema.php (0 mixed)
+100.000% ../src/Schema/JsonSchemaFactory.php (0 mixed)
+100.000% ../src/SchemaServer.php (0 mixed)
+100.000% ../src/Serializer/JsonSerializer.php (0 mixed)
+100.000% ../src/Validator/Symfony.php (0 mixed)
+100.000% ../src/Validator/SymfonyResult.php (0 mixed)
+
