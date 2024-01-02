@@ -12,7 +12,6 @@ file that was distributed with this source code.
 -->
 (Beta) MyAPI - Component
 =================
-<!--
 <p align="left">
 	<img src="https://img.shields.io/badge/status-active-success" alt="Project status - beta">
 	<a href="https://packagist.org/packages/sshilko/php-api-myrpc-beta"><img src="https://poser.pugx.org/sshilko/php-api-myrpc-beta/v/stable" alt="Latest Stable Version"></a>
@@ -42,7 +41,6 @@ file that was distributed with this source code.
     <br/>
     </p>
 </p>
--->
 
 PHP [JSON-RPC](https://www.jsonrpc.org) server and client with json-schema auto-generation and validation using DTO 
 
