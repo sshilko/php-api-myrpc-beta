@@ -1,3 +1,5 @@
+root = true
+
 [*]
 charset = utf-8
 end_of_line = lf
@@ -11,6 +13,16 @@ ij_formatter_tags_enabled = false
 ij_smart_tabs = false
 ij_visual_guides = none
 ij_wrap_on_typing = false
+
+[{test/tmp/**,build/tmp/**}]
+ij_formatter_enabled = false
+generated_code = true
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset
 
 [{*.json,composer.lock}]
 indent_size = 4
@@ -40,10 +52,9 @@ ij_yaml_space_before_colon = false
 ij_yaml_spaces_within_braces = true
 ij_yaml_spaces_within_brackets = true
 
-[{*.php}]
+[*.php]
 indent_size = 4
 indent_style = space
-ij_continuation_indent_size = 4
 ij_php_align_assignments = false
 ij_php_align_class_constants = false
 ij_php_align_group_field_declarations = false
@@ -261,17 +272,7 @@ ij_php_version_weight = 28
 ij_php_while_brace_force = always
 ij_php_while_on_new_line = false
 
-[{*.sh}]
-indent_size = 4
-tab_width = 4
-ij_shell_binary_ops_start_line = false
-ij_shell_keep_column_alignment_padding = false
-ij_shell_minify_program = false
-ij_shell_redirect_followed_by_space = false
-ij_shell_switch_cases_indented = false
-ij_shell_use_unix_line_separator = true
-
-[{*.xml}]
+[*.xml]
 indent_size = 4
 indent_style = space
 ij_xml_align_attributes = true

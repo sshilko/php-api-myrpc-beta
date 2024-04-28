@@ -14,6 +14,11 @@
 declare(strict_types = 1);
 
 include_once 'vendor/autoload.php';
+
+/**
+ * This is only necessary if autoloader does not work
+ * @deprecated
+ */
 foreach (glob(__DIR__ . '/phpunit/includes/*.php') as $filename) {
     include_once $filename;
 }

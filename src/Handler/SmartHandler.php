@@ -292,6 +292,10 @@ class SmartHandler implements SmartHandlerInterface
             if (enum_exists($paramType->getName(), false)) {
                 $reflectionClass = new ReflectionClass($paramType->getName());
                 if ($reflectionClass->isEnum() && $reflectionClass->implementsInterface(BackedEnum::class)) {
+                    /**
+                     * Assume it is and verify later
+                     *
+                     */
                     $enumName = $paramType->getName();
                     assert($enumName instanceof BackedEnum);
                     assert(is_string($input[$paramName]) || is_int($input[$paramName]));

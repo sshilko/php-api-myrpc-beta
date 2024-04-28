@@ -39,6 +39,7 @@ path-exclude /usr/share/linda/*                     \n\
     pre-commit                                                  \
     locales                                                     \
     netcat-traditional                                          \
+    jq                                                          \
     git                                                      && \
     apt-get clean                                            && \
     apt-get -y autoremove                                    && \

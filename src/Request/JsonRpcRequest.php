@@ -27,6 +27,7 @@ class JsonRpcRequest implements RequestInterface
     ) {
         $this->action = null;
         if (is_string($action) && '' !== $action) {
+            /** @psalm-suppress RedundantCast */
             $action = (string) filter_var($action, FILTER_SANITIZE_URL);
             if ('' !== $action && str_contains($action, '/')) {
                 /**

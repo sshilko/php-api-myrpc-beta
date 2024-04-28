@@ -63,7 +63,7 @@
         <exclude name="SlevomatCodingStandard.Classes.ClassLength" />
         <exclude name="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion.DisallowedConstructorPropertyPromotion" />
         <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName" />
-        <exclude name="SlevomatCodingStandard.Files.FunctionLength" />
+        <!-- <exclude name="SlevomatCodingStandard.Files.FunctionLength" /> -->
         <exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong" />
 
         <exclude name="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature.RequiredMultiLineSignature" />

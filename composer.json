@@ -1,6 +1,7 @@
 {
     "name": "sshilko/php-api-myrpc-beta",
     "type": "library",
+    "version": "1.0.0",
     "description": "API facade in PHP for JSON RPC",
     "license": "MIT",
     "authors": [
@@ -88,13 +89,14 @@
         ],
         "app-phpdoc": [
             "@putenv XDEBUG_MODE=off",
-            "/usr/bin/phpdoc --config /app/build/phpdoc.xml"
+            "/usr/bin/phpdoc     --config /app/build/phpdoc.xml"
         ],
         "app-phan": [
-            "@putenv XDEBUG_MODE=off",
             "@putenv PHAN_DISABLE_XDEBUG_WARN=1",
             "@putenv PHAN_ALLOW_XDEBUG=1",
-            "php ./vendor/bin/phan --load-baseline='./build/phan.baseline.php' --disable-plugins --color -k ./build/phan.php --output-mode html -o build/tmp/phan.html --long-progress-bar; cat build/tmp/phan.html"
+            "php ./vendor/bin/phan --analyze-twice --load-baseline='./build/phan.baseline.php' --disable-plugins --no-color -k ./build/phan.php --long-progress-bar --output-mode codeclimate -o build/tmp/phan-codeclimate.json || echo 'Phan report saved'",
+            "(tr '\\0' ',' < build/tmp/phan-codeclimate.json | sed 's/^/[/' | sed 's/,$/]/') > build/tmp/phan-codeclimate-v1.json",
+            "cat build/tmp/phan-codeclimate-v1.json | jq"
         ],
         "app-phan-baseline": [
             "@putenv XDEBUG_MODE=off",
@@ -131,9 +133,10 @@
         "php": ">=8.1",
         "ext-json": "*",
         "ext-pcntl": "*",
-        "composer-plugin-api": "^2",
+        "composer-plugin-api": ">=2.2.0",
+        "composer-runtime-api": "^2",
         "psr/container": "^1.1",
-        "psr/log": "^1",
+        "psr/log": "^1 || ^2.0 || ^3.0",
         "symfony/property-access": "^6.4",
         "symfony/property-info": "^6.4",
         "symfony/serializer": "^6.4",
@@ -142,6 +145,11 @@
     "autoload": {
         "psr-4": {
             "myrpc\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "phpunit\\": "test/phpunit"
         }
     }
 }

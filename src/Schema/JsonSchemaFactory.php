@@ -40,7 +40,6 @@ class JsonSchemaFactory implements SchemaFactoryInterface
 
     /**
      * @param array<array-key, array<array-key, array<array-key, mixed>>> $schema
-     * @return array
      * @throws \myrpc\Exception\ServiceException
      */
     protected function sortSchema(array $schema): array

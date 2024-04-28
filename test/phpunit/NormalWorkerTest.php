@@ -173,14 +173,14 @@ final class NormalWorkerTest extends BaseTestCase
      * @dataProvider getSimpleMethodValidations
      * @throws \JsonException
      */
-    public function testSimpleMethodValidations(string $action, array $args, $id, string $err, int $code): void
+    public function testSimpleMethodArgumentValidations(string $action, array $args, $id, string $err, int $code): void
     {
 
         $this->service = $this->newApiServer($action, $args, $id);
 
         $response = $this->service->run();
 
-        self::assertEquals($code, $response->getError());
+        self::assertEquals($code, $response->getError(), $response->getResponse());
         self::assertEquals($err, $response->getResponse());
         self::assertFalse($response->isSuccess());
     }
@@ -191,7 +191,6 @@ final class NormalWorkerTest extends BaseTestCase
         $id = (new TokenIdentityFactory())->create($token);
 
         return [
-
             'inputArray' => [
                 'inputArray',
                 [1, 2, 3, 'a', 'b', 'c'],

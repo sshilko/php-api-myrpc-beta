@@ -1,0 +1,61 @@
+# Docker-in-Docker documentation: https://docs.gitlab.com/ee/ci/docker/using_docker_build.html
+# include:
+#   - template: Jobs/Container-Scanning.gitlab-ci.yml
+# container_scanning:
+#   variables:
+#     CS_IMAGE: $CI_REGISTRY_IMAGE:latest
+variables:
+  APPNAME: "php-api-myrpc"
+  REPONAME: "sshilko/php-api-myrpc"
+  DOCKER_HOST: tcp://docker:2376
+  DOCKER_TLS_CERTDIR: "/certs"
+  COMPOSE_DOCKER_CLI_BUILD: 1
+  DOCKER_BUILDKIT: 1
+  COMPOSE_PARALLEL_LIMIT: 2
+
+build-docker:
+  image: docker:cli
+  stage: build
+  services:
+    - docker:26.0.0-dind-alpine3.19
+  timeout: 300 seconds
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker pull $CI_REGISTRY_IMAGE:latest || true
+    - docker tag $CI_REGISTRY_IMAGE:latest $REPONAME:latest || true
+    - docker-compose build $APPNAME
+    - docker-compose up $APPNAME -d
+    - docker-compose exec $APPNAME composer install
+    - docker-compose exec $APPNAME composer app-quality
+    - docker-compose exec $APPNAME composer app-phpunit-coverage
+    - docker-compose down
+#   - docker tag $REPONAME:latest $CI_REGISTRY_IMAGE:latest
+#   - docker push $CI_REGISTRY_IMAGE:latest
+#   - |-
+#     if [[ $CI_COMMIT_TAG != '' ]]; then
+#         apk add curl && \
+#         curl -v --header "Job-Token: ${CI_JOB_TOKEN}" --data tag=${CI_COMMIT_TAG} "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/composer"
+#     fi
+  coverage: /^\s*Lines:\s*\d+.\d+\%/
+
+  artifacts:
+    paths:
+      - test/tmp/html/
+      - build/tmp/phan-codeclimate-v1.json
+      - build/tmp/pdepend-jdepend-chart.svg
+      - build/tmp/pdepend-overview-pyramid.svg
+      - build/tmp/phpcbf.txt
+      - build/tmp/phpcs.txt
+      - build/tmp/phpmd.txt
+      - build/tmp/phpstan.txt
+      - build/tmp/psalm-console.txt
+      - test/tmp/phpunit-coverage-badge-classes.svg
+      - test/tmp/phpunit-coverage-badge-methods.svg
+      - test/tmp/phpunit-coverage-badge-lines.svg
+    reports:
+      junit: test/tmp/phpunit-junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: test/tmp/phpunit-cobertura.xml
+      codequality: build/tmp/phan-codeclimate-v1.json
