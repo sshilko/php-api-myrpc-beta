@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2024-01-02T23:25:15" pdepend="@package_version@" ahh="0.2" andc="0.33333333333333" calls="159" ccn="159" ccn2="188" cloc="209" clsa="1" clsc="37" eloc="1418" fanout="179" leafs="34" lloc="843" loc="2174" maxDIT="4" ncloc="1965" noc="38" nof="0" noi="27" nom="144" nop="14" roots="2">
+<metrics generated="2024-04-28T10:24:45" pdepend="@package_version@" ahh="0.2" andc="0.33333333333333" calls="160" ccn="159" ccn2="188" cloc="212" clsa="1" clsc="37" eloc="1419" fanout="179" leafs="34" lloc="845" loc="2179" maxDIT="4" ncloc="1967" noc="38" nof="0" noi="27" nom="144" nop="14" roots="2">
   <files>
     <file name="/app/src/ApiServer.php" loc="92" cloc="9" eloc="63" lloc="37" ncloc="83"/>
     <file name="/app/src/SchemaServer.php" loc="36" cloc="4" eloc="24" lloc="13" ncloc="32"/>
@@ -24,11 +24,11 @@
     <file name="/app/src/Handler/HandlerFactory.php" loc="88" cloc="3" eloc="67" lloc="40" ncloc="85"/>
     <file name="/app/src/Handler/HandlerResponse.php" loc="31" cloc="0" eloc="24" lloc="9" ncloc="31"/>
     <file name="/app/src/Handler/HandlerResponseFactory.php" loc="32" cloc="1" eloc="24" lloc="13" ncloc="31"/>
-    <file name="/app/src/Handler/SmartHandler.php" loc="377" cloc="45" eloc="280" lloc="201" ncloc="332"/>
+    <file name="/app/src/Handler/SmartHandler.php" loc="381" cloc="49" eloc="280" lloc="201" ncloc="332"/>
     <file name="/app/src/Handler/Worker/WorkerTrait.php" loc="19" cloc="0" eloc="12" lloc="6" ncloc="19"/>
     <file name="/app/src/Identity/TokenIdentity.php" loc="19" cloc="0" eloc="13" lloc="5" ncloc="19"/>
-    <file name="/app/src/Identity/TokenIdentityFactory.php" loc="15" cloc="1" eloc="10" lloc="4" ncloc="14"/>
-    <file name="/app/src/Request/JsonRpcRequest.php" loc="69" cloc="6" eloc="50" lloc="32" ncloc="63"/>
+    <file name="/app/src/Identity/TokenIdentityFactory.php" loc="16" cloc="0" eloc="11" lloc="6" ncloc="16"/>
+    <file name="/app/src/Request/JsonRpcRequest.php" loc="70" cloc="7" eloc="50" lloc="32" ncloc="63"/>
     <file name="/app/src/Request/JsonRpcRequestFactory.php" loc="53" cloc="18" eloc="28" lloc="26" ncloc="35"/>
     <file name="/app/src/Request/SimpleRequest.php" loc="44" cloc="0" eloc="34" lloc="13" ncloc="44"/>
     <file name="/app/src/Response/JsonRpcResponse.php" loc="59" cloc="5" eloc="42" lloc="27" ncloc="54"/>
@@ -36,7 +36,7 @@
     <file name="/app/src/Response/SimpleResponse.php" loc="40" cloc="3" eloc="28" lloc="11" ncloc="37"/>
     <file name="/app/src/Response/SimpleResponseFactory.php" loc="31" cloc="0" eloc="24" lloc="9" ncloc="31"/>
     <file name="/app/src/Schema/JsonSchema.php" loc="35" cloc="8" eloc="19" lloc="14" ncloc="27"/>
-    <file name="/app/src/Schema/JsonSchemaFactory.php" loc="75" cloc="14" eloc="47" lloc="37" ncloc="61"/>
+    <file name="/app/src/Schema/JsonSchemaFactory.php" loc="74" cloc="13" eloc="47" lloc="37" ncloc="61"/>
     <file name="/app/src/Serializer/JsonSerializer.php" loc="118" cloc="24" eloc="46" lloc="16" ncloc="94"/>
     <file name="/app/src/Validator/Symfony.php" loc="55" cloc="12" eloc="34" lloc="24" ncloc="43"/>
     <file name="/app/src/Validator/SymfonyResult.php" loc="33" cloc="0" eloc="25" lloc="10" ncloc="33"/>
@@ -162,7 +162,7 @@
       <method name="createErrorResponse" start="14" end="19" ccn="1" ccn2="1" loc="6" cloc="0" eloc="3" lloc="1" ncloc="6" npath="1" hnt="11" hnd="10" hv="36.541209043761" hd="5.25" hl="0.19047619047619" he="191.84134747975" ht="10.657852637764" hb="0.011087668241344" hi="6.9602302940497" mi="78.514964679948"/>
       <method name="createSuccessResponse" start="21" end="30" ccn="2" ccn2="3" loc="10" cloc="0" eloc="6" lloc="3" ncloc="10" npath="3" hnt="32" hnd="16" hv="128" hd="9.5" hl="0.10526315789474" he="1216" ht="67.555555555556" hb="0.037975292580811" hi="13.473684210526" mi="67.86721592171"/>
     </class>
-    <class name="SmartHandler" fqname="myrpc\Handler\SmartHandler" start="63" end="376" loc="314" cloc="41" eloc="205" lloc="114" ncloc="273" dit="0" noam="0" nocc="0" noom="0" nom="7" cr="0.15" rcr="0.5701125" ca="0" cbo="30" ce="30" impl="4" cis="5" csz="12" npm="5" vars="5" varsi="5" varsnp="0" wmc="59" wmci="59" wmcnp="18">
+    <class name="SmartHandler" fqname="myrpc\Handler\SmartHandler" start="63" end="380" loc="318" cloc="45" eloc="205" lloc="114" ncloc="273" dit="0" noam="0" nocc="0" noom="0" nom="7" cr="0.15" rcr="0.5701125" ca="0" cbo="30" ce="30" impl="4" cis="5" csz="12" npm="5" vars="5" varsi="5" varsnp="0" wmc="59" wmci="59" wmcnp="18">
       <file name="/app/src/Handler/SmartHandler.php"/>
       <method name="__construct" start="76" end="84" ccn="1" ccn2="1" loc="9" cloc="0" eloc="5" lloc="3" ncloc="9" npath="1" hnt="22" hnd="15" hv="85.951593103387" hd="4.3333333333333" hl="0.23076923076923" he="372.45690344801" ht="20.692050191556" hb="0.017255574806497" hi="19.834983023859" mi="71.0745190823"/>
       <method name="action" start="91" end="165" ccn="8" ccn2="14" loc="75" cloc="14" eloc="45" lloc="31" ncloc="61" npath="160" hnt="203" hnd="71" hv="1248.3986652595" hd="21.375" hl="0.046783625730994" he="26684.521469921" ht="1482.4734149956" hb="0.29765854737199" hi="58.404615918571" mi="40.373134252221"/>
@@ -170,7 +170,7 @@
       <method name="setSchemaFactory" start="172" end="177" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="9" hnd="8" hv="27" hd="5" hl="0.2" he="135" ht="7.5" hb="0.0087720532146386" hi="5.4" mi="76.709754179319"/>
       <method name="getSchema" start="179" end="184" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="13" hnd="11" hv="44.972611042285" hd="4.8" hl="0.20833333333333" he="215.86853300297" ht="11.992696277943" hb="0.011995130357899" hi="9.3692939671427" mi="75.158217726801"/>
       <method name="prepareArguments" start="186" end="208" ccn="4" ccn2="9" loc="23" cloc="0" eloc="20" lloc="9" ncloc="23" npath="4" hnt="71" hnd="30" hv="348.3892322882" hd="17.9375" hl="0.055749128919861" he="6249.2318541697" ht="347.17954745387" hb="0.11309146686351" hi="19.422396225126" mi="52.609281525812"/>
-      <method name="resolveArguments" start="217" end="375" ccn="21" ccn2="32" loc="159" cloc="15" eloc="124" lloc="66" ncloc="144" npath="17922" hnt="503" hnd="125" hv="3503.789495185" hd="40.224489795918" hl="0.024860476915271" he="140938.14479612" ht="7829.8969331176" hb="0.90274365698795" hi="87.105877861018" mi="25.211179350222"/>
+      <method name="resolveArguments" start="217" end="379" ccn="21" ccn2="32" loc="163" cloc="19" eloc="124" lloc="66" ncloc="144" npath="17922" hnt="503" hnd="125" hv="3503.789495185" hd="40.224489795918" hl="0.024860476915271" he="140938.14479612" ht="7829.8969331176" hb="0.90274365698795" hi="87.105877861018" mi="25.211179350222"/>
     </class>
   </package>
   <package name="myrpc\Handler\Worker" noc="0" noi="1" nom="1" nof="0" cr="0.15" rcr="0.15">
@@ -185,20 +185,20 @@
       <method name="__construct" start="10" end="12" ccn="1" ccn2="1" loc="3" cloc="0" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
       <method name="getIdentityToken" start="14" end="17" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
     </class>
-    <class name="TokenIdentityFactory" fqname="myrpc\Identity\TokenIdentityFactory" start="7" end="14" loc="8" cloc="1" eloc="3" lloc="1" ncloc="7" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="2" ce="2" impl="1" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+    <class name="TokenIdentityFactory" fqname="myrpc\Identity\TokenIdentityFactory" start="9" end="15" loc="7" cloc="0" eloc="3" lloc="1" ncloc="7" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="2" ce="2" impl="1" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
       <file name="/app/src/Identity/TokenIdentityFactory.php"/>
-      <method name="create" start="9" end="13" ccn="2" ccn2="2" loc="5" cloc="1" eloc="3" lloc="1" ncloc="4" npath="2" hnt="10" hnd="9" hv="31.699250014423" hd="6" hl="0.16666666666667" he="190.19550008654" ht="10.566416671474" hb="0.011024161587826" hi="5.2832083357372" mi="78.812723514891"/>
+      <method name="create" start="11" end="14" ccn="2" ccn2="2" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="2" hnt="12" hnd="10" hv="39.863137138648" hd="5.25" hl="0.19047619047619" he="209.2814699779" ht="11.626748332106" hb="0.011749857421146" hi="7.5929785025997" mi="78.115865755769"/>
     </class>
   </package>
   <package name="myrpc\Request" noc="3" noi="2" nom="19" nof="0" cr="0.15" rcr="0.15">
-    <class name="JsonRpcRequest" fqname="myrpc\Request\JsonRpcRequest" start="15" end="68" loc="54" cloc="6" eloc="25" lloc="11" ncloc="48" dit="0" noam="0" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.21375" ca="1" cbo="0" ce="0" impl="1" cis="6" csz="8" npm="6" vars="2" varsi="2" varsnp="0" wmc="10" wmci="10" wmcnp="10">
+    <class name="JsonRpcRequest" fqname="myrpc\Request\JsonRpcRequest" start="15" end="69" loc="55" cloc="7" eloc="25" lloc="11" ncloc="48" dit="0" noam="0" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.21375" ca="1" cbo="0" ce="0" impl="1" cis="6" csz="8" npm="6" vars="2" varsi="2" varsnp="0" wmc="10" wmci="10" wmcnp="10">
       <file name="/app/src/Request/JsonRpcRequest.php"/>
-      <method name="__construct" start="22" end="42" ccn="3" ccn2="5" loc="21" cloc="6" eloc="10" lloc="6" ncloc="15" npath="5" hnt="53" hnd="23" hv="239.74878367102" hd="11.538461538462" hl="0.086666666666667" he="2766.332119281" ht="153.68511773783" hb="0.065687332326536" hi="20.778227918155" mi="60.850435651034"/>
-      <method name="getService" start="44" end="47" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
-      <method name="getAction" start="49" end="52" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
-      <method name="getArguments" start="54" end="57" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
-      <method name="getIdentityToken" start="59" end="62" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
-      <method name="getRequestId" start="64" end="67" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="__construct" start="22" end="43" ccn="3" ccn2="5" loc="22" cloc="7" eloc="10" lloc="6" ncloc="15" npath="5" hnt="53" hnd="23" hv="239.74878367102" hd="11.538461538462" hl="0.086666666666667" he="2766.332119281" ht="153.68511773783" hb="0.065687332326536" hi="20.778227918155" mi="60.850435651034"/>
+      <method name="getService" start="45" end="48" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getAction" start="50" end="53" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getArguments" start="55" end="58" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getIdentityToken" start="60" end="63" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getRequestId" start="65" end="68" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
     </class>
     <class name="JsonRpcRequestFactory" fqname="myrpc\Request\JsonRpcRequestFactory" start="16" end="52" loc="37" cloc="18" eloc="13" lloc="10" ncloc="19" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="5" ce="5" impl="1" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="11" wmci="11" wmcnp="11">
       <file name="/app/src/Request/JsonRpcRequestFactory.php"/>
@@ -250,12 +250,12 @@
       <method name="__construct" start="18" end="20" ccn="1" ccn2="1" loc="3" cloc="0" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
       <method name="__toString" start="25" end="33" ccn="1" ccn2="1" loc="9" cloc="2" eloc="5" lloc="3" ncloc="7" npath="1" hnt="19" hnd="13" hv="70.308354644681" hd="6.4166666666667" hl="0.15584415584416" he="451.1452756367" ht="25.063626424261" hb="0.019607536004667" hi="10.957146178392" mi="71.685423695431"/>
     </class>
-    <class name="JsonSchemaFactory" fqname="myrpc\Schema\JsonSchemaFactory" start="15" end="74" loc="60" cloc="14" eloc="30" lloc="19" ncloc="46" dit="0" noam="0" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.2775" ca="0" cbo="5" ce="5" impl="1" cis="2" csz="4" npm="2" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="2">
+    <class name="JsonSchemaFactory" fqname="myrpc\Schema\JsonSchemaFactory" start="15" end="73" loc="59" cloc="13" eloc="30" lloc="19" ncloc="46" dit="0" noam="0" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.2775" ca="0" cbo="5" ce="5" impl="1" cis="2" csz="4" npm="2" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="2">
       <file name="/app/src/Schema/JsonSchemaFactory.php"/>
       <method name="__construct" start="17" end="19" ccn="1" ccn2="1" loc="3" cloc="0" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
       <method name="newSchemaFromObject" start="24" end="39" ccn="1" ccn2="1" loc="16" cloc="4" eloc="8" lloc="6" ncloc="12" npath="1" hnt="33" hnd="14" hv="125.6427124279" hd="10" hl="0.1" he="1256.427124279" ht="69.801506904389" hb="0.03881238055541" hi="12.56427124279" mi="65.467337576312"/>
-      <method name="sortSchema" start="46" end="66" ccn="4" ccn2="4" loc="21" cloc="2" eloc="16" lloc="11" ncloc="19" npath="6" hnt="76" hnd="33" hv="383.37395307124" hd="27.6" hl="0.036231884057971" he="10581.121104766" ht="587.84006137591" hb="0.16065707978592" hi="13.890360618523" mi="55.104798867455"/>
-      <method name="sortDefinitions" start="68" end="73" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="9" hnd="7" hv="25.266194298518" hd="7.5" hl="0.13333333333333" he="189.49645723889" ht="10.527580957716" hb="0.010997132943852" hi="3.3688259064691" mi="76.911579734314"/>
+      <method name="sortSchema" start="45" end="65" ccn="4" ccn2="4" loc="21" cloc="2" eloc="16" lloc="11" ncloc="19" npath="6" hnt="76" hnd="33" hv="383.37395307124" hd="27.6" hl="0.036231884057971" he="10581.121104766" ht="587.84006137591" hb="0.16065707978592" hi="13.890360618523" mi="55.104798867455"/>
+      <method name="sortDefinitions" start="67" end="72" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="9" hnd="7" hv="25.266194298518" hd="7.5" hl="0.13333333333333" he="189.49645723889" ht="10.527580957716" hb="0.010997132943852" hi="3.3688259064691" mi="76.911579734314"/>
     </class>
   </package>
   <package name="myrpc\Serializer" noc="1" noi="1" nom="3" nof="0" cr="0.15" rcr="0.15">
