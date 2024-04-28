@@ -2,7 +2,7 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="SmartHandler.php" path="/Handler">
     <totals>
-      <lines total="377" comments="45" code="332" executable="120" executed="92" percent="76.67"/>
+      <lines total="381" comments="49" code="332" executable="120" executed="92" percent="76.67"/>
       <methods count="7" tested="4" percent="57.14"/>
       <functions count="0" tested="0" percent="0"/>
       <classes count="1" tested="0" percent="0.00"/>
@@ -16,7 +16,7 @@
       <method name="setSchemaFactory" signature="setSchemaFactory(myrpc\Schema\SchemaFactoryInterface $schemaFactory): myrpc\Handler\HandlerWithSchemaInterface" start="172" end="177" crap="1" executable="2" executed="2" coverage="100"/>
       <method name="getSchema" signature="getSchema(): myrpc\Schema\SchemaInterface" start="179" end="184" crap="1" executable="1" executed="1" coverage="100"/>
       <method name="prepareArguments" signature="prepareArguments(ReflectionMethod $method, array $input): array" start="186" end="208" crap="9.16" executable="8" executed="7" coverage="87.5"/>
-      <method name="resolveArguments" signature="resolveArguments(ReflectionMethod $method, array $input): array" start="217" end="375" crap="43.24" executable="81" executed="63" coverage="77.777777777778"/>
+      <method name="resolveArguments" signature="resolveArguments(ReflectionMethod $method, array $input): array" start="217" end="379" crap="43.24" executable="81" executed="63" coverage="77.777777777778"/>
     </class>
     <coverage>
       <line nr="81">
@@ -56,10 +56,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="82">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -98,10 +98,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="83">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -140,10 +140,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="97">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -171,10 +171,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="98">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -202,10 +202,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="99">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -233,10 +233,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="103">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -264,10 +264,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="104">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -295,10 +295,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="111">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -326,10 +326,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="114">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -357,19 +357,19 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="115">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="121">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -518,10 +518,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="174">
         <covered by="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;input5or6&quot;"/>
@@ -588,10 +588,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="189">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -619,10 +619,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="190">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -650,10 +650,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="191">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -672,10 +672,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="192">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -694,10 +694,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="200">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -716,10 +716,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="204">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -747,10 +747,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="219">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -778,10 +778,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="220">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -809,10 +809,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="221">
         <covered by="phpunit\BasicWorkerTest::testSimpleRequestResponseHandler with data set &quot;getArray&quot;"/>
@@ -842,10 +842,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="226">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -864,10 +864,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="227">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -886,10 +886,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="229">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -908,10 +908,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="230">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -930,10 +930,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="234">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -952,10 +952,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="235">
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputNull&quot;"/>
@@ -983,13 +983,13 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="255">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="258">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -1008,9 +1008,9 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
       <line nr="264">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -1029,15 +1029,15 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
       <line nr="270">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
       </line>
       <line nr="271">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
       </line>
       <line nr="275">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
@@ -1056,8 +1056,8 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
       <line nr="279">
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
@@ -1102,50 +1102,50 @@
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
       <line nr="293">
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
       <line nr="294">
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
-      <line nr="295">
+      <line nr="299">
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
-      <line nr="298">
+      <line nr="302">
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-      </line>
-      <line nr="300">
-        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-      </line>
-      <line nr="301">
-        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
-      </line>
-      <line nr="303">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
       <line nr="304">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
       <line nr="305">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
+      </line>
+      <line nr="307">
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+      </line>
+      <line nr="308">
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
       <line nr="309">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
-      <line nr="310">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+      <line nr="313">
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
       </line>
-      <line nr="315">
+      <line nr="314">
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+      </line>
+      <line nr="319">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
@@ -1153,7 +1153,7 @@
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
       </line>
-      <line nr="316">
+      <line nr="320">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
@@ -1161,7 +1161,7 @@
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
       </line>
-      <line nr="317">
+      <line nr="321">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
@@ -1169,38 +1169,26 @@
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
       </line>
-      <line nr="324">
+      <line nr="328">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
       </line>
-      <line nr="329">
+      <line nr="333">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
-      </line>
-      <line nr="330">
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
-      </line>
-      <line nr="331">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
       </line>
       <line nr="334">
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
       </line>
-      <line nr="336">
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
-      </line>
-      <line nr="337">
+      <line nr="335">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
       </line>
@@ -1208,34 +1196,37 @@
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
       </line>
-      <line nr="339">
+      <line nr="340">
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+      </line>
+      <line nr="341">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
       </line>
       <line nr="342">
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
-      </line>
-      <line nr="343">
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+      </line>
+      <line nr="343">
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+      </line>
+      <line nr="346">
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
       </line>
       <line nr="347">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
       </line>
-      <line nr="348">
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
-      </line>
-      <line nr="349">
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
-      </line>
-      <line nr="350">
-        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
-      </line>
       <line nr="351">
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
+      </line>
+      <line nr="352">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
       </line>
       <line nr="353">
@@ -1244,14 +1235,23 @@
       <line nr="354">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
       </line>
-      <line nr="363">
+      <line nr="355">
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+      </line>
+      <line nr="357">
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+      </line>
+      <line nr="358">
+        <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
+      </line>
+      <line nr="367">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
       </line>
-      <line nr="367">
+      <line nr="371">
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputEnum2&quot;"/>
       </line>
-      <line nr="374">
+      <line nr="378">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with optional and nullable property returns OK&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;input5or6&quot;"/>
@@ -1267,19 +1267,19 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
       </line>
       <line nr="272">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
       </line>
-      <line nr="306">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
+      <line nr="310">
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
       </line>
-      <line nr="311">
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
+      <line nr="315">
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
       </line>
-      <line nr="340">
+      <line nr="344">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
       </line>
-      <line nr="355">
+      <line nr="359">
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
       </line>
     </coverage>
@@ -3577,6 +3577,19 @@
       </line>
       <line no="295">
         <token name="T_WHITESPACE">                    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="296">
+        <token name="T_DOC_COMMENT">                     * Assume it is and verify later</token>
+      </line>
+      <line no="297">
+        <token name="T_DOC_COMMENT">                     *</token>
+      </line>
+      <line no="298">
+        <token name="T_DOC_COMMENT">                     */</token>
+      </line>
+      <line no="299">
+        <token name="T_WHITESPACE">                    </token>
         <token name="T_VARIABLE">$enumName</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_EQUAL">=</token>
@@ -3588,7 +3601,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="296">
+      <line no="300">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_STRING">assert</token>
         <token name="T_OPEN_BRACKET">(</token>
@@ -3600,7 +3613,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="297">
+      <line no="301">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_STRING">assert</token>
         <token name="T_OPEN_BRACKET">(</token>
@@ -3624,7 +3637,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="298">
+      <line no="302">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_VARIABLE">$reflectionEnumValue</token>
         <token name="T_WHITESPACE"> </token>
@@ -3641,8 +3654,8 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="299"/>
-      <line no="300">
+      <line no="303"/>
+      <line no="304">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -3656,7 +3669,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="301">
+      <line no="305">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_VARIABLE">$output</token>
         <token name="T_OPEN_SQUARE">[</token>
@@ -3668,7 +3681,7 @@
         <token name="T_VARIABLE">$reflectionEnumValue</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="302">
+      <line no="306">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_CLOSE_CURLY">}</token>
         <token name="T_WHITESPACE"> </token>
@@ -3676,7 +3689,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="303">
+      <line no="307">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -3685,7 +3698,7 @@
         <token name="T_STRING">HandlerActionInputException</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="304">
+      <line no="308">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'Enum value "'</token>
         <token name="T_WHITESPACE"> </token>
@@ -3702,7 +3715,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_DOT">.</token>
       </line>
-      <line no="305">
+      <line no="309">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'" is not defined for enum argument \''</token>
         <token name="T_WHITESPACE"> </token>
@@ -3714,16 +3727,16 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">"'"</token>
       </line>
-      <line no="306">
+      <line no="310">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="307">
+      <line no="311">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="308">
+      <line no="312">
         <token name="T_WHITESPACE">                </token>
         <token name="T_CLOSE_CURLY">}</token>
         <token name="T_WHITESPACE"> </token>
@@ -3731,7 +3744,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="309">
+      <line no="313">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -3740,7 +3753,7 @@
         <token name="T_STRING">HandlerActionInputException</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="310">
+      <line no="314">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'Non-backend enum argument type is not supported, check \''</token>
         <token name="T_WHITESPACE"> </token>
@@ -3752,21 +3765,21 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">'\' definition'</token>
       </line>
-      <line no="311">
+      <line no="315">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="312">
+      <line no="316">
         <token name="T_WHITESPACE">                </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="313">
+      <line no="317">
         <token name="T_WHITESPACE">            </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="314"/>
-      <line no="315">
+      <line no="318"/>
+      <line no="319">
         <token name="T_WHITESPACE">            </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -3783,7 +3796,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="316">
+      <line no="320">
         <token name="T_WHITESPACE">                </token>
         <token name="T_VARIABLE">$reflectionClass</token>
         <token name="T_WHITESPACE"> </token>
@@ -3801,7 +3814,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="317">
+      <line no="321">
         <token name="T_WHITESPACE">                </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -3818,23 +3831,23 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="318">
+      <line no="322">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="319">
+      <line no="323">
         <token name="T_DOC_COMMENT">                     * Allow accepting only limited subset of user defined types, type conversion will happen later</token>
       </line>
-      <line no="320">
+      <line no="324">
         <token name="T_DOC_COMMENT">                     */</token>
       </line>
-      <line no="321">
+      <line no="325">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_TRY">try</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="322">
+      <line no="326">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_STRING">assert</token>
         <token name="T_OPEN_BRACKET">(</token>
@@ -3849,11 +3862,11 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="323">
+      <line no="327">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_COMMENT">/* @phan-suppress-next-line PhanPartialTypeMismatchArgument */</token>
       </line>
-      <line no="324">
+      <line no="328">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_VARIABLE">$denormalized</token>
         <token name="T_WHITESPACE"> </token>
@@ -3879,17 +3892,17 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="325">
+      <line no="329">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="326">
+      <line no="330">
         <token name="T_DOC_COMMENT">                         * We only expect instances of Datatype as input</token>
       </line>
-      <line no="327">
+      <line no="331">
         <token name="T_DOC_COMMENT">                         */</token>
       </line>
-      <line no="328">
+      <line no="332">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_STRING">assert</token>
         <token name="T_OPEN_BRACKET">(</token>
@@ -3901,7 +3914,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="329">
+      <line no="333">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_VARIABLE">$errors</token>
         <token name="T_WHITESPACE"> </token>
@@ -3917,7 +3930,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="330">
+      <line no="334">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -3934,7 +3947,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="331">
+      <line no="335">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_VARIABLE">$errorMessage</token>
         <token name="T_WHITESPACE"> </token>
@@ -3946,7 +3959,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="332">
+      <line no="336">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_STRING">assert</token>
         <token name="T_OPEN_BRACKET">(</token>
@@ -3958,8 +3971,8 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="333"/>
-      <line no="334">
+      <line no="337"/>
+      <line no="338">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_VARIABLE">$errorMessageBody</token>
         <token name="T_WHITESPACE"> </token>
@@ -3974,8 +3987,8 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="335"/>
-      <line no="336">
+      <line no="339"/>
+      <line no="340">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -3984,7 +3997,7 @@
         <token name="T_STRING">HandlerActionValidationException</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="337">
+      <line no="341">
         <token name="T_WHITESPACE">                                </token>
         <token name="T_DOUBLE_QUOTES">"</token>
         <token name="T_ENCAPSED_AND_WHITESPACE">Validation failed in '</token>
@@ -3994,7 +4007,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_DOT">.</token>
       </line>
-      <line no="338">
+      <line no="342">
         <token name="T_WHITESPACE">                                </token>
         <token name="T_VARIABLE">$errorMessage</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -4008,21 +4021,21 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_DOT">.</token>
       </line>
-      <line no="339">
+      <line no="343">
         <token name="T_WHITESPACE">                                </token>
         <token name="T_VARIABLE">$errorMessageBody</token>
         <token name="T_COMMA">,</token>
       </line>
-      <line no="340">
+      <line no="344">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="341">
+      <line no="345">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="342">
+      <line no="346">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_VARIABLE">$output</token>
         <token name="T_OPEN_SQUARE">[</token>
@@ -4034,7 +4047,7 @@
         <token name="T_VARIABLE">$denormalized</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="343">
+      <line no="347">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_CLOSE_CURLY">}</token>
         <token name="T_WHITESPACE"> </token>
@@ -4048,7 +4061,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="344">
+      <line no="348">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -4057,7 +4070,7 @@
         <token name="T_STRING">HandlerActionValidationException</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="345">
+      <line no="349">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_DOUBLE_QUOTES">"</token>
         <token name="T_ENCAPSED_AND_WHITESPACE">ValidatorException in '</token>
@@ -4073,12 +4086,12 @@
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="346">
+      <line no="350">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="347">
+      <line no="351">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_CLOSE_CURLY">}</token>
         <token name="T_WHITESPACE"> </token>
@@ -4092,7 +4105,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="348">
+      <line no="352">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_VARIABLE">$w</token>
         <token name="T_WHITESPACE"> </token>
@@ -4105,7 +4118,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="349">
+      <line no="353">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -4119,7 +4132,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="350">
+      <line no="354">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_VARIABLE">$missingProperties</token>
         <token name="T_WHITESPACE"> </token>
@@ -4132,7 +4145,7 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="351">
+      <line no="355">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_STRING">sort</token>
         <token name="T_OPEN_BRACKET">(</token>
@@ -4140,8 +4153,8 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="352"/>
-      <line no="353">
+      <line no="356"/>
+      <line no="357">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -4150,7 +4163,7 @@
         <token name="T_STRING">HandlerActionArgumentsException</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="354">
+      <line no="358">
         <token name="T_WHITESPACE">                                </token>
         <token name="T_DOUBLE_QUOTES">"</token>
         <token name="T_ENCAPSED_AND_WHITESPACE">Missing properties in '</token>
@@ -4171,17 +4184,17 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="355">
+      <line no="359">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="356">
+      <line no="360">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="357"/>
-      <line no="358">
+      <line no="361"/>
+      <line no="362">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -4190,7 +4203,7 @@
         <token name="T_STRING">HandlerActionSerializerException</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="359">
+      <line no="363">
         <token name="T_WHITESPACE">                            </token>
         <token name="T_DOUBLE_QUOTES">"</token>
         <token name="T_ENCAPSED_AND_WHITESPACE">Invalid argument payload in '</token>
@@ -4206,31 +4219,31 @@
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="360">
+      <line no="364">
         <token name="T_WHITESPACE">                        </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="361">
-        <token name="T_WHITESPACE">                    </token>
-        <token name="T_CLOSE_CURLY">}</token>
-      </line>
-      <line no="362"/>
-      <line no="363">
-        <token name="T_WHITESPACE">                    </token>
-        <token name="T_CONTINUE">continue</token>
-        <token name="T_SEMICOLON">;</token>
-      </line>
-      <line no="364">
-        <token name="T_WHITESPACE">                </token>
-        <token name="T_CLOSE_CURLY">}</token>
-      </line>
       <line no="365">
-        <token name="T_WHITESPACE">            </token>
+        <token name="T_WHITESPACE">                    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
       <line no="366"/>
       <line no="367">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_CONTINUE">continue</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="368">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="369">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="370"/>
+      <line no="371">
         <token name="T_WHITESPACE">            </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -4247,7 +4260,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="368">
+      <line no="372">
         <token name="T_WHITESPACE">                </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -4256,7 +4269,7 @@
         <token name="T_STRING">HandlerActionInputException</token>
         <token name="T_OPEN_BRACKET">(</token>
       </line>
-      <line no="369">
+      <line no="373">
         <token name="T_WHITESPACE">                    </token>
         <token name="T_DOUBLE_QUOTES">"</token>
         <token name="T_ENCAPSED_AND_WHITESPACE">Argument '</token>
@@ -4276,35 +4289,35 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">" does not match"</token>
       </line>
-      <line no="370">
+      <line no="374">
         <token name="T_WHITESPACE">                </token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="371">
+      <line no="375">
         <token name="T_WHITESPACE">            </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="372">
+      <line no="376">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="373"/>
-      <line no="374">
+      <line no="377"/>
+      <line no="378">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_VARIABLE">$output</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="375">
+      <line no="379">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="376">
+      <line no="380">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="377"/>
+      <line no="381"/>
     </source>
   </file>
 </phpunit>

@@ -57,10 +57,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="21">
         <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
@@ -101,10 +101,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="26">
         <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
@@ -145,10 +145,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="31">
         <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
@@ -189,10 +189,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="36">
         <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
@@ -233,10 +233,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
       <line nr="41">
         <covered by="phpunit\BasicHandlerTest::testSimpleRequestResponseHandler with data set &quot;getArguments-1&quot;"/>
@@ -277,10 +277,10 @@
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputString&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputStringBetween1And5Characters&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testSimpleRequestResponseHandler with data set &quot;inputUUIDorEmail&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
     </coverage>
     <source>

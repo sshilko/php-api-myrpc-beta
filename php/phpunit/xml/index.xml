@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Tue Jan 2 23:25:32 UTC 2024" phpunit="9.6.15" coverage="9.2.30">
-    <runtime name="PHP" version="8.1.27" url="https://secure.php.net/"/>
+  <build time="Sun Apr 28 16:57:52 UTC 2024" phpunit="9.6.19" coverage="9.2.31">
+    <runtime name="PHP" version="8.1.28" url="https://secure.php.net/"/>
     <driver name="xdebug" version="3.1.6"/>
   </build>
   <project source="/app/src">
@@ -55,10 +55,10 @@
       <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputString&quot;" size="unknown" result="0" status="PASSED"/>
       <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputStringBetween1And5Characters&quot;" size="unknown" result="0" status="PASSED"/>
       <test name="phpunit\NormalWorkerTest::testSimpleSchemaGeneration with data set &quot;inputUUIDorEmail&quot;" size="unknown" result="0" status="PASSED"/>
-      <test name="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;" size="unknown" result="0" status="PASSED"/>
-      <test name="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;" size="unknown" result="0" status="PASSED"/>
-      <test name="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;" size="unknown" result="0" status="PASSED"/>
-      <test name="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;" size="unknown" result="0" status="PASSED"/>
+      <test name="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;" size="unknown" result="0" status="PASSED"/>
       <test name="phpunit\ServiceTest::testRunBehaviour with data set &quot;failure-response&quot;" size="unknown" result="0" status="PASSED"/>
       <test name="phpunit\ServiceTest::testRunBehaviour with data set &quot;success-response&quot;" size="unknown" result="0" status="PASSED"/>
       <test name="phpunit\ServiceTest::testRunBehaviour with data set &quot;svc-err-failure&quot;" size="unknown" result="0" status="PASSED"/>
@@ -66,7 +66,7 @@
     </tests>
     <directory name="/">
       <totals>
-        <lines total="2130" comments="214" code="1916" executable="353" executed="239" percent="67.71"/>
+        <lines total="2135" comments="217" code="1918" executable="353" executed="239" percent="67.71"/>
         <methods count="93" tested="52" percent="55.91"/>
         <functions count="0" tested="0" percent="0"/>
         <classes count="27" tested="11" percent="40.74"/>
@@ -281,7 +281,7 @@
       </directory>
       <directory name="Handler">
         <totals>
-          <lines total="866" comments="70" code="796" executable="170" executed="121" percent="71.18"/>
+          <lines total="870" comments="74" code="796" executable="170" executed="121" percent="71.18"/>
           <methods count="32" tested="20" percent="62.50"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="6" tested="3" percent="50.00"/>
@@ -460,7 +460,7 @@
         </file>
         <file name="SmartHandler.php" href="Handler/SmartHandler.php.xml">
           <totals>
-            <lines total="377" comments="45" code="332" executable="120" executed="92" percent="76.67"/>
+            <lines total="381" comments="49" code="332" executable="120" executed="92" percent="76.67"/>
             <methods count="7" tested="4" percent="57.14"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
@@ -479,7 +479,7 @@
       </directory>
       <directory name="Identity">
         <totals>
-          <lines total="34" comments="1" code="33" executable="3" executed="3" percent="100.00"/>
+          <lines total="35" comments="0" code="35" executable="3" executed="3" percent="100.00"/>
           <methods count="3" tested="3" percent="100.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="2" tested="2" percent="100.00"/>
@@ -496,7 +496,7 @@
         </file>
         <file name="TokenIdentityFactory.php" href="Identity/TokenIdentityFactory.php.xml">
           <totals>
-            <lines total="15" comments="1" code="14" executable="1" executed="1" percent="100.00"/>
+            <lines total="16" comments="0" code="16" executable="1" executed="1" percent="100.00"/>
             <methods count="1" tested="1" percent="100.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="1" percent="100.00"/>
@@ -506,7 +506,7 @@
       </directory>
       <directory name="Request">
         <totals>
-          <lines total="196" comments="24" code="172" executable="26" executed="6" percent="23.08"/>
+          <lines total="197" comments="25" code="172" executable="26" executed="6" percent="23.08"/>
           <methods count="13" tested="6" percent="46.15"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="3" tested="1" percent="33.33"/>
@@ -514,7 +514,7 @@
         </totals>
         <file name="JsonRpcRequest.php" href="Request/JsonRpcRequest.php.xml">
           <totals>
-            <lines total="69" comments="6" code="63" executable="11" executed="0" percent="0.00"/>
+            <lines total="70" comments="7" code="63" executable="11" executed="0" percent="0.00"/>
             <methods count="6" tested="0" percent="0.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
@@ -623,7 +623,7 @@
       </directory>
       <directory name="Schema">
         <totals>
-          <lines total="135" comments="23" code="112" executable="23" executed="15" percent="65.22"/>
+          <lines total="134" comments="22" code="112" executable="23" executed="15" percent="65.22"/>
           <methods count="6" tested="4" percent="66.67"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="2" tested="1" percent="50.00"/>
@@ -640,7 +640,7 @@
         </file>
         <file name="JsonSchemaFactory.php" href="Schema/JsonSchemaFactory.php.xml">
           <totals>
-            <lines total="75" comments="14" code="61" executable="20" executed="12" percent="60.00"/>
+            <lines total="74" comments="13" code="61" executable="20" executed="12" percent="60.00"/>
             <methods count="4" tested="2" percent="50.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>

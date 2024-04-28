@@ -56,10 +56,10 @@
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype but incomplete payload provided as input&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata&quot;"/>
         <covered by="phpunit\NormalWorkerTest::testDatatypesRequestResponseHandler with data set &quot;inputCustomDatatype with attributes validation using Symfony validator attributes&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputArray&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum1&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputEnum2&quot;"/>
-        <covered by="phpunit\NormalWorkerTest::testSimpleMethodValidations with data set &quot;inputIntOrString&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputArray&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum1&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputEnum2&quot;"/>
+        <covered by="phpunit\NormalWorkerTest::testSimpleMethodArgumentValidations with data set &quot;inputIntOrString&quot;"/>
       </line>
     </coverage>
     <source>

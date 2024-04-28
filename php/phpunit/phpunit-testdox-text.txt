@@ -52,10 +52,10 @@ Normal Worker (phpunit\NormalWorker)
  [x] Simple schema generation with data set "inputString"
  [x] Simple schema generation with data set "inputStringBetween1And5Characters"
  [x] Simple schema generation with data set "inputUUIDorEmail"
- [x] Simple method validations with data set "inputArray"
- [x] Simple method validations with data set "inputEnum1"
- [x] Simple method validations with data set "inputEnum2"
- [x] Simple method validations with data set "inputIntOrString"
+ [x] Simple method argument validations with data set "inputArray"
+ [x] Simple method argument validations with data set "inputEnum1"
+ [x] Simple method argument validations with data set "inputEnum2"
+ [x] Simple method argument validations with data set "inputIntOrString"
 
 Service (phpunit\Service)
  [x] Run behaviour with data set "failure-response"
