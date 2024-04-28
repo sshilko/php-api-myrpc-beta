@@ -84,7 +84,6 @@ x-mysql: &mysql
 
 version: '3.7'
 services:
-
   mysql80:
     <<: *mysql
     image: library/mysql:8.0.30-debian
