@@ -33,11 +33,15 @@ jobs:
       with:
         path: /tmp/docker-save
         key: ${{ runner.os }}-docker-php-build-save-${{ hashFiles('build/Dockerfile.php.common', 'build/Dockerfile.php81') }}
+
     - name: Load cached Docker image
       run: docker load -i /tmp/docker-save/snapshot.tar && docker tag app/php-image-cache app/php
+      if: steps.docker-php-image-cache.outputs.cache-hit == 'true'
 
     - name: Docker boot
       env:
+        DOCKER_BUILDKIT: '1'
+        COMPOSE_DOCKER_CLI_BUILD: '1'
         SERVICES_NAME: "app.php"
       run: docker-compose up -d $SERVICES_NAME
 
