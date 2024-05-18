@@ -297,7 +297,6 @@ class SmartHandler implements SmartHandlerInterface
                      *
                      */
                     $enumName = $paramType->getName();
-                    assert($enumName instanceof BackedEnum);
                     assert(is_string($input[$paramName]) || is_int($input[$paramName]));
                     $reflectionEnumValue = $enumName::tryFrom($input[$paramName]);
 
