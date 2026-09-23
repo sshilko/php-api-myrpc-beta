@@ -88,7 +88,7 @@ jobs:
 
       # https://github.com/marketplace/actions/download-a-build-artifact
       - name: Download all PHPUnit artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v5
         with:
           name: phpdoc-output
           path: php/phpdoc
