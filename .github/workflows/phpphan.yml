@@ -55,7 +55,7 @@ jobs:
 
         # https://github.com/actions/upload-artifact
       - name: Upload Phan artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: phan-output
           path: |

@@ -55,7 +55,7 @@ jobs:
 
         # https://github.com/actions/upload-artifact
       - name: Upload PHPMD artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: phpmd-output
           path: |

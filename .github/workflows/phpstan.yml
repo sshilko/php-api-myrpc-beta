@@ -61,7 +61,7 @@ jobs:
 
           # https://github.com/actions/upload-artifact
       - name: Upload PHPStan artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: phpstan-output
           path: |

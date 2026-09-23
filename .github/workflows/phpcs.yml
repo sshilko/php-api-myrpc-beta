@@ -61,7 +61,7 @@ jobs:
 
           # https://github.com/actions/upload-artifact
       - name: Upload PHPCS artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: phpcs-output
           path: |

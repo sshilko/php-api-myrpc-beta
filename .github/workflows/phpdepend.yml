@@ -65,7 +65,7 @@ jobs:
 
         # https://github.com/actions/upload-artifact
       - name: Upload Pdepend artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: pdepend-output
           path: |

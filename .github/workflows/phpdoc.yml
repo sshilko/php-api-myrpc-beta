@@ -67,7 +67,7 @@ jobs:
 
         # https://github.com/actions/upload-artifact
       - name: Upload PHPDoc artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: phpdoc-output
           path: |
