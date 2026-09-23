@@ -43,7 +43,7 @@ use function var_export;
  */
 final class BasicWorkerTest extends BaseTestCase
 {
-    private const CODE_UNKNOWN = 100000;
+    private const int CODE_UNKNOWN = 100000;
 
     /**
      * @dataProvider getSimpleApiCalls
@@ -57,7 +57,7 @@ final class BasicWorkerTest extends BaseTestCase
     ): void {
         $service = 'v2/workerService';
 
-        $worker = new BasicWorker();
+        $worker  = new BasicWorker();
         $handler = new SmartHandler($worker);
 
         $request = $this->newSimpleRequest($service, $action, $arguments, uniqid('', true), $id->getIdentityToken());
@@ -68,13 +68,13 @@ final class BasicWorkerTest extends BaseTestCase
 
         $datatypeFactory = $this->createMock(DatatypeFactoryInterface::class);
 
-        $handlerFactory = new HandlerFactory($container, $datatypeFactory);
+        $handlerFactory  = new HandlerFactory($container, $datatypeFactory);
         $responseFactory = new SimpleResponseFactory();
         $identityFactory = new TokenIdentityFactory();
 
         $logger = $this->createMock(LoggerInterface::class);
 
-        $schemaFactory = $this->createMock(SchemaFactoryInterface::class);
+        $schemaFactory  = $this->createMock(SchemaFactoryInterface::class);
         $requestFactory = $this->createMock(RequestFactoryInterface::class);
         $requestFactory->expects(self::once())->method('create')->willReturn($request);
 
@@ -113,7 +113,7 @@ final class BasicWorkerTest extends BaseTestCase
     public static function getSimpleApiCalls(): array
     {
         $token = uniqid('any-auth-token', true);
-        $id = (new TokenIdentityFactory())->create($token);
+        $id    = (new TokenIdentityFactory())->create($token);
 
         return [
             'getArray'   => ['getArray',      [],                    $id,       []],

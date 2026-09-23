@@ -36,7 +36,7 @@ class JsonRpcRequest implements RequestInterface
                  * service = 'v1/accounts/tickets';
                  * action  = 'payment'
                  */
-                $this->action = (string) parse_url($action, PHP_URL_FRAGMENT);
+                $this->action  = (string) parse_url($action, PHP_URL_FRAGMENT);
                 $this->service = (string) parse_url($action, PHP_URL_PATH);
             }
         }

@@ -23,7 +23,7 @@ class JsonSchemaFactory implements SchemaFactoryInterface
      */
     public function newSchemaFromObject(object $obj): SchemaInterface
     {
-        $schema = [];
+        $schema      = [];
         $definitions = [];
 
         //TODO RESUME HERE 01.04.2023, 23.04.2023
@@ -32,7 +32,7 @@ class JsonSchemaFactory implements SchemaFactoryInterface
         $schema = $this->sortSchema($schema);
 
         //ksort($definitions);
-        $schema['obj'] = $obj; //TODO: remove me
+        $schema['obj']         = $obj; //TODO: remove me
         $schema['definitions'] = $definitions;
 
         return new JsonSchema($schema);

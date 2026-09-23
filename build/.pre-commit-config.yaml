@@ -33,7 +33,7 @@ repos:
         exclude: ^test/phpunit/includes/MyUserlandDatatype*
       - id: php-code-phpcs
         name: php-code-phpcs
-        entry: php ./vendor/bin/phpcs --standard=build/phpcs-ruleset.xml
+        entry: sh -c 'printf "%s\n" "$@" | xargs -r -n 1 -P 2 php -d memory_limit=-1 ./vendor/bin/phpcbf -v --standard=build/phpcs-ruleset.xml || exit 0' _
         log_file: build/tmp/phpcs.txt
         language: system
         types: [php]
@@ -49,13 +49,13 @@ repos:
       - id: php-code-psalm-single-changed-file-check
         name: php-code-psalm-single-changed-file-check
         entry: |
-            php ./vendor/bin/psalm.phar --config build/psalm.xml
-                                        --memory-limit=256M
-                                        --no-diff
-                                        --long-progress
-                                        --show-info=true
-                                        --stats
-                                        --disable-extension=xdebug
+          php ./vendor/bin/psalm.phar --config build/psalm.xml
+                                      --memory-limit=256M
+                                      --no-diff
+                                      --long-progress
+                                      --show-info=true
+                                      --stats
+                                      --disable-extension=xdebug
         language: system
         types: [php]
         verbose: false

@@ -21,11 +21,11 @@ class SchemaServer
      */
     public function getServiceSchema(string $service): ?string
     {
-        $handler = $this->handlerFactory->create($service);
+        $handler           = $this->handlerFactory->create($service);
         $handlerWithSchema = $this->handlerFactory->hasSchema($handler);
         if ($handlerWithSchema) {
             $handler = $this->handlerFactory->withSchema($handlerWithSchema, $this->schemaFactory);
-            $schema = $handler->getSchema();
+            $schema  = $handler->getSchema();
 
             return (string) $schema;
         }

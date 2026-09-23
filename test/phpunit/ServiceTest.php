@@ -38,13 +38,13 @@ final class ServiceTest extends BaseTestCase
      */
     public function testRunBehaviour($error, int $code): void
     {
-        $requestMock = $this->createMock(RequestInterface::class);
-        $handlerMock = $this->createMock(HandlerInterface::class);
+        $requestMock  = $this->createMock(RequestInterface::class);
+        $handlerMock  = $this->createMock(HandlerInterface::class);
         $identityMock = $this->createMock(IdentityInterface::class);
         $actionResult = $this->createMock(HandlerResponseInterface::class);
 
-        $service = $requestId = $action = $authToken = $response = uniqid('', true);
-        $payload = [];
+        $service   = $requestId = $action = $authToken = $response = uniqid('', true);
+        $payload   = [];
         $arguments = [];
 
         $this->requestFactory->expects(self::once())->method('create')->with($payload)

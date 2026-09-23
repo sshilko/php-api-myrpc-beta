@@ -44,8 +44,8 @@ class JsonRpcRequestFactory implements RequestFactoryInterface
 
         $method = isset($decoded['method']) && is_string($decoded['method']) ? $decoded['method'] : null;
         $params = isset($decoded['params']) && is_array($decoded['params']) ? $decoded['params'] : null;
-        $rid = isset($decoded['id']) && is_scalar($decoded['id']) ? (string) $decoded['id'] : null;
-        $sid = isset($decoded['sid']) && is_scalar($decoded['sid']) ? (string) $decoded['sid'] : null;
+        $rid    = isset($decoded['id']) && is_scalar($decoded['id']) ? (string) $decoded['id'] : null;
+        $sid    = isset($decoded['sid']) && is_scalar($decoded['sid']) ? (string) $decoded['sid'] : null;
 
         return new JsonRpcRequest($method, $params, $rid, $sid);
     }

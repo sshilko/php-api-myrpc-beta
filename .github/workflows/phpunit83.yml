@@ -7,7 +7,7 @@
 # For the full copyright and license information, please view the LICENSE
 # file that was distributed with this source code.
 # @license https://opensource.org/licenses/mit-license.php MIT
-name: Docker
+name: 8.3 PHPUnit
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip-ci')"
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -48,3 +48,51 @@ jobs:
       - name: Tag Docker image
         run: docker tag app/php-image app/php-image-cache && mkdir -p /tmp/docker-save && docker save app/php-image-cache -o /tmp/docker-save/snapshot.tar && ls -lh /tmp/docker-save || true
         if: always() && steps.docker-php-image-cache.outputs.cache-hit != 'true'
+
+  build:
+    needs: build-containers
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'skip-ci')"
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Load cached app docker image
+        id: docker-php-image-cache
+        uses: actions/cache@v5
+        with:
+          path: /tmp/docker-save
+          key: ${{ runner.os }}-docker-php-build-save-${{ hashFiles('build/Dockerfile.php83') }}
+
+      - name: Load cached Docker image
+        run: docker load -i /tmp/docker-save/snapshot.tar && docker tag app/php-image-cache app/php83
+
+      - name: Docker boot
+        env:
+          DOCKER_BUILDKIT: "1"
+          COMPOSE_DOCKER_CLI_BUILD: "1"
+          SERVICES_NAME: "app.php83"
+        run: docker-compose up --force-recreate -d $SERVICES_NAME
+        timeout-minutes: 3
+
+      - name: Wait for all services to become healthy
+        run: for SVC in "app.php83"; do while [ "\"healthy\"" != "$(docker inspect --format '{{json .State.Health.Status }}' ${SVC})" ];do docker-compose ps && sleep 5; done; done
+        timeout-minutes: 3
+
+      - name: Sleep
+        run: sleep 4
+      - run: docker-compose ps
+
+      - name: Cache Composer packages
+        id: composer-cache
+        uses: actions/cache@v5
+        with:
+          path: vendor
+          key: ${{ runner.os }}-php-${{ hashFiles('composer.lock') }}-composer-dev
+
+      - name: Docker install dependencies
+        run: docker-compose exec -T app.php83 composer install
+
+      - name: Docker run PHPUnit
+        run: docker-compose exec -T app.php83 composer app-phpunit-coverage

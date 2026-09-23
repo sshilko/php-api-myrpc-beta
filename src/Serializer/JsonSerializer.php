@@ -36,8 +36,8 @@ use const JSON_THROW_ON_ERROR;
  */
 class JsonSerializer implements SerializerInterface
 {
-    private const FORMAT = JsonEncoder::FORMAT;
-    private const RECURSION_DEPTH = 64;
+    private const string FORMAT       = JsonEncoder::FORMAT;
+    private const int RECURSION_DEPTH = 64;
 
     protected readonly Serializer $serializer;
 

@@ -41,7 +41,7 @@ class ApiServer
 
             //TODO unit cover this context creation and passing
 
-            $handler = $this->handlerFactory->create($service);
+            $handler        = $this->handlerFactory->create($service);
             $contextHandler = $this->handlerFactory->hasContext($handler);
 
             if ($contextHandler) {

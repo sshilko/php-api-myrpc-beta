@@ -12,8 +12,21 @@
             "role": "Developer"
         }
     ],
-    "keywords": ["api", "php", "json", "rpc", "schema", "grpc", "rest", "json-schema", "openapi"],
+    "keywords": [
+        "api",
+        "php",
+        "json",
+        "rpc",
+        "schema",
+        "grpc",
+        "rest",
+        "json-schema",
+        "openapi"
+    ],
     "config": {
+        "platform": {
+            "php": "8.3"
+        },
         "vendor-dir": "vendor",
         "preferred-install": {
             "*": "dist"
@@ -44,10 +57,10 @@
             "@app-psalm",
             "@app-phan"
         ],
-        "app-nocache":[
+        "app-nocache": [
             "rm -rf build/tmp/cache/* && rm -rf build/tmp/psalm-cache/* && echo build/tmp cache cleared"
         ],
-        "app-psalm":[
+        "app-psalm": [
             "@putenv XDEBUG_MODE=off",
             "php ./vendor/bin/psalm.phar --root=$PWD/src --php-version=$(php -r 'echo PHP_VERSION;') --config build/psalm.xml --memory-limit=-1 --no-diff --show-info=true --long-progress --stats --disable-extension=xdebug --report=$PWD/build/tmp/psalm.txt $1"
         ],
@@ -59,15 +72,15 @@
             "@putenv XDEBUG_MODE=off",
             "php ./vendor/bin/psalm.phar --root=$PWD/src --php-version=$(php -r 'echo PHP_VERSION;') --config build/psalm.xml --taint-analysis --long-progress --disable-extension=xdebug"
         ],
-        "app-phpcbf":[
+        "app-phpcbf": [
             "@putenv XDEBUG_MODE=off",
             "pre-commit run --all-files --config build/.pre-commit-config.yaml php-code-phpcbf"
         ],
-        "app-phpcs":[
+        "app-phpcs": [
             "@putenv XDEBUG_MODE=off",
             "pre-commit run --all-files --config build/.pre-commit-config.yaml php-code-phpcs"
         ],
-        "app-phpstan":[
+        "app-phpstan": [
             "@putenv XDEBUG_MODE=off",
             "pre-commit run --all-files --config build/.pre-commit-config.yaml php-code-phpstan"
         ],
@@ -118,15 +131,15 @@
     "require-dev": {
         "ext-posix": "*",
         "ext-ast": "*",
-        "nikic/php-parser": "^4",
-        "pdepend/pdepend": "^2.12",
-        "phan/phan": "^5.4",
-        "phpmd/phpmd": "^2.13",
-        "phpstan/phpstan": "^1.8",
+        "nikic/php-parser": "*",
+        "pdepend/pdepend": "*",
+        "phan/phan": "*",
+        "phpmd/phpmd": "*",
+        "phpstan/phpstan": "*",
         "phpunit/phpunit": "^9.5",
         "psalm/phar": "*",
-        "slevomat/coding-standard": "^8.4",
-        "squizlabs/php_codesniffer": "^3.7",
+        "slevomat/coding-standard": "*",
+        "squizlabs/php_codesniffer": "*",
         "composer/composer": "^2"
     },
     "require": {

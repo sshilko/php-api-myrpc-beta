@@ -67,7 +67,7 @@ final class NormalWorkerTest extends BaseTestCase
         callable $responseGen
     ): void {
         $this->service = $this->newApiServer($action, $arguments(), $id);
-        $responseBody = $responseGen();
+        $responseBody  = $responseGen();
 
         $response = $this->service->run();
         if ($responseBody instanceof Throwable) {
@@ -154,7 +154,7 @@ final class NormalWorkerTest extends BaseTestCase
         $container->method('get')->with($service)->willReturn($handler);
 
         $datatypeFactory = $this->createMock(DatatypeFactoryInterface::class);
-        $handlerFactory = new HandlerFactory($container, $datatypeFactory);
+        $handlerFactory  = new HandlerFactory($container, $datatypeFactory);
 
         $schemaServer = new SchemaServer(
             $handlerFactory,
@@ -188,7 +188,7 @@ final class NormalWorkerTest extends BaseTestCase
     public static function getSimpleMethodValidations(): array
     {
         $token = uniqid('any-auth-token', true);
-        $id = (new TokenIdentityFactory())->create($token);
+        $id    = (new TokenIdentityFactory())->create($token);
 
         return [
             'inputArray' => [
@@ -228,7 +228,7 @@ final class NormalWorkerTest extends BaseTestCase
     public static function getSimpleApiCalls(): array
     {
         $token = uniqid('any-auth-token', true);
-        $id = (new TokenIdentityFactory())->create($token);
+        $id    = (new TokenIdentityFactory())->create($token);
 
         $inputNamedArgumentsResponse = (object) [
             'mybool3' => false,
@@ -236,7 +236,7 @@ final class NormalWorkerTest extends BaseTestCase
             'myint2' => 456,
             'mystring1' => 'str1',
         ];
-        $success1 = new Success($inputNamedArgumentsResponse);
+        $success1                    = new Success($inputNamedArgumentsResponse);
 
         //TODO: fix arrays with symfony serializer
         //$bookInput->bookRatings = ['boggle' => 4, 'msdn' => 'yes', 'usr' => 1.1];
@@ -308,10 +308,10 @@ final class NormalWorkerTest extends BaseTestCase
     public static function getUserlandDatatypesApiCalls(): array
     {
         $token = uniqid('any-auth-token', true);
-        $id = (new TokenIdentityFactory())->create($token);
+        $id    = (new TokenIdentityFactory())->create($token);
 
         $bookInput = new MyUserlandDatatype("author2", 18, false, 1.99);
-        $bookArg = json_decode(
+        $bookArg   = json_decode(
             json_encode($bookInput, JSON_THROW_ON_ERROR),
             false,
             JSON_THROW_ON_ERROR,
@@ -350,9 +350,9 @@ final class NormalWorkerTest extends BaseTestCase
                 },
                 $id,
                 static function () use ($bookInput) {
-                    $bookInputOptional = clone $bookInput;
+                    $bookInputOptional            = clone $bookInput;
                     $bookInputOptional->bookPrice = null;
-                    $bookInputOptional->verified = true;
+                    $bookInputOptional->verified  = true;
 
                     return $bookInputOptional;
                 },
@@ -367,7 +367,7 @@ final class NormalWorkerTest extends BaseTestCase
                 },
                 $id,
                 static function () use ($bookInput) {
-                    $bookOutput = clone $bookInput;
+                    $bookOutput           = clone $bookInput;
                     $bookOutput->verified = true;
 
                     return $bookOutput;
@@ -380,7 +380,7 @@ final class NormalWorkerTest extends BaseTestCase
             'inputCustomDatatype with attributes validation using Symfony validator loadValidatorMetadata' => [
                 'getMyUserlandDatatype',
                 static function () use ($bookArg) {
-                    $bookYoungAuthor = clone $bookArg;
+                    $bookYoungAuthor            = clone $bookArg;
                     $bookYoungAuthor->authorAge = 1;
 
                     return [$bookYoungAuthor];
@@ -397,7 +397,7 @@ final class NormalWorkerTest extends BaseTestCase
             'inputCustomDatatype with attributes validation using Symfony validator attributes' => [
                 'getMyUserlandDatatype',
                 static function () use ($bookArg) {
-                    $bookWithoutAuthor = clone $bookArg;
+                    $bookWithoutAuthor             = clone $bookArg;
                     $bookWithoutAuthor->authorName = "";
 
                     return [$bookWithoutAuthor];
@@ -417,7 +417,7 @@ final class NormalWorkerTest extends BaseTestCase
     {
         $service = uniqid('', true);
 
-        $worker = new NormalWorker();
+        $worker  = new NormalWorker();
         $handler = new SmartHandler($worker);
 
         $request = $this->newSimpleRequest($service, $action, $arguments, uniqid('', true), $id->getIdentityToken());
@@ -428,13 +428,13 @@ final class NormalWorkerTest extends BaseTestCase
 
         $datatypeFactory = $this->createMock(DatatypeFactoryInterface::class);
 
-        $handlerFactory = new HandlerFactory($container, $datatypeFactory);
+        $handlerFactory  = new HandlerFactory($container, $datatypeFactory);
         $responseFactory = new SimpleResponseFactory();
         $identityFactory = new TokenIdentityFactory();
 
         $logger = $this->createMock(LoggerInterface::class);
 
-        $schemaFactory = $this->createMock(SchemaFactoryInterface::class);
+        $schemaFactory  = $this->createMock(SchemaFactoryInterface::class);
         $requestFactory = $this->createMock(RequestFactoryInterface::class);
         $requestFactory->expects(self::once())->method('create')->willReturn($request);
 

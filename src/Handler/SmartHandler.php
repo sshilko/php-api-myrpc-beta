@@ -79,8 +79,8 @@ class SmartHandler implements SmartHandlerInterface
         ?ValidatorInterface $validator = null
     ) {
         $this->reflectionClass = new ReflectionClass($worker);
-        $this->serializer = $serializer ?? new JsonSerializer();
-        $this->validator = $validator ?? new Symfony();
+        $this->serializer      = $serializer ?? new JsonSerializer();
+        $this->validator       = $validator ?? new Symfony();
     }
 
     /**
@@ -124,9 +124,9 @@ class SmartHandler implements SmartHandlerInterface
              * This only happens if type conversion/mapping of input objects failed
              * Edge case, this error would have been caught earlier in conversion step
              */
-            $actionMessage = explode(':', $ex->getMessage(), 3);
+            $actionMessage      = explode(':', $ex->getMessage(), 3);
             $actionErrorMessage = $actionMessage[2] ?? '??';
-            $message = str_replace(['(', ')'], '', "TypeError for action " . $actionErrorMessage);
+            $message            = str_replace(['(', ')'], '', "TypeError for action " . $actionErrorMessage);
 
             throw new HandlerActionTypeException($message);
         }

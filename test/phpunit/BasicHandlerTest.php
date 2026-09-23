@@ -60,13 +60,13 @@ final class BasicHandlerTest extends BaseTestCase
 
         $datatypeFactory = $this->createMock(DatatypeFactoryInterface::class);
 
-        $handlerFactory = new HandlerFactory($container, $datatypeFactory);
+        $handlerFactory  = new HandlerFactory($container, $datatypeFactory);
         $responseFactory = new SimpleResponseFactory();
         $identityFactory = new TokenIdentityFactory();
 
         $logger = $this->createMock(LoggerInterface::class);
 
-        $schemaFactory = $this->createMock(SchemaFactoryInterface::class);
+        $schemaFactory  = $this->createMock(SchemaFactoryInterface::class);
         $requestFactory = $this->createMock(RequestFactoryInterface::class);
         $requestFactory->expects(self::once())->method('create')->willReturn($request);
 
@@ -93,7 +93,7 @@ final class BasicHandlerTest extends BaseTestCase
     public static function getSimpleApiCalls(): array
     {
         $token = uniqid('any-auth-token', true);
-        $id = (new TokenIdentityFactory())->create($token);
+        $id    = (new TokenIdentityFactory())->create($token);
 
         return [
             'getArguments-1'     => ['getArguments',      [1,2,3],    $id,       [1,2,3]],

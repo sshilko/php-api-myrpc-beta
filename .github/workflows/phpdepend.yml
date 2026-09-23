@@ -1,4 +1,4 @@
-# This file is part of the sshilko/php-api-myrpc package.
+﻿# This file is part of the sshilko/php-api-myrpc package.
 #
 # (c) Sergei Shilko <contact@sshilko.com>
 #
@@ -7,7 +7,7 @@
 # For the full copyright and license information, please view the LICENSE
 # file that was distributed with this source code.
 # @license https://opensource.org/licenses/mit-license.php MIT
-name: PHPDocumentor
+name: PDepend
 
 on:
   workflow_run:
@@ -33,10 +33,8 @@ jobs:
         with:
           path: /tmp/docker-save
           key: ${{ runner.os }}-docker-php-build-save-${{ hashFiles('build/Dockerfile.php83') }}
-
       - name: Load cached Docker image
-        run: docker load -i /tmp/docker-save/snapshot.tar && docker tag app/php-image-cache app/php
-        if: steps.docker-php-image-cache.outputs.cache-hit == 'true'
+        run: docker load -i /tmp/docker-save/snapshot.tar && docker tag app/php-image-cache app/php83
 
       - name: Docker boot
         env:
@@ -62,19 +60,23 @@ jobs:
         run: docker-compose exec -T app.php83 composer install
 
         # Docs: https://phpunit.readthedocs.io/en/9.5/
-      - name: Docker run PHPDoc
-        run: docker-compose exec -T app.php83 composer app-phpdoc
+      - name: Docker run PHPUnit
+        run: docker-compose exec -T app.php83 composer app-pdepend
 
         # https://github.com/actions/upload-artifact
-      - name: Upload PHPDoc artifacts
+      - name: Upload Pdepend artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: phpdoc-output
+          name: pdepend-output
           path: |
-            build/tmp/phpdoc-output
+            build/tmp/pdepend-dependency-xml.xml
+            build/tmp/pdepend-jdepend-chart.svg
+            build/tmp/pdepend-jdepend-xml.xml
+            build/tmp/pdepend-summary-xml.xml
+            build/tmp/pdepend-overview-pyramid.svg
           retention-days: 1
 
-  docs:
+  badges:
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 2
@@ -90,11 +92,11 @@ jobs:
       - name: Download all PHPUnit artifacts
         uses: actions/download-artifact@v3
         with:
-          name: phpdoc-output
-          path: php/phpdoc
+          name: pdepend-output
+          path: php/pdepend
 
       - uses: nick-fields/retry@v2
-        name: Commit phpdoc details
+        name: Commit pdepend details
         continue-on-error: true
         with:
           timeout_seconds: 20
@@ -105,6 +107,6 @@ jobs:
             git config user.name github-actions
             git config user.email github-actions@github.com
             git pull
-            git add php/phpdoc/*
-            git commit -m "generated phpdoc artifacts from revision ${GITHUB_SHA::7}"
+            git add php/pdepend/*
+            git commit -m "generated pdepend artifacts from revision ${GITHUB_SHA::7}"
             git push

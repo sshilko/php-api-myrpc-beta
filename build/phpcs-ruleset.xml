@@ -21,6 +21,8 @@
     <exclude-pattern>*/vendor/*</exclude-pattern>
     <exclude-pattern>*baseline*</exclude-pattern>
     <exclude-pattern>*phpunit/includes*</exclude-pattern>
+    <exclude-pattern>phan.php</exclude-pattern>
+     <exclude-pattern>*/tmp/*</exclude-pattern>    
 
     <arg name="error-severity" value="1" />
     <arg name="warning-severity" value="1" />
