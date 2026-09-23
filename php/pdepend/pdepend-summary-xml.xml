@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2024-04-28T16:57:43" pdepend="@package_version@" ahh="0.2" andc="0.33333333333333" calls="160" ccn="159" ccn2="188" cloc="212" clsa="1" clsc="37" eloc="1419" fanout="179" leafs="34" lloc="845" loc="2179" maxDIT="4" ncloc="1967" noc="38" nof="0" noi="27" nom="144" nop="14" roots="2">
+<metrics generated="2026-09-23T18:07:02" pdepend="@package_version@" ahh="0.2" andc="0.33333333333333" calls="160" ccn="159" ccn2="188" cloc="212" clsa="1" clsc="37" eloc="1418" fanout="179" leafs="34" lloc="844" loc="2178" maxDIT="4" ncloc="1966" noc="38" nof="0" noi="27" nom="144" nop="14" roots="2">
   <files>
     <file name="/app/src/ApiServer.php" loc="92" cloc="9" eloc="63" lloc="37" ncloc="83"/>
     <file name="/app/src/SchemaServer.php" loc="36" cloc="4" eloc="24" lloc="13" ncloc="32"/>
@@ -24,7 +24,7 @@
     <file name="/app/src/Handler/HandlerFactory.php" loc="88" cloc="3" eloc="67" lloc="40" ncloc="85"/>
     <file name="/app/src/Handler/HandlerResponse.php" loc="31" cloc="0" eloc="24" lloc="9" ncloc="31"/>
     <file name="/app/src/Handler/HandlerResponseFactory.php" loc="32" cloc="1" eloc="24" lloc="13" ncloc="31"/>
-    <file name="/app/src/Handler/SmartHandler.php" loc="381" cloc="49" eloc="280" lloc="201" ncloc="332"/>
+    <file name="/app/src/Handler/SmartHandler.php" loc="380" cloc="49" eloc="279" lloc="200" ncloc="331"/>
     <file name="/app/src/Handler/Worker/WorkerTrait.php" loc="19" cloc="0" eloc="12" lloc="6" ncloc="19"/>
     <file name="/app/src/Identity/TokenIdentity.php" loc="19" cloc="0" eloc="13" lloc="5" ncloc="19"/>
     <file name="/app/src/Identity/TokenIdentityFactory.php" loc="16" cloc="0" eloc="11" lloc="6" ncloc="16"/>
@@ -162,7 +162,7 @@
       <method name="createErrorResponse" start="14" end="19" ccn="1" ccn2="1" loc="6" cloc="0" eloc="3" lloc="1" ncloc="6" npath="1" hnt="11" hnd="10" hv="36.541209043761" hd="5.25" hl="0.19047619047619" he="191.84134747975" ht="10.657852637764" hb="0.011087668241344" hi="6.9602302940497" mi="78.514964679948"/>
       <method name="createSuccessResponse" start="21" end="30" ccn="2" ccn2="3" loc="10" cloc="0" eloc="6" lloc="3" ncloc="10" npath="3" hnt="32" hnd="16" hv="128" hd="9.5" hl="0.10526315789474" he="1216" ht="67.555555555556" hb="0.037975292580811" hi="13.473684210526" mi="67.86721592171"/>
     </class>
-    <class name="SmartHandler" fqname="myrpc\Handler\SmartHandler" start="63" end="380" loc="318" cloc="45" eloc="205" lloc="114" ncloc="273" dit="0" noam="0" nocc="0" noom="0" nom="7" cr="0.15" rcr="0.5701125" ca="0" cbo="30" ce="30" impl="4" cis="5" csz="12" npm="5" vars="5" varsi="5" varsnp="0" wmc="59" wmci="59" wmcnp="18">
+    <class name="SmartHandler" fqname="myrpc\Handler\SmartHandler" start="63" end="379" loc="317" cloc="45" eloc="204" lloc="113" ncloc="272" dit="0" noam="0" nocc="0" noom="0" nom="7" cr="0.15" rcr="0.5701125" ca="0" cbo="30" ce="30" impl="4" cis="5" csz="12" npm="5" vars="5" varsi="5" varsnp="0" wmc="59" wmci="59" wmcnp="18">
       <file name="/app/src/Handler/SmartHandler.php"/>
       <method name="__construct" start="76" end="84" ccn="1" ccn2="1" loc="9" cloc="0" eloc="5" lloc="3" ncloc="9" npath="1" hnt="22" hnd="15" hv="85.951593103387" hd="4.3333333333333" hl="0.23076923076923" he="372.45690344801" ht="20.692050191556" hb="0.017255574806497" hi="19.834983023859" mi="71.0745190823"/>
       <method name="action" start="91" end="165" ccn="8" ccn2="14" loc="75" cloc="14" eloc="45" lloc="31" ncloc="61" npath="160" hnt="203" hnd="71" hv="1248.3986652595" hd="21.375" hl="0.046783625730994" he="26684.521469921" ht="1482.4734149956" hb="0.29765854737199" hi="58.404615918571" mi="40.373134252221"/>
@@ -170,7 +170,7 @@
       <method name="setSchemaFactory" start="172" end="177" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="9" hnd="8" hv="27" hd="5" hl="0.2" he="135" ht="7.5" hb="0.0087720532146386" hi="5.4" mi="76.709754179319"/>
       <method name="getSchema" start="179" end="184" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="13" hnd="11" hv="44.972611042285" hd="4.8" hl="0.20833333333333" he="215.86853300297" ht="11.992696277943" hb="0.011995130357899" hi="9.3692939671427" mi="75.158217726801"/>
       <method name="prepareArguments" start="186" end="208" ccn="4" ccn2="9" loc="23" cloc="0" eloc="20" lloc="9" ncloc="23" npath="4" hnt="71" hnd="30" hv="348.3892322882" hd="17.9375" hl="0.055749128919861" he="6249.2318541697" ht="347.17954745387" hb="0.11309146686351" hi="19.422396225126" mi="52.609281525812"/>
-      <method name="resolveArguments" start="217" end="379" ccn="21" ccn2="32" loc="163" cloc="19" eloc="124" lloc="66" ncloc="144" npath="17922" hnt="503" hnd="125" hv="3503.789495185" hd="40.224489795918" hl="0.024860476915271" he="140938.14479612" ht="7829.8969331176" hb="0.90274365698795" hi="87.105877861018" mi="25.211179350222"/>
+      <method name="resolveArguments" start="217" end="378" ccn="21" ccn2="32" loc="162" cloc="19" eloc="123" lloc="65" ncloc="143" npath="17922" hnt="497" hnd="124" hv="3456.2355662623" hd="40.221649484536" hl="0.024862232474689" he="139015.49548219" ht="7723.0830823438" hb="0.89451484689311" hi="85.929732135702" mi="25.329444409043"/>
     </class>
   </package>
   <package name="myrpc\Handler\Worker" noc="0" noi="1" nom="1" nof="0" cr="0.15" rcr="0.15">
