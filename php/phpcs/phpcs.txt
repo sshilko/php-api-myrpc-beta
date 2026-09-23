@@ -1,4 +1,112 @@
-File,Line,Column,Type,Message,Source,Severity,Fixable
-File,Line,Column,Type,Message,Source,Severity,Fixable
-File,Line,Column,Type,Message,Source,Severity,Fixable
-File,Line,Column,Type,Message,Source,Severity,Fixable
+Composer detected issues in your platform:
+
+Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34.
+
+PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/autoload_real.php(25): require()
+#1 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/autoload.php(22): ComposerAutoloaderInitec82d349dae6304111c76118fd029767::getLoader()
+#2 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/autoload.php(84): include('...')
+#3 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/bin/phpcbf(29): PHP_CodeSniffer\Autoload::load()
+#4 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/bin/phpcbf(119): include('...')
+#5 {main}
+  thrown in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php on line 22
+Composer detected issues in your platform:
+
+Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34.
+
+PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/autoload_real.php(25): require()
+#1 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/autoload.php(22): ComposerAutoloaderInitec82d349dae6304111c76118fd029767::getLoader()
+#2 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/autoload.php(84): include('...')
+#3 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/bin/phpcbf(29): PHP_CodeSniffer\Autoload::load()
+#4 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/bin/phpcbf(119): include('...')
+#5 {main}
+  thrown in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php on line 22
+xargs: php: exited with status 255; aborting
+xargs: php: exited with status 255; aborting
+Composer detected issues in your platform:
+
+Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34.
+
+PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/autoload_real.php(25): require()
+#1 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/autoload.php(22): ComposerAutoloaderInitec82d349dae6304111c76118fd029767::getLoader()
+#2 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/autoload.php(84): include('...')
+#3 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/bin/phpcbf(29): PHP_CodeSniffer\Autoload::load()
+#4 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/bin/phpcbf(119): include('...')
+#5 {main}
+  thrown in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php on line 22
+Composer detected issues in your platform:
+
+Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34.
+
+PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/autoload_real.php(25): require()
+#1 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/autoload.php(22): ComposerAutoloaderInitec82d349dae6304111c76118fd029767::getLoader()
+#2 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/autoload.php(84): include('...')
+#3 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/bin/phpcbf(29): PHP_CodeSniffer\Autoload::load()
+#4 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/bin/phpcbf(119): include('...')
+#5 {main}
+  thrown in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php on line 22
+xargs: php: exited with status 255; aborting
+xargs: php: exited with status 255; aborting
+Composer detected issues in your platform:
+
+Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34.
+
+PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/autoload_real.php(25): require()
+#1 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/autoload.php(22): ComposerAutoloaderInitec82d349dae6304111c76118fd029767::getLoader()
+#2 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/autoload.php(84): include('...')
+#3 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/bin/phpcbf(29): PHP_CodeSniffer\Autoload::load()
+#4 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/bin/phpcbf(119): include('...')
+#5 {main}
+  thrown in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php on line 22
+Composer detected issues in your platform:
+
+Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34.
+
+PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/autoload_real.php(25): require()
+#1 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/autoload.php(22): ComposerAutoloaderInitec82d349dae6304111c76118fd029767::getLoader()
+#2 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/autoload.php(84): include('...')
+#3 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/bin/phpcbf(29): PHP_CodeSniffer\Autoload::load()
+#4 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/bin/phpcbf(119): include('...')
+#5 {main}
+  thrown in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php on line 22
+xargs: php: exited with status 255; aborting
+xargs: php: exited with status 255; aborting
+Composer detected issues in your platform:
+
+Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34.
+
+PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/autoload_real.php(25): require()
+#1 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/autoload.php(22): ComposerAutoloaderInitec82d349dae6304111c76118fd029767::getLoader()
+#2 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/autoload.php(84): include('...')
+#3 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/bin/phpcbf(29): PHP_CodeSniffer\Autoload::load()
+#4 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/bin/phpcbf(119): include('...')
+#5 {main}
+  thrown in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php on line 22
+xargs: php: exited with status 255; aborting
+Composer detected issues in your platform:
+
+Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34.
+
+PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/autoload_real.php(25): require()
+#1 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/autoload.php(22): ComposerAutoloaderInitec82d349dae6304111c76118fd029767::getLoader()
+#2 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/autoload.php(84): include('...')
+#3 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/squizlabs/php_codesniffer/bin/phpcbf(29): PHP_CodeSniffer\Autoload::load()
+#4 /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/bin/phpcbf(119): include('...')
+#5 {main}
+  thrown in /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/vendor/composer/platform_check.php on line 22
+xargs: php: exited with status 255; aborting
