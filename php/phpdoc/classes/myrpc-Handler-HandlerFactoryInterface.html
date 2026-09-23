@@ -6,7 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,7 +57,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/myrpc.html" class="">myrpc</a>
@@ -99,7 +102,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -107,14 +110,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -150,7 +153,8 @@
 
 
 
-
+    
+    
 <h3 id="toc">
     Table of Contents
     <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -173,31 +177,31 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_create">create()</a>
+    <a class="" href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_create">create()</a>
     <span>
                                 &nbsp;: <a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasContext">hasContext()</a>
+    <a class="" href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasContext">hasContext()</a>
     <span>
                                 &nbsp;: <a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasSchema">hasSchema()</a>
+    <a class="" href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasSchema">hasSchema()</a>
     <span>
                                 &nbsp;: <a href="classes/myrpc-Handler-HandlerSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerSchemaInterface">HandlerSchemaInterface</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withContext">withContext()</a>
+    <a class="" href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withContext">withContext()</a>
     <span>
                                 &nbsp;: <a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withSchema">withSchema()</a>
+    <a class="" href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withSchema">withSchema()</a>
     <span>
                                 &nbsp;: <a href="classes/myrpc-Handler-HandlerWithSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerWithSchemaInterface">HandlerWithSchemaInterface</abbr></a>    </span>
 </dt>
@@ -206,6 +210,8 @@
 
 
 
+
+        
 
         
 
@@ -236,16 +242,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handlerId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handlerId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$handlerId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$handlerId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -253,22 +260,23 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_create_tags">
         Tags
-        <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_create#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_create_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/myrpc-Exception-ServiceException.html"><abbr title="\myrpc\Exception\ServiceException">ServiceException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a></span>
@@ -296,16 +304,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasContext</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$h</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">hasContext</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$h</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$h</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$h</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -314,6 +323,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a>|null</span>
@@ -341,16 +352,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$h</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerSchemaInterface">HandlerSchemaInterface</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">hasSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$h</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerSchemaInterface">HandlerSchemaInterface</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$h</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$h</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/myrpc-Handler-HandlerInterface.html"><abbr title="\myrpc\Handler\HandlerInterface">HandlerInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -358,22 +370,23 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_hasSchema_tags">
         Tags
-        <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasSchema#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasSchema_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/myrpc-Exception-ServiceException.html"><abbr title="\myrpc\Exception\ServiceException">ServiceException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerSchemaInterface">HandlerSchemaInterface</abbr></a>|null</span>
@@ -401,23 +414,24 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withContext</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$h</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-Context-ContextInterface.html"><abbr title="\myrpc\Handler\Context\ContextInterface">ContextInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ctx</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">withContext</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$h</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/myrpc-Handler-Context-ContextInterface.html"><abbr title="\myrpc\Handler\Context\ContextInterface">ContextInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ctx</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$h</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$h</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ctx</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-Context-ContextInterface.html"><abbr title="\myrpc\Handler\Context\ContextInterface">ContextInterface</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$ctx</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/myrpc-Handler-Context-ContextInterface.html"><abbr title="\myrpc\Handler\Context\ContextInterface">ContextInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -425,22 +439,23 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_withContext_tags">
         Tags
-        <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withContext#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withContext_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/myrpc-Exception-ServiceException.html"><abbr title="\myrpc\Exception\ServiceException">ServiceException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-SmartHandlerInterface.html"><abbr title="\myrpc\Handler\SmartHandlerInterface">SmartHandlerInterface</abbr></a></span>
@@ -468,23 +483,24 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-HandlerSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerSchemaInterface">HandlerSchemaInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$h</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Schema-SchemaFactoryInterface.html"><abbr title="\myrpc\Schema\SchemaFactoryInterface">SchemaFactoryInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerWithSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerWithSchemaInterface">HandlerWithSchemaInterface</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">withSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/myrpc-Handler-HandlerSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerSchemaInterface">HandlerSchemaInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$h</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/myrpc-Schema-SchemaFactoryInterface.html"><abbr title="\myrpc\Schema\SchemaFactoryInterface">SchemaFactoryInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerWithSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerWithSchemaInterface">HandlerWithSchemaInterface</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$h</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Handler-HandlerSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerSchemaInterface">HandlerSchemaInterface</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$h</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/myrpc-Handler-HandlerSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerSchemaInterface">HandlerSchemaInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$schema</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/myrpc-Schema-SchemaFactoryInterface.html"><abbr title="\myrpc\Schema\SchemaFactoryInterface">SchemaFactoryInterface</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$schema</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/myrpc-Schema-SchemaFactoryInterface.html"><abbr title="\myrpc\Schema\SchemaFactoryInterface">SchemaFactoryInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -492,22 +508,23 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_withSchema_tags">
         Tags
-        <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withSchema#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withSchema_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/myrpc-Exception-ServiceException.html"><abbr title="\myrpc\Exception\ServiceException">ServiceException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/myrpc-Handler-HandlerWithSchemaInterface.html"><abbr title="\myrpc\Handler\HandlerWithSchemaInterface">HandlerWithSchemaInterface</abbr></a></span>
@@ -516,102 +533,11 @@
 </article>
             </section>
 
-        <div class="phpdocumentor-modal" id="source-view">
-    <div class="phpdocumentor-modal-bg" data-exit-button></div>
-    <div class="phpdocumentor-modal-container">
-        <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/Handler/HandlerFactoryInterface.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
-        </div>
-        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
-    </div>
-</div>
-
-    <script type="text/javascript">
-        (function () {
-            function loadExternalCodeSnippet(el, url, line) {
-                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
-                    const language = 'php';
-
-                    const code = document.createElement('code');
-                    code.className = 'language-' + language;
-                    pre.textContent = '';
-                    pre.setAttribute('data-line', line)
-                    code.textContent = 'Loading…';
-                    pre.appendChild(code);
-
-                    var xhr = new XMLHttpRequest();
-
-                    xhr.open('GET', src, true);
-
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState !== 4) {
-                            return;
-                        }
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-                            Prism.highlightElement(code);
-                            return;
-                        }
-
-                        if (xhr.status === 404) {
-                            code.textContent = '✖ Error: File could not be found';
-                            return;
-                        }
-
-                        if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                            return;
-                        }
-
-                        code.textContent = '✖ Error: An unknown error occurred';
-                    };
-
-                    xhr.send(null);
-                });
-            }
-
-            const modalButtons = document.querySelectorAll("[data-modal]");
-            const openedAsLocalFile = window.location.protocol === 'file:';
-            if (modalButtons.length > 0 && openedAsLocalFile) {
-                console.warn(
-                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
-                    'browsers block XHR requests when a page is opened this way'
-                );
-            }
-
-            modalButtons.forEach(function (trigger) {
-                if (openedAsLocalFile) {
-                    trigger.setAttribute("hidden", "hidden");
-                }
-
-                trigger.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const modal = document.getElementById(trigger.dataset.modal);
-                    if (!modal) {
-                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
-                        return;
-                    }
-                    modal.classList.add("phpdocumentor-modal__open");
-
-                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
-                    const exits = modal.querySelectorAll("[data-exit-button]");
-                    exits.forEach(function (exit) {
-                        exit.addEventListener("click", function (event) {
-                            event.preventDefault();
-                            modal.classList.remove("phpdocumentor-modal__open");
-                        });
-                    });
-                });
-            });
-        })();
-    </script>
-
+        
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
-                            
+                                
     <section class="phpdocumentor-on-this-page__content">
         <strong class="phpdocumentor-on-this-page__title">On this page</strong>
 
@@ -619,18 +545,18 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                    <li><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#toc-constants">Constants</a></li>
-                    <li><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#toc-methods">Methods</a></li>
-                </ul>
+                                                                                <li><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#toc-methods">Methods</a></li>
+                                    </ul>
             </li>
+            
                             <li class="phpdocumentor-on-this-page-section__title">Methods</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_create">create()</a></li>
-                                                    <li><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasContext">hasContext()</a></li>
-                                                    <li><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasSchema">hasSchema()</a></li>
-                                                    <li><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withContext">withContext()</a></li>
-                                                    <li><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withSchema">withSchema()</a></li>
+                                                    <li class=""><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_create">create()</a></li>
+                                                    <li class=""><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasContext">hasContext()</a></li>
+                                                    <li class=""><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_hasSchema">hasSchema()</a></li>
+                                                    <li class=""><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withContext">withContext()</a></li>
+                                                    <li class=""><a href="classes/myrpc-Handler-HandlerFactoryInterface.html#method_withSchema">withSchema()</a></li>
                                             </ul>
                 </li>
             

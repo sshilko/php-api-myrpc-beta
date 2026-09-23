@@ -268,12 +268,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\myrpc\\Handler\\Context\\Context\u003A\u003AnewSuccessResponse\u0028\u0029",
             "name": "newSuccessResponse",
-            "summary": "",
+            "summary": "Do\u0020not\u0020allow\u0020returning\u0020stdClass,\u0020all\u0020objects\u0020need\u0020to\u0020be\u0020typed",
             "url": "classes/myrpc-Handler-Context-Context.html#method_newSuccessResponse"
         },                {
             "fqsen": "\\myrpc\\Handler\\Context\\Context\u003A\u003AnewDatatypeResponse\u0028\u0029",
             "name": "newDatatypeResponse",
-            "summary": "",
+            "summary": "Use\u0020user\u002Ddefined\u0020types\u0020as\u0020response",
             "url": "classes/myrpc-Handler-Context-Context.html#method_newDatatypeResponse"
         },                {
             "fqsen": "\\myrpc\\Handler\\Context\\Context\u003A\u003AsetIdentity\u0028\u0029",
