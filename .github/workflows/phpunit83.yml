@@ -72,7 +72,7 @@ jobs:
         env:
           DOCKER_BUILDKIT: "1"
           COMPOSE_DOCKER_CLI_BUILD: "1"
-          SERVICES_NAME: "app/php83"
+          SERVICES_NAME: "app.php83"
         run: docker compose up --force-recreate -d $SERVICES_NAME
         timeout-minutes: 3
 
