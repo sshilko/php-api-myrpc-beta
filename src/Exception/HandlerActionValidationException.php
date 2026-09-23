@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace myrpc\Exception;
 
-class HandlerActionValidationException extends HandlerActionException
+final class HandlerActionValidationException extends HandlerActionException
 {
 
 }

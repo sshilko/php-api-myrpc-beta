@@ -12,12 +12,13 @@ use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use function is_a;
 
-class DatatypeFactory implements DatatypeFactoryInterface, UserspaceDatatypeFactoryInterface
+final class DatatypeFactory implements DatatypeFactoryInterface, UserspaceDatatypeFactoryInterface
 {
     public function __construct(private ContainerInterface $typesSource)
     {
     }
 
+    #[\Override]
     public function hasUserspaceType(string $typeName): bool
     {
         return $this->typesSource->has($typeName);
@@ -26,16 +27,19 @@ class DatatypeFactory implements DatatypeFactoryInterface, UserspaceDatatypeFact
     /**
      * @throws \myrpc\Exception\DatatypeException
      */
+    #[\Override]
     public function getUserspaceType(string $typeName): DatatypeInterface
     {
         return $this->create($typeName);
     }
 
+    #[\Override]
     public function getInternalErrorResponseType(string $message, ?int $code = null): DatatypeInterface
     {
         return new Error($message, $code);
     }
 
+    #[\Override]
     public function getInternalSuccessResponseType(object|array|string|int|float|bool|null $response): DatatypeInterface
     {
         return new Success($response);

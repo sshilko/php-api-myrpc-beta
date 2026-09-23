@@ -12,7 +12,7 @@ use const JSON_THROW_ON_ERROR;
 /**
  * @see https://json-schema.org/understanding-json-schema/reference/generic.html
  */
-class JsonSchema implements SchemaInterface
+final class JsonSchema implements SchemaInterface
 {
 
     public function __construct(protected array $jsonSchema)

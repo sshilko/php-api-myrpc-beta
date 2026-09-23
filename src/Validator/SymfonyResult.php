@@ -6,7 +6,7 @@ namespace myrpc\Validator;
 
 use Stringable;
 
-class SymfonyResult implements ValidatorResultInterface
+final class SymfonyResult implements ValidatorResultInterface
 {
     public function __construct(
         protected readonly string $name,
@@ -15,16 +15,19 @@ class SymfonyResult implements ValidatorResultInterface
     ) {
     }
 
+    #[\Override]
     public function getName(): string
     {
         return $this->name;
     }
 
+    #[\Override]
     public function getCode(): ?string
     {
         return $this->code;
     }
 
+    #[\Override]
     public function getMessage(): string|Stringable
     {
         return $this->message;

@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace myrpc\Exception;
 
-class SerializerObjectAssertException extends ServiceException
+final class SerializerObjectAssertException extends ServiceException
 {
 
 }

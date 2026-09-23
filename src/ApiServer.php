@@ -15,7 +15,7 @@ use myrpc\Schema\SchemaFactoryInterface;
 use Psr\Log\LoggerInterface;
 use Throwable;
 
-class ApiServer
+final class ApiServer
 {
     //TODO add factory
     public function __construct(

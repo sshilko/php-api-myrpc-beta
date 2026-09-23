@@ -9,11 +9,13 @@ use myrpc\Validator\IsValidatableInterface;
 
 abstract class AbstractDatatype implements DatatypeInterface, IsValidatableInterface
 {
+    #[\Override]
     public function getPayload(): object|array|string|int|float|bool|null
     {
         return $this;
     }
 
+    #[\Override]
     public function validatableObject(): object
     {
         return $this;

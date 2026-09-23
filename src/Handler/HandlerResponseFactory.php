@@ -9,8 +9,9 @@ use function is_a;
 use function is_object;
 
 //TODO test me
-class HandlerResponseFactory implements HandlerResponseFactoryInterface
+final class HandlerResponseFactory implements HandlerResponseFactoryInterface
 {
+    #[\Override]
     public function createErrorResponse(
         object|array|string|int|float|bool|null $response,
         ?int $errorCode = null
@@ -18,6 +19,7 @@ class HandlerResponseFactory implements HandlerResponseFactoryInterface
         return new HandlerResponse($response, $errorCode, true);
     }
 
+    #[\Override]
     public function createSuccessResponse(
         object|array|string|int|float|bool|null $response,
         ?int $code = null

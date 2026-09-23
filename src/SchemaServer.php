@@ -7,7 +7,7 @@ namespace myrpc;
 use myrpc\Handler\HandlerFactoryInterface;
 use myrpc\Schema\SchemaFactoryInterface;
 
-class SchemaServer
+final class SchemaServer
 {
     //TODO add factory
     public function __construct(

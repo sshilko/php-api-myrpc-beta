@@ -9,7 +9,7 @@ use myrpc\Datatype\Internal\AbstractDatatype;
 /**
  * This is generic success response
  */
-class Success extends AbstractDatatype
+final class Success extends AbstractDatatype
 {
 
     /**

@@ -9,6 +9,8 @@
 # .gitignore file
 # @see https://github.com/github/gitignore
 
+build
+
 # @see https://getcomposer.org
 vendor
 

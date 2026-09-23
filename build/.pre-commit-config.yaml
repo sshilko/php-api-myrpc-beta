@@ -23,9 +23,14 @@ repos:
         entry: php -l -d display_errors=0
         language: system
         types: [php]
+      - id: php-sed
+        name: php-sed
+        entry: sed -i 's/\r$//'
+        language: system
+        types: [php]
       - id: php-code-phpcbf
         name: php-code-phpcbf
-        entry: php ./vendor/bin/phpcbf --standard=build/phpcs-ruleset.xml
+        entry: sh -c 'printf "%s\n" "$@" | xargs -r -n 1 -P 2 php -d memory_limit=-1 ./vendor/bin/phpcbf -v --standard=build/phpcs-ruleset.xml || exit 0' _
         log_file: build/tmp/phpcbf.txt
         language: system
         types: [php]
@@ -33,7 +38,7 @@ repos:
         exclude: ^test/phpunit/includes/MyUserlandDatatype*
       - id: php-code-phpcs
         name: php-code-phpcs
-        entry: sh -c 'printf "%s\n" "$@" | xargs -r -n 1 -P 2 php -d memory_limit=-1 ./vendor/bin/phpcbf -v --standard=build/phpcs-ruleset.xml || exit 0' _
+        entry: php -d memory_limit=-1 ./vendor/bin/phpcs --standard=build/phpcs-ruleset.xml
         log_file: build/tmp/phpcs.txt
         language: system
         types: [php]

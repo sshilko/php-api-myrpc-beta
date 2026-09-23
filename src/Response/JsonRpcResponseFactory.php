@@ -6,8 +6,9 @@ namespace myrpc\Response;
 
 use Throwable;
 
-class JsonRpcResponseFactory implements ResponseFactoryInterface
+final class JsonRpcResponseFactory implements ResponseFactoryInterface
 {
+    #[\Override]
     public function createSuccessResponse(
         object|array|string|int|float|bool|null $data,
         ?string $requestId = null
@@ -29,6 +30,7 @@ class JsonRpcResponseFactory implements ResponseFactoryInterface
         return new JsonRpcResponse($data, $requestId, null);
     }
 
+    #[\Override]
     public function createErrorResponse(
         object|array|string|int|float|bool|null $data,
         ?int $errorId = null,
@@ -37,6 +39,7 @@ class JsonRpcResponseFactory implements ResponseFactoryInterface
         return new JsonRpcResponse($data, $requestId ?? '', $errorId ?? 0);
     }
 
+    #[\Override]
     public function createExceptionResponse(Throwable $e, int $errorId, ?string $requestId = null): ResponseInterface
     {
         return new JsonRpcResponse($e->getMessage(), $requestId ?? '', $errorId);

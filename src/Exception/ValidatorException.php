@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace myrpc\Exception;
 
-class ValidatorException extends ServiceException
+final class ValidatorException extends ServiceException
 {
 
 }

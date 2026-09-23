@@ -12,7 +12,7 @@ use function is_array;
 use function ksort;
 use function usort;
 
-class JsonSchemaFactory implements SchemaFactoryInterface
+final class JsonSchemaFactory implements SchemaFactoryInterface
 {
     public function __construct(protected DatatypeFactoryInterface $datatypeFactory)
     {
@@ -21,6 +21,7 @@ class JsonSchemaFactory implements SchemaFactoryInterface
     /**
      * @throws \myrpc\Exception\ServiceException
      */
+    #[\Override]
     public function newSchemaFromObject(object $obj): SchemaInterface
     {
         $schema      = [];

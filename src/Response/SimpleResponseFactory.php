@@ -6,8 +6,9 @@ namespace myrpc\Response;
 
 use Throwable;
 
-class SimpleResponseFactory implements ResponseFactoryInterface
+final class SimpleResponseFactory implements ResponseFactoryInterface
 {
+    #[\Override]
     public function createSuccessResponse(
         object|array|bool|float|int|string|null $data,
         ?string $requestId = null
@@ -15,6 +16,7 @@ class SimpleResponseFactory implements ResponseFactoryInterface
         return new SimpleResponse($data, $requestId ?? '', null);
     }
 
+    #[\Override]
     public function createErrorResponse(
         object|array|bool|float|int|string|null $data,
         ?int $errorId = null,
@@ -23,6 +25,7 @@ class SimpleResponseFactory implements ResponseFactoryInterface
         return new SimpleResponse($data, $requestId ?? '', $errorId ?? 0);
     }
 
+    #[\Override]
     public function createExceptionResponse(Throwable $e, int $errorId, ?string $requestId = null): ResponseInterface
     {
         return new SimpleResponse($e->getMessage(), $requestId ?? '', $errorId);

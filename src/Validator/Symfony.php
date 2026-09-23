@@ -15,7 +15,7 @@ use function count;
  * - supports attributes constraints
  * - supports classMetadata
  */
-class Symfony implements ValidatorInterface
+final class Symfony implements ValidatorInterface
 {
 
     protected readonly \Symfony\Component\Validator\Validator\ValidatorInterface $validator;
@@ -35,6 +35,7 @@ class Symfony implements ValidatorInterface
      * @return array<\myrpc\Validator\ValidatorResultInterface>
      * @throws \myrpc\Exception\ValidatorException
      */
+    #[\Override]
     public function validate(IsValidatableInterface $input): array
     {
         $response = [];

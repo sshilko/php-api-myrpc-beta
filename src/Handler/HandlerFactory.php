@@ -13,7 +13,7 @@ use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use function is_a;
 
-class HandlerFactory implements HandlerFactoryInterface
+final class HandlerFactory implements HandlerFactoryInterface
 {
     public function __construct(
         private ContainerInterface $handlersSource,
@@ -24,6 +24,7 @@ class HandlerFactory implements HandlerFactoryInterface
     /**
      * @throws \myrpc\Exception\ServiceException
      */
+    #[\Override]
     public function create(string $handlerId): HandlerInterface
     {
         if ('' === $handlerId) {
@@ -55,6 +56,7 @@ class HandlerFactory implements HandlerFactoryInterface
         throw new ServiceException('Handler ' . $handlerId . ' is not defined in source ContainerInterface');
     }
 
+    #[\Override]
     public function hasSchema(HandlerInterface $h): ?HandlerSchemaInterface
     {
         if (is_a($h, HandlerSchemaInterface::class)) {
@@ -64,6 +66,7 @@ class HandlerFactory implements HandlerFactoryInterface
         return null;
     }
 
+    #[\Override]
     public function hasContext(HandlerInterface $h): ?SmartHandlerInterface
     {
         if (is_a($h, SmartHandlerInterface::class)) {
@@ -73,6 +76,7 @@ class HandlerFactory implements HandlerFactoryInterface
         return null;
     }
 
+    #[\Override]
     public function withContext(SmartHandlerInterface $h, ContextInterface $ctx): SmartHandlerInterface
     {
         $h->setContext($ctx);
@@ -80,6 +84,7 @@ class HandlerFactory implements HandlerFactoryInterface
         return $h;
     }
 
+    #[\Override]
     public function withSchema(HandlerSchemaInterface $h, SchemaFactoryInterface $schema): HandlerWithSchemaInterface
     {
         return $h->setSchemaFactory($schema);

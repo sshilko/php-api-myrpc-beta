@@ -13,8 +13,9 @@ use function is_string;
 use function json_decode;
 use const JSON_THROW_ON_ERROR;
 
-class JsonRpcRequestFactory implements RequestFactoryInterface
+final class JsonRpcRequestFactory implements RequestFactoryInterface
 {
+    #[\Override]
     public function create(mixed $data = null): RequestInterface
     {
         /**

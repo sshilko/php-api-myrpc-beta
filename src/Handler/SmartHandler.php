@@ -60,7 +60,7 @@ use function trim;
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  * @SuppressWarnings(PHPMD.CyclomaticComplexity)
  */
-class SmartHandler implements SmartHandlerInterface
+final class SmartHandler implements SmartHandlerInterface
 {
 
     protected ?ContextInterface $context = null;
@@ -88,6 +88,7 @@ class SmartHandler implements SmartHandlerInterface
      * @throws \myrpc\Exception\HandlerActionException
      * @phpcs:disable SlevomatCodingStandard.Complexity.Cognitive.ComplexityTooHigh
      */
+    #[\Override]
     public function action(
         string $action,
         ?array $arguments = null,
@@ -164,11 +165,13 @@ class SmartHandler implements SmartHandlerInterface
         return $this->context->newSuccessResponse($result);
     }
 
+    #[\Override]
     public function setContext(ContextInterface $context): void
     {
         $this->context = $context;
     }
 
+    #[\Override]
     public function setSchemaFactory(SchemaFactoryInterface $schemaFactory): HandlerWithSchemaInterface
     {
         $this->schemaFactory = $schemaFactory;
@@ -176,6 +179,7 @@ class SmartHandler implements SmartHandlerInterface
         return $this;
     }
 
+    #[\Override]
     public function getSchema(): SchemaInterface
     {
         assert(null !== $this->schemaFactory);
@@ -298,9 +302,11 @@ class SmartHandler implements SmartHandlerInterface
                      */
                     $enumName = $paramType->getName();
                     assert(is_string($input[$paramName]) || is_int($input[$paramName]));
+                    /** @psalm-suppress MixedAssignment, MixedMethodCall */
                     $reflectionEnumValue = $enumName::tryFrom($input[$paramName]);
 
                     if (null !== $reflectionEnumValue) {
+                        /** @psalm-suppress MixedAssignment */
                         $output[$paramName] = $reflectionEnumValue;
                     } else {
                         throw new HandlerActionInputException(

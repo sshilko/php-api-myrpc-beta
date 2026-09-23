@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace myrpc\Request;
 
-class SimpleRequest implements RequestInterface
+final class SimpleRequest implements RequestInterface
 {
 
     public function __construct(
@@ -16,26 +16,31 @@ class SimpleRequest implements RequestInterface
     ) {
     }
 
+    #[\Override]
     public function getService(): string
     {
         return $this->service;
     }
 
+    #[\Override]
     public function getAction(): ?string
     {
         return $this->action;
     }
 
+    #[\Override]
     public function getArguments(): ?array
     {
         return $this->arguments;
     }
 
+    #[\Override]
     public function getIdentityToken(): ?string
     {
         return $this->authenticationToken;
     }
 
+    #[\Override]
     public function getRequestId(): ?string
     {
         return $this->requestId;

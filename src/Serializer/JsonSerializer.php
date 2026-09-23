@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace myrpc\Serializer;
 
@@ -26,7 +26,9 @@ use Symfony\Component\Serializer\Normalizer\PropertyNormalizer;
 use Symfony\Component\Serializer\Normalizer\UidNormalizer;
 use Symfony\Component\Serializer\Serializer;
 use Throwable;
+
 use function is_object;
+
 use const JSON_THROW_ON_ERROR;
 
 /**
@@ -34,7 +36,7 @@ use const JSON_THROW_ON_ERROR;
  * @see https://symfony.com/doc/current/components/serializer.html#recursive-denormalization-and-type-safety
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
-class JsonSerializer implements SerializerInterface
+final class JsonSerializer implements SerializerInterface
 {
     private const string FORMAT       = JsonEncoder::FORMAT;
     private const int RECURSION_DEPTH = 64;
@@ -69,6 +71,7 @@ class JsonSerializer implements SerializerInterface
      * NO support for interfaces
      * No support for abstract classes
      */
+    #[\Override]
     public function denormalize(stdClass $input, string $className): object
     {
         /**

@@ -12,7 +12,7 @@ use const FILTER_SANITIZE_URL;
 use const PHP_URL_FRAGMENT;
 use const PHP_URL_PATH;
 
-class JsonRpcRequest implements RequestInterface
+final class JsonRpcRequest implements RequestInterface
 {
 
     protected ?string $action;
@@ -42,26 +42,31 @@ class JsonRpcRequest implements RequestInterface
         }
     }
 
+    #[\Override]
     public function getService(): string
     {
         return $this->service;
     }
 
+    #[\Override]
     public function getAction(): ?string
     {
         return $this->action;
     }
 
+    #[\Override]
     public function getArguments(): ?array
     {
         return $this->arguments;
     }
 
+    #[\Override]
     public function getIdentityToken(): ?string
     {
         return $this->authenticationToken;
     }
 
+    #[\Override]
     public function getRequestId(): ?string
     {
         return $this->requestId;

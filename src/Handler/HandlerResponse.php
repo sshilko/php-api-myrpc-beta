@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace myrpc\Handler;
 
-class HandlerResponse implements HandlerResponseInterface
+final class HandlerResponse implements HandlerResponseInterface
 {
     public function __construct(
         protected object|array|string|int|float|bool|null $response,
@@ -13,16 +13,19 @@ class HandlerResponse implements HandlerResponseInterface
     ) {
     }
 
+    #[\Override]
     public function getResponse(): object|array|string|int|float|bool|null
     {
         return $this->response;
     }
 
+    #[\Override]
     public function isError(): bool
     {
         return $this->isError;
     }
 
+    #[\Override]
     public function getErrorCode(): ?int
     {
         return $this->code;

@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace myrpc\Exception;
 
-class HandlerActionArgumentsException extends HandlerActionException
+final class HandlerActionArgumentsException extends HandlerActionException
 {
 
 }

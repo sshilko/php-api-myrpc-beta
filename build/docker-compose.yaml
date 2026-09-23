@@ -27,8 +27,8 @@ x-app: &app
     start_period: 5s
     interval: 2s
     retries: 3
-  cpus: 0.5
-  mem_limit: "1100M"
+  cpus: 2
+  mem_limit: "2000M"
   pids_limit: 100
   ulimits:
     nproc: 65535
@@ -38,8 +38,8 @@ x-app: &app
   tmpfs:
     - /tmp
   volumes:
-    - ./php.ini:/usr/local/etc/php/php.ini:ro,cached
-    - ./../:/app:rw,cached
+    - ./php.ini:/usr/local/etc/php/php.ini:ro
+    - ./../:/app:rw
   sysctls:
     net.ipv4.tcp_synack_retries: 2 # Number of times SYNACKs for passive TCP connection.
     net.ipv4.ip_local_port_range: "2000 65535" # Allowed local port range

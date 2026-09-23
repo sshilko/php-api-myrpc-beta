@@ -11,7 +11,7 @@ use function is_string;
 use function json_encode;
 use const JSON_THROW_ON_ERROR;
 
-class JsonRpcResponse implements ResponseInterface
+final class JsonRpcResponse implements ResponseInterface
 {
 
     protected float|object|array|bool|int|string|null $response;
@@ -24,6 +24,7 @@ class JsonRpcResponse implements ResponseInterface
         $this->response = $response;
     }
 
+    #[\Override]
     public function isSuccess(): bool
     {
         return null === $this->errorId;
@@ -32,6 +33,7 @@ class JsonRpcResponse implements ResponseInterface
     /**
      * @throws \myrpc\Exception\ServiceException
      */
+    #[\Override]
     public function getResponse(): string
     {
         try {
@@ -46,11 +48,13 @@ class JsonRpcResponse implements ResponseInterface
         }
     }
 
+    #[\Override]
     public function getError(): ?int
     {
         return $this->errorId;
     }
 
+    #[\Override]
     public function getRequestId(): ?string
     {
         return $this->requestId;

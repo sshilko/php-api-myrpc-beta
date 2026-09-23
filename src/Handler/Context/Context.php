@@ -10,7 +10,7 @@ use myrpc\Handler\HandlerResponseFactoryInterface;
 use myrpc\Handler\HandlerResponseInterface;
 use myrpc\Identity\IdentityInterface;
 
-class Context implements ContextInterface
+final class Context implements ContextInterface
 {
 
     private ?IdentityInterface $identity = null;
@@ -25,6 +25,7 @@ class Context implements ContextInterface
     ) {
     }
 
+    #[\Override]
     public function newErrorResponse(
         DatatypeInterface|array|string|int|float|bool|null $response,
         int $errorCode = 0
@@ -32,12 +33,14 @@ class Context implements ContextInterface
         return $this->handlerResponseFactory->createErrorResponse($response, $errorCode);
     }
 
+    #[\Override]
     public function newSuccessResponse(
         DatatypeInterface|array|string|int|float|bool|null $response
     ): HandlerResponseInterface {
         return $this->handlerResponseFactory->createSuccessResponse($response);
     }
 
+    #[\Override]
     public function newDatatypeResponse(string $typeName): ?DatatypeInterface
     {
         if ($this->userspaceDatatypeFactory->hasUserspaceType($typeName)) {
@@ -47,31 +50,37 @@ class Context implements ContextInterface
         return null;
     }
 
+    #[\Override]
     public function setIdentity(?IdentityInterface $identity): void
     {
         $this->identity = $identity;
     }
 
+    #[\Override]
     public function getIdentity(): ?IdentityInterface
     {
         return $this->identity;
     }
 
+    #[\Override]
     public function setAction(string $action): void
     {
         $this->action = $action;
     }
 
+    #[\Override]
     public function setArguments(?array $arguments = null): void
     {
         $this->arguments = $arguments;
     }
 
+    #[\Override]
     public function getAction(): string
     {
         return $this->action;
     }
 
+    #[\Override]
     public function getArguments(): ?array
     {
         return $this->arguments;

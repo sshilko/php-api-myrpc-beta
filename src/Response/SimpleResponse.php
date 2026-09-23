@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace myrpc\Response;
 
-class SimpleResponse implements ResponseInterface
+final class SimpleResponse implements ResponseInterface
 {
 
     public function __construct(
@@ -14,6 +14,7 @@ class SimpleResponse implements ResponseInterface
     ) {
     }
 
+    #[\Override]
     public function isSuccess(): bool
     {
         return null === $this->errorId;
@@ -22,16 +23,19 @@ class SimpleResponse implements ResponseInterface
     /**
      * @throws \myrpc\Exception\ServiceException
      */
+    #[\Override]
     public function getResponse(): object|array|bool|float|int|string|null
     {
         return $this->response;
     }
 
+    #[\Override]
     public function getError(): ?int
     {
         return $this->errorId;
     }
 
+    #[\Override]
     public function getRequestId(): ?string
     {
         return $this->requestId;
