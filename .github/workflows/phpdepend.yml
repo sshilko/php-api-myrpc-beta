@@ -41,9 +41,9 @@ jobs:
           DOCKER_BUILDKIT: "1"
           COMPOSE_DOCKER_CLI_BUILD: "1"
           SERVICES_NAME: "app.php83"
-        run: docker-compose up -d $SERVICES_NAME
+        run: docker compose up -d $SERVICES_NAME
 
-      - run: docker-compose ps
+      - run: docker compose ps
 
       - name: Sleep
         run: sleep 6
@@ -57,11 +57,11 @@ jobs:
           key: ${{ runner.os }}-php-${{ hashFiles('composer.lock') }}-composer-dev
 
       - name: Docker install dependencies
-        run: docker-compose exec -T app.php83 composer install
+        run: docker compose exec -T app.php83 composer install
 
         # Docs: https://phpunit.readthedocs.io/en/9.5/
       - name: Docker run PHPUnit
-        run: docker-compose exec -T app.php83 composer app-pdepend
+        run: docker compose exec -T app.php83 composer app-pdepend
 
         # https://github.com/actions/upload-artifact
       - name: Upload Pdepend artifacts

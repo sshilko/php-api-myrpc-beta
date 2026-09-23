@@ -24,19 +24,19 @@ build-docker:
   script:
     - docker pull $CI_REGISTRY_IMAGE:latest || true
     - docker tag $CI_REGISTRY_IMAGE:latest $REPONAME:latest || true
-    - docker-compose build $APPNAME
-    - docker-compose up $APPNAME -d
-    - docker-compose exec $APPNAME composer install
-    - docker-compose exec $APPNAME composer app-quality
-    - docker-compose exec $APPNAME composer app-phpunit-coverage
-    - docker-compose down
-#   - docker tag $REPONAME:latest $CI_REGISTRY_IMAGE:latest
-#   - docker push $CI_REGISTRY_IMAGE:latest
-#   - |-
-#     if [[ $CI_COMMIT_TAG != '' ]]; then
-#         apk add curl && \
-#         curl -v --header "Job-Token: ${CI_JOB_TOKEN}" --data tag=${CI_COMMIT_TAG} "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/composer"
-#     fi
+    - docker compose build $APPNAME
+    - docker compose up $APPNAME -d
+    - docker compose exec $APPNAME composer install
+    - docker compose exec $APPNAME composer app-quality
+    - docker compose exec $APPNAME composer app-phpunit-coverage
+    - docker compose down
+  #   - docker tag $REPONAME:latest $CI_REGISTRY_IMAGE:latest
+  #   - docker push $CI_REGISTRY_IMAGE:latest
+  #   - |-
+  #     if [[ $CI_COMMIT_TAG != '' ]]; then
+  #         apk add curl && \
+  #         curl -v --header "Job-Token: ${CI_JOB_TOKEN}" --data tag=${CI_COMMIT_TAG} "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/composer"
+  #     fi
   coverage: /^\s*Lines:\s*\d+.\d+\%/
 
   artifacts:
