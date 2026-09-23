@@ -10,13 +10,31 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Request
-Processing JsonRpcRequestFactory.php [438 tokens in 52 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 44ms (0 fixable errors, 0 fixable warnings)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Schema
+Processing JsonSchemaFactory.php [467 tokens in 73 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 72ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 137ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Time: 174ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Registering sniffs in the PHP_CodeSniffer standard... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Request
+Processing JsonRpcRequestFactory.php [438 tokens in 52 lines]... DONE in 67ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 285ms; Memory: 12MB
+DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -29,30 +47,12 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype/Internal/v1/Response
-Processing Error.php [86 tokens in 16 lines]... DONE (196 sniffs registered)
-DONE in 8ms (0 fixable errors, 0 fixable warnings)
+Processing Error.php [86 tokens in 16 lines]... DONE in 21ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 83ms; Memory: 12MB
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Schema
-Processing JsonSchemaFactory.php [467 tokens in 73 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 78ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 294ms; Memory: 12MB
-DONE (196 sniffs registered)
+Time: 241ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -65,12 +65,12 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Identity
-Processing IdentityFactoryInterface.php [50 tokens in 10 lines]... DONE in 26ms (0 fixable errors, 0 fixable warnings)
+Processing IdentityFactoryInterface.php [50 tokens in 10 lines]... DONE in 19ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 111ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Time: 206ms; Memory: 12MB
+DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -85,7 +85,7 @@ Creating file list... DONE (0 files in queue)
 ERROR: No files were checked.
 All specified files were excluded or did not match filtering rules.
 
-DONE (196 sniffs registered)
+Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -98,11 +98,29 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Context
-Processing ContextWriterInterface.php [90 tokens in 16 lines]... DONE in 17ms (0 fixable errors, 0 fixable warnings)
+Processing ContextWriterInterface.php [90 tokens in 16 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 37ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 145ms; Memory: 12MB
+Time: 191ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
+Processing HandlerWithSchemaInterface.php [36 tokens in 10 lines]... DONE in 15ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 219ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -116,47 +134,11 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing HandlerWithSchemaInterface.php [36 tokens in 10 lines]... DONE (196 sniffs registered)
-DONE in 8ms (0 fixable errors, 0 fixable warnings)
+Processing HandlerFactoryInterface.php [187 tokens in 33 lines]... DONE in 49ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 176ms; Memory: 12MB
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing HandlerFactoryInterface.php [187 tokens in 33 lines]... DONE in 36ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 143ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing HandlerActionValidationException.php [33 tokens in 10 lines]... DONE in 8ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 148ms; Memory: 12MB
+Time: 275ms; Memory: 12MB
 DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -170,134 +152,11 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing ServiceAuthenticationException.php [32 tokens in 9 lines]... DONE in 8ms (0 fixable errors, 0 fixable warnings)
+Processing HandlerActionValidationException.php [33 tokens in 10 lines]... DONE in 14ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 179ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Identity
-Processing TokenIdentity.php [80 tokens in 18 lines]... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test/phpunit
-Processing BasicHandlerTest.php DONE in 14ms[972 tokens in 118 lines]...  (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 104ms; Memory: 12MB
-DONE in 99ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 250ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
-Processing JsonRpcResponse.php [358 tokens in 58 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 24ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 117ms; Memory: 12MB
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype/Internal
-Processing AbstractDatatype.php [109 tokens in 21 lines]... DONE in 15ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 115ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Validator
-Processing Symfony.php [364 tokens in 54 lines]... DONE in 49ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 117ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Registering sniffs in the PHP_CodeSniffer standard... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype
-Processing UserspaceDatatypeFactoryInterface.php [61 tokens in 12 lines]... DONE in 13ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 80ms; Memory: 12MB
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (0 files in queue)
-ERROR: No files were checked.
-All specified files were excluded or did not match filtering rules.
-
+Time: 212ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -310,30 +169,12 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
-Processing ResponseInterface.php [110 tokens in 19 lines]... DONE in 26ms (0 fixable errors, 0 fixable warnings)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
+Processing ServiceAuthenticationException.php [32 tokens in 9 lines]... DONE in 7ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 154ms; Memory: 12MB
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Request
-Processing SimpleRequest.php [227 tokens in 43 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 32ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 247ms; Memory: 12MB
+Time: 183ms; Memory: 12MB
 DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -347,11 +188,29 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test/phpunit
-Processing NormalWorkerTest.php [3151 tokens in 458 lines]... DONE in 131ms (0 fixable errors, 0 fixable warnings)
+Processing BasicHandlerTest.php [972 tokens in 118 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 169ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 245ms; Memory: 14MB
+Time: 279ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Identity
+Processing TokenIdentity.php [80 tokens in 18 lines]... DONE in 24ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 216ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -364,13 +223,136 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Schema
-Processing SchemaInterface.php [41 tokens in 13 lines]... DONE in 11ms (0 fixable errors, 0 fixable warnings)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
+Processing JsonRpcResponse.php [358 tokens in 58 lines]... DONE in 66ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 165ms; Memory: 12MB
+Time: 286ms; Memory: 12MB
 DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype/Internal
+Processing AbstractDatatype.php [109 tokens in 21 lines]... DONE in 22ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 231ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Validator
+Processing Symfony.php [364 tokens in 54 lines]... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype
+Processing UserspaceDatatypeFactoryInterface.php [61 tokens in 12 lines]... DONE in 74ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 313ms; Memory: 12MB
+DONE in 22ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 237ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (0 files in queue)
+ERROR: No files were checked.
+All specified files were excluded or did not match filtering rules.
+
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Request
+Processing SimpleRequest.php [227 tokens in 43 lines]... DONE in 47ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 240ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Registering sniffs in the PHP_CodeSniffer standard... WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
+Processing ResponseInterface.php [110 tokens in 19 lines]... DONE in 32ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 210ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test/phpunit
+Processing NormalWorkerTest.php [3151 tokens in 458 lines]... DONE in 124ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 243ms; Memory: 14MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -383,12 +365,11 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Worker
-Processing WorkerInterface.php [50 tokens in 12 lines]... DONE in 22ms (0 fixable errors, 0 fixable warnings)
+Processing WorkerInterface.php [50 tokens in 12 lines]... DONE in 14ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 200ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Time: 177ms; Memory: 12MB
 DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -400,7 +381,15 @@ WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
-Creating file list... WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Schema
+Processing SchemaInterface.php [41 tokens in 13 lines]... DONE in 12ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 239ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
    This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
@@ -410,20 +399,31 @@ Creating file list... WARNING: The PHP_CodeSniffer standard uses 1 deprecated sn
 Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
-DONE (1 files in queue)
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing HandlerFactory.php Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing HandlerResponseInterface.php [82 tokens in 14 lines]... [579 tokens in 87 lines]... DONE in 30ms (0 fixable errors, 0 fixable warnings)
+Processing HandlerFactory.php [579 tokens in 87 lines]... DONE in 85ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 217ms; Memory: 12MB
-DONE in 55ms (0 fixable errors, 0 fixable warnings)
+Time: 296ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
+Processing HandlerResponseInterface.php [82 tokens in 14 lines]... DONE in 21ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 255ms; Memory: 12MB
+Time: 218ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -456,7 +456,7 @@ Processing ValidatorInterface.php [44 tokens in 10 lines]... DONE in 22ms (0 fix
 
 No violations were found
 
-Time: 181ms; Memory: 12MB
+Time: 233ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -470,12 +470,7 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing SerializerObjectAssertException.php [33 tokens in 10 lines]... DONE in 10ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 149ms; Memory: 12MB
-DONE (196 sniffs registered)
+Processing SerializerObjectAssertException.php [33 tokens in 10 lines]... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -488,12 +483,17 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing SmartHandlerInterface.php [54 tokens in 12 lines]... DONE in 21ms (0 fixable errors, 0 fixable warnings)
+Processing SmartHandlerInterface.php [54 tokens in 12 lines]... DONE in 19ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 166ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Time: 227ms; Memory: 12MB
+DONE in 10ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 152ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -506,12 +506,12 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Request
-Processing RequestFactoryInterface.php [48 tokens in 10 lines]... DONE in 15ms (0 fixable errors, 0 fixable warnings)
+Processing RequestFactoryInterface.php [48 tokens in 10 lines]... DONE in 21ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 118ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Time: 242ms; Memory: 12MB
+DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -524,29 +524,11 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Schema
-Processing SchemaFactoryInterface.php [44 tokens in 10 lines]... DONE in 18ms (0 fixable errors, 0 fixable warnings)
+Processing SchemaFactoryInterface.php [44 tokens in 10 lines]... DONE in 23ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 213ms; Memory: 12MB
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype/Internal/v1/Response
-Processing Success.php [104 tokens in 23 lines]... DONE in 27ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 153ms; Memory: 12MB
+Time: 252ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -559,8 +541,26 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype/Internal/v1/Response
+Processing Success.php [104 tokens in 23 lines]... DONE in 38ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 296ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing SmartHandler.php [2770 tokens in 379 lines]... DONE (196 sniffs registered)
+Processing SmartHandler.php [2770 tokens in 379 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -573,16 +573,16 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Request
-Processing JsonRpcRequest.php [451 tokens in 69 lines]... DONE in 48ms (0 fixable errors, 0 fixable warnings)
+Processing JsonRpcRequest.php [451 tokens in 69 lines]... DONE in 57ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 214ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE in 322ms (0 fixable errors, 0 fixable warnings)
+Time: 208ms; Memory: 12MB
+DONE in 422ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 481ms; Memory: 14MB
+Time: 633ms; Memory: 14MB
 Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -596,7 +596,12 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src
-Processing SchemaServer.php [202 tokens in 35 lines]... DONE (196 sniffs registered)
+Processing SchemaServer.php [202 tokens in 35 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 47ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 238ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -609,65 +614,42 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Context
-Processing ContextFactoryInterface.php [41 tokens in 10 lines]... DONE in 12ms (0 fixable errors, 0 fixable warnings)
+Processing ContextFactoryInterface.php [41 tokens in 10 lines]... DONE in 28ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 80ms; Memory: 12MB
-DONE in 35ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 248ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (0 files in queue)
-ERROR: No files were checked.
-All specified files were excluded or did not match filtering rules.
-
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-Registering sniffs in the PHP_CodeSniffer standard... WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing HandlerActionSerializerException.php [33 tokens in 10 lines]... DONE in 4ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 77ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (0 files in queue)
-ERROR: No files were checked.
-All specified files were excluded or did not match filtering rules.
-
+Time: 271ms; Memory: 12MB
 DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (0 files in queue)
+ERROR: No files were checked.
+All specified files were excluded or did not match filtering rules.
+
+Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (0 files in queue)
+ERROR: No files were checked.
+All specified files were excluded or did not match filtering rules.
+
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -684,78 +666,6 @@ Processing SymfonyResult.php [169 tokens in 32 lines]... DONE in 15ms (0 fixable
 
 No violations were found
 
-Time: 81ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Validator
-Processing ValidatorResultInterface.php [78 tokens in 16 lines]... DONE in 5ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 50ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-DONE (196 sniffs registered)
-Processing HandlerActionException.php [33 tokens in 10 lines]... WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-DONE in 14msProcessing HandlerResponseFactory.php  (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 213ms; Memory: 12MB
-[231 tokens in 31 lines]... DONE in 38ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 210ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing HandlerActionInputException.php [33 tokens in 10 lines]... DONE in 7ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
 Time: 109ms; Memory: 12MB
 DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
@@ -769,12 +679,30 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Request
-Processing RequestInterface.php [101 tokens in 18 lines]... DONE in 11ms (0 fixable errors, 0 fixable warnings)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
+Processing HandlerActionSerializerException.php [33 tokens in 10 lines]... DONE in 13ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 129ms; Memory: 12MB
+Time: 257ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Validator
+Processing ValidatorResultInterface.php [78 tokens in 16 lines]... DONE in 11ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 152ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -786,9 +714,81 @@ WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
-Creating file list... DONE (196 sniffs registered)
-DONE (1 files in queue)
+DONE (196 sniffs registered)
+Creating file list... DONE (1 files in queue)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
+Processing HandlerResponseFactory.php [231 tokens in 31 lines]... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
+Processing HandlerActionException.php [33 tokens in 10 lines]... DONE in 13ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 230ms; Memory: 12MB
+DONE in 37ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 246ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... Creating file list... DONE (1 files in queue)
+DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Request
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
+Processing HandlerActionInputException.php Processing RequestInterface.php [33 tokens in 10 lines]... [101 tokens in 18 lines]... DONE in 10ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 215ms; Memory: 12MB
+DONE in 23ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 220ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+DONE (1 files in queue)
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
    This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
@@ -803,30 +803,12 @@ ERROR: No files were checked.
 All specified files were excluded or did not match filtering rules.
 
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing HandlerSchemaInterface.php [69 tokens in 15 lines]... DONE in 32ms (0 fixable errors, 0 fixable warnings)
+Processing HandlerSchemaInterface.php [69 tokens in 15 lines]... DONE in 20ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 118ms; Memory: 12MB
+Time: 219ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test/phpunit
-Processing BasicWorkerTest.php [1054 tokens in 134 lines]... DONE (196 sniffs registered)
-DONE in 55ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 158ms; Memory: 12MB
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -839,12 +821,12 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Identity
-Processing TokenIdentityFactory.php [89 tokens in 15 lines]... DONE in 23ms (0 fixable errors, 0 fixable warnings)
+Processing TokenIdentityFactory.php [89 tokens in 15 lines]... DONE in 25ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 220ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Time: 181ms; Memory: 12MB
+DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -856,8 +838,13 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
-Processing SimpleResponse.php [225 tokens in 39 lines]... DONE (196 sniffs registered)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test/phpunit
+Processing BasicWorkerTest.php [1054 tokens in 134 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 171ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 371ms; Memory: 12MB
+DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -870,16 +857,11 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype
-Processing DatatypeFactory.php [493 tokens in 71 lines]... DONE in 33ms (0 fixable errors, 0 fixable warnings)
+Processing DatatypeFactory.php [493 tokens in 71 lines]... DONE in 51ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 110ms; Memory: 12MB
-DONE in 62ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 189ms; Memory: 12MB
+Time: 226ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -893,7 +875,30 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src
-Processing ApiServer.php [636 tokens in 91 lines]... DONE (196 sniffs registered)
+Processing ApiServer.php [636 tokens in 91 lines]... DONE in 45ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 221ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
+Processing SimpleResponse.php [225 tokens in 39 lines]... DONE in 49ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 285ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -906,16 +911,11 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Context
-Processing Context.php [493 tokens in 79 lines]... DONE in 92ms (0 fixable errors, 0 fixable warnings)
+Processing Context.php [493 tokens in 79 lines]... DONE in 55ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 253ms; Memory: 12MB
-DONE in 60ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 251ms; Memory: 12MB
+Time: 241ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -929,11 +929,11 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing HandlerActionTypeException.php [33 tokens in 10 lines]... DONE in 14ms (0 fixable errors, 0 fixable warnings)
+Processing HandlerActionTypeException.php [33 tokens in 10 lines]... DONE in 17ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 163ms; Memory: 12MB
+Time: 225ms; Memory: 12MB
 DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -960,32 +960,33 @@ WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
+DONE (196 sniffs registered)
+Creating file list... DONE (1 files in queue)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing HandlerResponse.php [178 tokens in 30 lines]... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Validator
-Processing IsValidatableInterface.php [41 tokens in 10 lines]... DONE in 6ms (0 fixable errors, 0 fixable warnings)
+Processing HandlerResponse.php [178 tokens in 30 lines]... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Validator
+Processing IsValidatableInterface.php [41 tokens in 10 lines]... DONE in 14ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 184ms; Memory: 12MB
-DONE in 35ms (0 fixable errors, 0 fixable warnings)
+Time: 112ms; Memory: 12MB
+DONE in 18ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 214ms; Memory: 12MB
+Time: 203ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -997,12 +998,83 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Context
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Schema
-Processing JsonSchema.php [175 tokens in 34 lines]... DONE in 48ms (0 fixable errors, 0 fixable warnings)
+Processing ContextInterface.php [35 tokens in 9 lines]... Processing JsonSchema.php [175 tokens in 34 lines]... DONE in 21ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 233ms; Memory: 12MB
+Time: 241ms; Memory: 12MB
+DONE in 54ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 334ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype
+Processing DatatypeInterface.php [53 tokens in 10 lines]... DONE (196 sniffs registered)
+DONE in 11ms (0 fixable errors, 0 fixable warnings)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+
+No violations were found
+
+Time: 122ms; Memory: 12MB
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
+Processing ServiceException.php [115 tokens in 21 lines]... DONE in 18ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 228ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Registering sniffs in the PHP_CodeSniffer standard... WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype
+Processing DatatypeFactoryInterface.php [87 tokens in 14 lines]... DONE in 23ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 139ms; Memory: 12MB
 DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -1016,137 +1088,11 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Context
-Processing ContextInterface.php [35 tokens in 9 lines]... DONE in 7ms (0 fixable errors, 0 fixable warnings)
+Processing ContextFactory.php [111 tokens in 22 lines]... DONE in 25ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 154ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing ServiceException.php [115 tokens in 21 lines]... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-DONE in 9ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 104ms; Memory: 12MB
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype
-Processing DatatypeInterface.php [53 tokens in 10 lines]... DONE in 7ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 110ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Datatype
-Processing DatatypeFactoryInterface.php [87 tokens in 14 lines]... DONE in 8ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 115ms; Memory: 12MB
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Registering sniffs in the PHP_CodeSniffer standard... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Context
-Processing ContextFactory.php [111 tokens in 22 lines]... DONE in 30ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 224ms; Memory: 12MB
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing ValidatorException.php [33 tokens in 10 lines]... DONE in 10ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 86ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing HandlerResponseFactoryInterface.php [110 tokens in 19 lines]... DONE in 27ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 111ms; Memory: 12MB
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
-Processing JsonRpcResponseFactory.php [312 tokens in 44 lines]... DONE in 42ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 233ms; Memory: 12MB
+Time: 242ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -1159,12 +1105,48 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test
-Processing phpunit.xml.badges.php [409 tokens in 51 lines]... DONE in 14ms (0 fixable errors, 0 fixable warnings)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
+Processing ValidatorException.php [33 tokens in 10 lines]... DONE in 9ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 80ms; Memory: 12MB
+Time: 150ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... Registering sniffs in the PHP_CodeSniffer standard... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
+Processing JsonRpcResponseFactory.php [312 tokens in 44 lines]... DONE in 57ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 257ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
+Processing HandlerResponseFactoryInterface.php [110 tokens in 19 lines]... DONE in 29ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 229ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -1176,8 +1158,26 @@ WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test
+Processing phpunit.xml.badges.php [409 tokens in 51 lines]... DONE in 20ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 220ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
 Creating file list... DONE (0 files in queue)
-ERROR: No files were checked.
+Registering sniffs in the PHP_CodeSniffer standard... ERROR: No files were checked.
 All specified files were excluded or did not match filtering rules.
 
 DONE (196 sniffs registered)
@@ -1192,13 +1192,12 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
-Processing SimpleResponseFactory.php [252 tokens in 30 lines]... DONE in 29ms (0 fixable errors, 0 fixable warnings)
+Registering sniffs in the PHP_CodeSniffer standard... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
+Processing SimpleResponseFactory.php [252 tokens in 30 lines]... DONE in 38ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 197ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Time: 266ms; Memory: 12MB
 DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -1210,30 +1209,13 @@ WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
-Creating file list... --------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-DONE (1 files in queue)
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing HandlerActionArgumentsException.php [33 tokens in 10 lines]... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing DatatypeException.php [33 tokens in 10 lines]... DONE in 12ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-DONE in 12ms
- (0 fixable errors, 0 fixable warnings)
-Time: 91ms; Memory: 12MB
+Processing DatatypeException.php [33 tokens in 10 lines]... DONE in 6ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 188ms; Memory: 12MB
+Time: 227ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -1246,12 +1228,48 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
-Processing ResponseFactoryInterface.php [164 tokens in 23 lines]... DONE in 11ms (0 fixable errors, 0 fixable warnings)
+Registering sniffs in the PHP_CodeSniffer standard... Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
+Processing HandlerActionArgumentsException.php [33 tokens in 10 lines]... DONE in 19ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 77ms; Memory: 12MB
+Time: 221ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Response
+Processing ResponseFactoryInterface.php [164 tokens in 23 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 30ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 263ms; Memory: 12MB
+DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
+Processing SerializerException.php [33 tokens in 10 lines]... DONE in 13ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 156ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
@@ -1265,12 +1283,7 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test
-Processing phpunit.xml.bootstrap.php [108 tokens in 24 lines]... DONE in 31ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 99ms; Memory: 12MB
-DONE (196 sniffs registered)
+Processing phpunit.xml.bootstrap.php [108 tokens in 24 lines]... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -1282,26 +1295,18 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Exception
-Processing SerializerException.php [33 tokens in 10 lines]... DONE in 9ms (0 fixable errors, 0 fixable warnings)
+DONE in 44ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 185ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
+Time: 273ms; Memory: 12MB
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler
-Processing HandlerInterface.php [89 tokens in 19 lines]... DONE (196 sniffs registered)
+Processing HandlerInterface.php [89 tokens in 19 lines]... DONE in 39ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 194ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -1314,48 +1319,7 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Serializer
-Processing SerializerInterface.php [55 tokens in 12 lines]... DONE in 47ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 187ms; Memory: 12MB
-DONE in 17ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 147ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Identity
-Processing IdentityInterface.php [42 tokens in 10 lines]... DONE in 17ms (0 fixable errors, 0 fixable warnings)
-
-No violations were found
-
-Time: 115ms; Memory: 12MB
-DONE (196 sniffs registered)
-WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
---------------------------------------------------------------------------------
--  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
-   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
-   will be removed in Slevomat Coding Standard 9.0.0. Use
-   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
-
-Deprecated sniffs are still run, but will stop working at some point in the
-future.
-
-Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Worker
-Processing WorkerTrait.php [80 tokens in 18 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 23ms (0 fixable errors, 0 fixable warnings)
+Processing SerializerInterface.php [55 tokens in 12 lines]... DONE in 30ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
@@ -1372,13 +1336,49 @@ Deprecated sniffs are still run, but will stop working at some point in the
 future.
 
 Creating file list... DONE (1 files in queue)
-Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Context
-Processing ContextReaderInterface.php [203 tokens in 35 lines]... DONE in 31ms (0 fixable errors, 0 fixable warnings)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Identity
+Processing IdentityInterface.php [42 tokens in 10 lines]... DONE in 16ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 148ms; Memory: 12MB
+Time: 271ms; Memory: 12MB
 Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Worker
+Processing WorkerTrait.php [80 tokens in 18 lines]... DONE in 23ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 126ms; Memory: 12MB
+Registering sniffs in the PHP_CodeSniffer standard... Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
+--------------------------------------------------------------------------------
+-  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+   This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and
+   will be removed in Slevomat Coding Standard 9.0.0. Use
+   SlevomatCodingStandard.TypeHints.DNFTypeHintFormat instead.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+Creating file list... DONE (1 files in queue)
+Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Handler/Context
+Processing ContextReaderInterface.php [203 tokens in 35 lines]... DONE in 72ms (0 fixable errors, 0 fixable warnings)
+
+No violations were found
+
+Time: 298ms; Memory: 12MB
+DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -1391,12 +1391,12 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/src/Serializer
-Processing JsonSerializer.php [745 tokens in 117 lines]... DONE in 63ms (0 fixable errors, 0 fixable warnings)
+Processing JsonSerializer.php [745 tokens in 117 lines]... Registering sniffs in the PHP_CodeSniffer standard... DONE in 97ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 161ms; Memory: 12MB
-Registering sniffs in the PHP_CodeSniffer standard... DONE (196 sniffs registered)
+Time: 344ms; Memory: 12MB
+DONE (196 sniffs registered)
 WARNING: The PHP_CodeSniffer standard uses 1 deprecated sniff
 --------------------------------------------------------------------------------
 -  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
@@ -1409,8 +1409,8 @@ future.
 
 Creating file list... DONE (1 files in queue)
 Changing into directory /home/runner/work/php-api-myrpc-beta/php-api-myrpc-beta/test/phpunit
-Processing ServiceTest.php [1061 tokens in 114 lines]... DONE in 92ms (0 fixable errors, 0 fixable warnings)
+Processing ServiceTest.php [1061 tokens in 114 lines]... DONE in 44ms (0 fixable errors, 0 fixable warnings)
 
 No violations were found
 
-Time: 246ms; Memory: 12MB
+Time: 154ms; Memory: 12MB
