@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: PHP setup
         uses: shivammathur/setup-php@v2
@@ -57,7 +57,7 @@ jobs:
 
       # https://github.com/actions/upload-artifact
       - name: Upload Psalm artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           retention-days: 1
           name: psalm-output
@@ -72,13 +72,13 @@ jobs:
     steps:
       # https://github.com/actions/checkout
       - name: Checkout pages branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
         with:
           ref: pages
 
       # https://github.com/marketplace/actions/download-a-build-artifact
       - name: Download all Psalm artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v5
         with:
           name: psalm-output
           path: php/psalm
