@@ -77,8 +77,15 @@ jobs:
         timeout-minutes: 3
 
       - name: Wait for all services to become healthy
-        run: for SVC in "app/php83"; do while [ "\"healthy\"" != "$(docker inspect --format '{{json .State.Health.Status }}' ${SVC})" ];do docker compose ps && sleep 5; done; done
-        timeout-minutes: 3
+        run: |
+          for SVC in "app.php83"; do
+            while [ "$(docker compose ps --format json $SVC | grep -o '"Health":"[^"]*"' | cut -d'"' -f4)" != "healthy" ]; do
+              echo "Waiting for $SVC to become healthy..."
+              docker compose ps $SVC
+              sleep 5
+            done
+          done
+        timeout-minutes: 2
 
       - name: Sleep
         run: sleep 3
